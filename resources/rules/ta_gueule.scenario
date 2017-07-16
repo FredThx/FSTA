@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*
+
+# Plugin for FSTA
+# the main FSTA.installation object is named "maison"
+# To add a new group :
+#	maison.add_group(name = "mongroupe", hotword = "mongroupe.pmdl")
+# 
+# To add a new scenario (here or (better) in another file (ie my_rule.scenario))
+#	maison.group("mongroupe").add_scenario(name = "monscenario", _
+#											phrases = [u"do this",u"do that"], _ or phrases = u"éteint la lumière",
+#											actions = [
+#												action_mqtt(
+#													topic = "T-HOME/SALON/LUMIERES",
+#													payload = "ON",
+#													text = "ON"),
+#												action(callback_function, text = "Oooh"),
+#												action_os(cmd="my_cmd_line", text = "cmd_line")]
+# Attention : bien encoder ce fichier en UFT-8 !!!!!!
+from FSTA.action import *
+maison.group("maison").add_scenario(name = "ta_gueule",
+									phrases = [ u"t'as gueule",
+												u'tais-toi',
+												u'ferme ta gueule',
+												u'enculé',
+												u'connard'],
+									actions = action_mqtt_random(
+													topic = 'T-HOME/PI-SALON/SPEAK',
+													payload = [u"Merci de rester poli avec moi",
+																u"Je ne fais que mon boulot.",
+																u"Défoule toi sur une machine si tu veux.",
+																u'Tu ne veux pas plutôt une blague de Chuck.']),
+									min_cosine = 0.6,
+									text = "*****")

@@ -1,0 +1,161 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*
+
+import max7219.led as led
+import time
+import threading
+import functools
+
+led_lock = threading.RLock()
+
+def thread(function):
+	'''Décorateur : pour executions parallèle
+	'''
+	@functools.wraps(function)
+	def lock_function(*args, **kwargs):
+		with led_lock:
+			function(*args,**kwargs)
+	def th_function(*args, **kwargs):
+		th = threading.Thread(None,lock_function,None,args,kwargs)
+		th.start()
+	return th_function
+
+class eyes(object):
+	'''Eyes for FSTA
+	'''
+	def __init__(self, nb = 1, brightness = 0, speed = 2):
+		'''Init the leds
+			- nb			:	nb of cascaded led(s)
+			- brightness	:	(0-15) (be careful, high level draw more current and may cause crashes)
+			- speed			:	(1-5) the speed of scolling
+		'''
+		self.dev = led.matrix(cascaded = nb)
+		self.nb = nb
+		self.dev.brightness(brightness)
+		self.brightness = brightness
+		self.dev.clear()
+		self.speed=speed
+		
+	@property
+	def delay(self):
+		if self.speed>0:
+			return 0.05/self.speed
+		else:
+			return 0.05
+	
+	@thread
+	def show_car(self, char, id=None):
+		'''Show a charater on one or both eyes
+			- char		:	the character
+			- id		:	the id of the eye (None : both eyes)
+		'''
+		try:
+			code = ord(char)
+		except:
+			code = 32
+		if id!=None:
+			self.dev.letter(id,code)
+		else:
+			for i in range(self.nb):
+				self.dev.letter(i, code)
+	
+	@thread
+	def flash(self, duration = 0.1, intensity = 4):
+		'''Increase brightness during duration secondes
+			- duration		:	in seconds
+			- intensity		:	(1-15)
+		'''
+		self.dev.brightness(min(15,self.brightness+intensity))
+		time.sleep(duration)
+		self.dev.brightness(self.brightness)
+	
+	@thread
+	def	vibre(self, duration = 1):
+		'''down and up the text
+			- duration		in seconds
+			- speed			(1-5) speed of mouvement
+		'''
+		fin = time.time() + duration
+		down = False
+		while time.time()<fin:
+			if down:
+				self.dev.scroll_up()
+			else:
+				self.dev.scroll_down()
+			down = not down
+			time.sleep(self.delay*10)
+		if down:
+			self.dev.scroll_up()
+		
+	@thread
+	def clear(self, id=None):
+		'''Clear the eyes
+			- id	:	id of the eye
+		'''
+		self.dev.clear(id)
+		
+	@thread
+	def show_message(self, text):
+		'''Scroll a text on eyes
+		'''
+		self.dev.show_message(text, delay = self.delay, always_scroll=True)
+		self.close_eye()
+	
+	opened_eye = [
+				0b00001000,
+				0b00010100,
+				0b00100100,
+				0b00100100,
+				0b00100100,
+				0b00100100,
+				0b00010100,
+				0b00001000]
+	closed_eye = [
+				0b00001000,
+				0b00011000,
+				0b00011000,
+				0b00011000,
+				0b00011000,
+				0b00011000,
+				0b00011000,
+				0b00001000]
+	@thread
+	def draw(self, bytes, id = None):
+		'''Draw a bytesarray
+			- id	:	the id eye
+			- bytes	:	a array of bytes
+		'''
+		for i in range(self.nb):
+			if id==None or id==i:
+				for c in range(8):
+					self.dev.set_byte(i,c+1,bytes[c],False)
+		self.dev.flush()
+		
+	@thread
+	def open_eye(self, id = None):
+		''' Open one or both eyes
+			- id	the id eye
+		'''
+		self.draw(self.opened_eye, id)
+		
+	@thread
+	def close_eye(self, id = None):
+		''' Close one or both eyes
+			- id	the id eye
+		'''
+		self.draw(self.closed_eye, id)
+	
+	@thread
+	def cligne(self, id = None, delay = None, repeat = 1):
+		''' Open one or both eye(s)
+			and close it/them
+			id		:	the id eye
+			delay	:	in seconds
+			repeat	:	nb of repetition (None = 1)
+		'''
+		if delay==None:
+			delay = self.delay*15
+		for i in range(repeat):
+			self.open_eye(id)
+			time.sleep(delay)
+			self.close_eye(id)

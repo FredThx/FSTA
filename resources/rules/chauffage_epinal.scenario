@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+# Plugin for FSTA
+# the main FSTA.installation object is named "maison"
+# To add a new group :
+#	maison.add_group(name = "mongroupe", hotword = "mongroupe.pmdl")
+# 
+# To add a new scanario (here or (better) in another file (ie my_rule.scenario))
+#	maison.group("mongroupe").add_scenario(name = "monscenario", _
+#											phrases = [u"do this",u"do that"], _ or phrases = u"éteint la lumière",
+#											actions = [
+#												action_mqtt(
+#													topic = "T-HOME/SALON/LUMIERES",
+#													payload = "ON",
+#													text = "ON"),
+#												action(callback_function, text = "Oooh"),
+#												action_os(cmd="my_cmd_line", text = "cmd_line")]
+from FSTA.action import *
+
+maison.group("maison").add_scenario(name = "CHAUFFAGE",
+									phrases = [u"Allume le chauffage"],
+									actions = action_mqtt(
+											topic = "T-EPINAL/TEMP",
+											payload = "20",
+											text = "Chauffe : 20C"))
+
+maison.group("maison").add_scenario(name = "CHAUFFAGE BAS",
+									phrases = [u"Eteins le chauffage"],
+									actions = action_mqtt(
+											topic = "T-EPINAL/TEMP",
+											payload = "17",
+											text = "Chauffe : 17C"))
+											
+maison.group("maison").add_scenario(name = "CHAUFFAGE PLUS",
+									phrases = [u"Augmente la température", u"Augmente le chauffage"],
+									actions = action_mqtt(
+											topic = "T-EPINAL/TEMPLUS",
+											payload = "1",
+											text = "Chauffe : +1C"))
+											
+maison.group("maison").add_scenario(name = "CHAUFFAGE MOINS",
+									phrases = [u"Baisse la température", u"Baisse le chauffage"],
+									actions = action_mqtt(
+											topic = "T-EPINAL/TEMPLUS",
+											payload = "-1",
+											text = "Chauffe : -1C"))

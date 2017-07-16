@@ -1,0 +1,91 @@
+MANIFEST.in
+README.md
+_snowboydetect.so
+config.py
+maison.service
+maison.sh
+mqtt_speak.py
+setup.py
+FSTA/__init__.py
+FSTA/action.py
+FSTA/cortical_language_analyser.py
+FSTA/eyes.py
+FSTA/fred_language_analyser.py
+FSTA/group.py
+FSTA/installation.py
+FSTA/language_analyser.py
+FSTA/mqtt_speak.py
+FSTA/phrase.py
+FSTA/plugin.py
+FSTA/scenario.py
+FSTA/speaker.py
+FSTA.egg-info/PKG-INFO
+FSTA.egg-info/SOURCES.txt
+FSTA.egg-info/dependency_links.txt
+FSTA.egg-info/requires.txt
+FSTA.egg-info/top_level.txt
+resources/common.res
+resources/distance_syntaxique.xlsx
+resources/3D/FSTA_3D.skb
+resources/3D/FSTA_3D.skp
+resources/3D/FSTA_3D.stl
+resources/3D/FSTA_3D_cover.stl
+resources/3D/FSTA_3D_top.stl
+resources/3D/pam8403-audio-amplifier.png
+resources/Hotwords/Ok Kodi.pmdl
+resources/Hotwords/maison.pmdl
+resources/Hotwords/salon.pmdl
+resources/Hotwords/snowboy.umdl
+resources/hotwords/Ok Kodi.pmdl
+resources/hotwords/alexa.umdl
+resources/hotwords/maison.pmdl
+resources/hotwords/salon.pmdl
+resources/hotwords/snowboy.umdl
+resources/rules/TV.scenario
+resources/rules/cava.scenario
+resources/rules/chauffage_epinal.scenario
+resources/rules/chuck.scenario
+resources/rules/date.scenario
+resources/rules/exemple.group
+resources/rules/exemple.scenario
+resources/rules/fuel.scenario
+resources/rules/kodi.scenario
+resources/rules/lumiere.scenario
+resources/rules/maison.group
+resources/rules/meteo.scenario
+resources/rules/musique.scenario
+resources/rules/stop.scenario
+resources/rules/ta_gueule.scenario
+resources/rules/volume.scenario
+resources/rules/volume_denon.scenario
+resources/rules - Copie/TV.scenario
+resources/rules - Copie/cava.scenario
+resources/rules - Copie/chuck.scenario
+resources/rules - Copie/date.scenario
+resources/rules - Copie/exemple.group
+resources/rules - Copie/exemple.scenario
+resources/rules - Copie/fuel.scenario
+resources/rules - Copie/kodi.scenario
+resources/rules - Copie/lumiere.scenario
+resources/rules - Copie/maison.group
+resources/rules - Copie/meteo.scenario
+resources/rules - Copie/musique.scenario
+resources/rules - Copie/stop.scenario
+resources/rules - Copie/ta_gueule.scenario
+resources/rules - Copie/volume.scenario
+resources/rules - Copie/volume_denon.scenario
+resources/tuto/Boite crevé.PNG
+resources/tuto/Capture du 2017-03-22 23-11-51.png
+resources/tuto/DSC01313.JPG
+resources/tuto/FSTA - Page 1.png
+resources/tuto/HP.PNG
+resources/tuto/cSwGdnfJ.png
+resources/tuto/chainage max7219.PNG
+resources/tuto/composants.png
+resources/tuto/composants.psd
+resources/tuto/config.py.PNG
+resources/tuto/main.PNG
+resources/tuto/micro.PNG
+resources/tuto/pam8403.jpg
+resources/tuto/pi-and-max7219_bb.png
+resources/tuto/snowboy.png

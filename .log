@@ -1,0 +1,1266 @@
+2016-11-01 17:03:39,889 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-11-01 17:03:39,895 - INFO - FSTA.main.py start
+2016-11-01 17:03:47,417 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-11-01 17:03:47,419 - ERROR - <type 'exceptions.NameError'> - name 'actio_mqtt' is not defined
+2016-11-01 17:03:55,225 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-11-01 17:03:55,227 - ERROR - <type 'exceptions.NameError'> - name 'gsgsh' is not defined
+2016-11-01 17:04:19,086 - ERROR -   File "<stdin>", line 1, in <module>
+  File "config.py", line 91, in get_installation
+    led = led.matrix())
+  File "FSTA/installation.py", line 39, in __init__
+    group.init(self)
+  File "FSTA/group.py", line 35, in init
+    scenario.init(self)
+  File "FSTA/scenario.py", line 43, in init
+    if isinstance(action, action_mqtt):
+
+2016-11-01 17:04:19,091 - ERROR - <type 'exceptions.NameError'> - global name 'action_mqtt' is not defined
+2016-11-01 17:04:49,866 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-11-01 17:04:49,869 - ERROR - <type 'exceptions.NameError'> - name 'actio_mqtt' is not defined
+2016-11-01 17:05:22,405 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-11-01 17:05:22,418 - INFO - FSTA.main.py start
+2016-11-01 17:06:43,571 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-11-01 17:06:43,573 - ERROR - <type 'exceptions.AttributeError'> - 'module' object has no attribute 'get_intsllation'
+2016-11-01 17:06:53,421 - ERROR -   File "<stdin>", line 1, in <module>
+  File "config.py", line 91, in get_installation
+    led = led.matrix())
+  File "FSTA/installation.py", line 39, in __init__
+    group.init(self)
+  File "FSTA/group.py", line 35, in init
+    scenario.init(self)
+  File "FSTA/scenario.py", line 43, in init
+    if isinstance(action, action_mqtt):
+
+2016-11-01 17:06:53,429 - ERROR - <type 'exceptions.NameError'> - global name 'action_mqtt' is not defined
+2016-11-19 18:22:26,022 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-11-19 18:22:26,857 - INFO - FSTA.main.py start
+2016-11-19 18:22:37,445 - ERROR -   File "<stdin>", line 1, in <module>
+  File "config.py", line 135, in get_installation
+    google_API_key = "your_google_api_key_32_caracters", language = 'fr-FR')
+  File "FSTA/installation.py", line 42, in __init__
+    group.init(self)
+  File "FSTA/group.py", line 36, in init
+    if self.mqtt_hotword_topic == None and installation.mqtt_base_topic :
+
+2016-11-19 18:22:37,452 - ERROR - <type 'exceptions.AttributeError'> - 'installation' object has no attribute 'mqtt_base_topic'
+2016-11-19 18:25:14,513 - ERROR - 
+2016-11-19 18:25:14,516 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-11-19 18:25:26,222 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-11-19 18:25:48,831 - INFO - Keyword 1 detected at time: 2016-11-19 18:25:48
+2016-11-19 18:25:48,835 - INFO - Maison : I listen ...
+2016-11-19 18:25:48,880 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/installation.py", line 68, in run
+    sleep_time=0.03)
+  File "snowboydecoder.py", line 174, in start
+    callback()
+  File "FSTA/group.py", line 43, in callback
+    if self.mqtt_base_topic:
+
+2016-11-19 18:25:48,893 - ERROR - <type 'exceptions.AttributeError'> - 'group' object has no attribute 'mqtt_base_topic'
+2016-11-19 18:26:38,382 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-11-19 18:26:38,396 - INFO - FSTA.main.py start
+2016-11-19 18:26:47,901 - INFO - Keyword 1 detected at time: 2016-11-19 18:26:47
+2016-11-19 18:26:47,904 - INFO - Maison : I listen ...
+2016-11-19 18:26:50,771 - INFO - Audio captured
+2016-11-19 18:26:51,083 - ERROR - Could not request results from Google Speech Recognition service; recognition request failed: Forbidden
+2016-11-19 18:26:51,087 - INFO - None text captured.
+2016-12-11 10:05:10,444 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-11 10:05:10,466 - INFO - FSTA.main.py start
+2016-12-11 10:05:43,869 - INFO - Load the plugin maison.group
+2016-12-11 10:05:43,891 - INFO - Load the plugin exemple.group
+2016-12-11 10:05:43,898 - INFO - Load the plugin lumiere.scenario
+2016-12-11 10:05:43,918 - INFO - Load the plugin volume_denon.scenario
+2016-12-11 10:05:43,929 - INFO - Load the plugin musique.scenario
+2016-12-11 10:05:43,935 - ERROR - Error on plugin musique.scenario : invalid syntax (musique.scenario, line 31)
+2016-12-11 10:05:43,936 - INFO - Load the plugin exemple.scenario
+2016-12-11 10:05:43,950 - INFO - Load the plugin TV.scenario
+2016-12-11 10:05:44,010 - ERROR - Error on plugin TV.scenario : (unicode error) 'utf8' codec can't decode byte 0xe9 in position 0: unexpected end of data (TV.scenario, line 21)
+2016-12-11 10:05:44,012 - INFO - Load the plugin kodi.scenario
+2016-12-11 10:05:44,041 - INFO - Load the plugin date.scenario
+2016-12-11 10:05:44,051 - INFO - Load the plugin fuel.scenario
+2016-12-11 10:07:21,311 - DEBUG - Detector start
+2016-12-11 10:07:24,066 - INFO - Keyword 1 detected at time: 2016-12-11 10:07:24
+2016-12-11 10:07:24,067 - INFO - maison : I listen ...
+2016-12-11 10:07:24,376 - INFO - Calibration started ...
+2016-12-11 10:07:25,339 - INFO - energy_threshold is changed from 300 to 361.038873803
+2016-12-11 10:07:27,973 - INFO - Audio captured
+2016-12-11 10:07:28,613 - INFO - Text found with Google API: quelle heure est-il
+2016-12-11 10:07:28,672 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/installation.py", line 72, in run
+    self.detector.start(detected_callback=self.callbacks,interrupt_check=self.interrupt_callback,sleep_time=0.03)
+  File "snowboydecoder.py", line 174, in start
+    callback()
+  File "FSTA/group.py", line 77, in callback
+    scenario.test(text)
+  File "FSTA/scenario.py", line 53, in test
+    elif phrase.lower() in text.lower():
+
+2016-12-11 10:07:28,673 - ERROR - <type 'exceptions.UnicodeDecodeError'> - 'ascii' codec can't decode byte 0xe8 in position 14: ordinal not in range(128)
+2016-12-11 10:09:46,298 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 10:09:46,299 - ERROR - <type 'exceptions.NameError'> - name 'sr' is not defined
+2016-12-11 10:10:14,712 - ERROR -   File "<stdin>", line 2, in <module>
+
+2016-12-11 10:10:14,716 - ERROR - <type 'exceptions.NameError'> - name 'self' is not defined
+2016-12-11 10:14:58,243 - INFO - installation interrupted by signal.
+2016-12-11 10:15:00,108 - INFO - installation interrupted by signal.
+2016-12-11 10:15:01,099 - INFO - installation interrupted by signal.
+2016-12-11 10:15:01,739 - INFO - installation interrupted by signal.
+2016-12-11 10:15:02,005 - INFO - installation interrupted by signal.
+2016-12-11 10:15:02,171 - INFO - installation interrupted by signal.
+2016-12-11 10:15:02,331 - INFO - installation interrupted by signal.
+2016-12-11 10:15:02,499 - INFO - installation interrupted by signal.
+2016-12-11 10:15:07,491 - INFO - installation interrupted by signal.
+2016-12-11 10:42:58,286 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-11 10:42:58,294 - INFO - FSTA.main.py start
+2016-12-11 10:43:09,456 - ERROR - 
+2016-12-11 10:43:09,458 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-11 10:43:30,393 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 10:43:30,395 - ERROR - <type 'exceptions.KeyError'> - 'maison'
+2016-12-11 10:43:49,614 - INFO - Load the plugin maison.group ...
+2016-12-11 10:43:49,630 - INFO - 	plugin loaded.
+2016-12-11 10:43:49,634 - INFO - Load the plugin exemple.group ...
+2016-12-11 10:43:49,644 - INFO - 	plugin loaded.
+2016-12-11 10:43:49,647 - INFO - Load the plugin lumiere.scenario ...
+2016-12-11 10:43:49,695 - ERROR - 	Error on plugin lumiere.scenario : (unicode error) 'utf8' codec can't decode byte 0xe8 in position 0: unexpected end of data (lumiere.scenario, line 22)
+2016-12-11 10:43:49,698 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-11 10:43:49,712 - INFO - 	plugin loaded.
+2016-12-11 10:43:49,715 - INFO - Load the plugin musique.scenario ...
+2016-12-11 10:43:49,728 - ERROR - 	Error on plugin musique.scenario : invalid syntax (musique.scenario, line 31)
+2016-12-11 10:43:49,731 - INFO - Load the plugin exemple.scenario ...
+2016-12-11 10:43:49,749 - INFO - 	plugin loaded.
+2016-12-11 10:43:49,750 - INFO - Load the plugin TV.scenario ...
+2016-12-11 10:43:49,778 - ERROR - 	Error on plugin TV.scenario : (unicode error) 'utf8' codec can't decode byte 0xe9 in position 0: unexpected end of data (TV.scenario, line 21)
+2016-12-11 10:43:49,780 - INFO - Load the plugin kodi.scenario ...
+2016-12-11 10:43:49,791 - INFO - 	plugin loaded.
+2016-12-11 10:43:49,792 - INFO - Load the plugin date.scenario ...
+2016-12-11 10:43:49,803 - INFO - 	plugin loaded.
+2016-12-11 10:43:49,804 - INFO - Load the plugin fuel.scenario ...
+2016-12-11 10:43:49,844 - ERROR - 	Error on plugin fuel.scenario : (unicode error) 'utf8' codec can't decode byte 0xe9 in position 0: unexpected end of data (fuel.scenario, line 21)
+2016-12-11 10:43:49,846 - INFO - Load the plugin cava.scenario ...
+2016-12-11 10:43:49,892 - ERROR - 	Error on plugin cava.scenario : (unicode error) 'utf8' codec can't decode byte 0xe7 in position 0: unexpected end of data (cava.scenario, line 22)
+2016-12-11 10:44:16,465 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 10:44:16,466 - ERROR - <type 'exceptions.KeyError'> - 'cava'
+2016-12-11 10:45:33,002 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 10:45:33,003 - ERROR - <type 'exceptions.KeyError'> - 'cava'
+2016-12-11 10:45:36,631 - INFO - Load the plugin cava.scenario ...
+2016-12-11 10:45:36,645 - INFO - 	plugin loaded.
+2016-12-11 10:45:46,179 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 10:45:46,180 - ERROR - <type 'exceptions.KeyError'> - 'cava'
+2016-12-11 10:45:59,370 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 10:45:59,372 - ERROR - <type 'exceptions.KeyError'> - 'ca_va'
+2016-12-11 10:46:13,354 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 10:46:13,356 - ERROR - <type 'exceptions.AttributeError'> - 'scenario' object has no attribute 'pharses'
+2016-12-11 11:19:09,777 - ERROR - 
+2016-12-11 11:19:09,778 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-11 11:19:25,264 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-11 11:19:25,280 - INFO - FSTA.main.py start
+2016-12-11 11:19:46,817 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 11:19:46,819 - ERROR - <type 'exceptions.NameError'> - name 'mauison' is not defined
+2016-12-11 11:19:49,009 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 11:19:49,011 - ERROR - <type 'exceptions.NameError'> - name 'mauison' is not defined
+2016-12-11 11:19:53,417 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 11:19:53,420 - ERROR - <type 'exceptions.AttributeError'> - 'installation' object has no attribute 'check_plugins'
+2016-12-11 11:20:05,160 - INFO - Load the plugin maison.group ...
+2016-12-11 11:20:05,189 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,194 - INFO - Load the plugin exemple.group ...
+2016-12-11 11:20:05,215 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,218 - INFO - Load the plugin lumiere.scenario ...
+2016-12-11 11:20:05,235 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,238 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-11 11:20:05,259 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,263 - INFO - Load the plugin musique.scenario ...
+2016-12-11 11:20:05,277 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,282 - INFO - Load the plugin exemple.scenario ...
+2016-12-11 11:20:05,303 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,306 - INFO - Load the plugin TV.scenario ...
+2016-12-11 11:20:05,335 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,338 - INFO - Load the plugin kodi.scenario ...
+2016-12-11 11:20:05,347 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,352 - INFO - Load the plugin date.scenario ...
+2016-12-11 11:20:05,373 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,382 - INFO - Load the plugin fuel.scenario ...
+2016-12-11 11:20:05,402 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,407 - INFO - Load the plugin cava.scenario ...
+2016-12-11 11:20:05,421 - INFO - 	plugin loaded.
+2016-12-11 11:20:05,503 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/installation.py", line 109, in check_plugin
+    group.init(self) #TODO : a supprimer
+  File "FSTA/group.py", line 37, in init
+    scenario.init(self)
+  File "FSTA/scenario.py", line 57, in init
+    action.installation = group.installation
+
+2016-12-11 11:20:05,508 - ERROR - <type 'exceptions.AttributeError'> - 'unicode' object has no attribute 'installation'
+2016-12-11 11:21:30,682 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 11:21:30,684 - ERROR - <type 'exceptions.AttributeError'> - 'scenario' object has no attribute 'group'
+2016-12-11 11:21:39,242 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 11:21:39,244 - ERROR - <type 'exceptions.AttributeError'> - 'scenario' object has no attribute 'installation'
+2016-12-11 11:42:23,924 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 11:42:23,925 - ERROR - <type 'exceptions.NameError'> - name 'Math' is not defined
+2016-12-11 11:42:28,451 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 11:42:28,453 - ERROR - <type 'exceptions.NameError'> - name 'Math' is not defined
+2016-12-11 11:44:15,420 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 11:44:15,421 - ERROR - <type 'exceptions.TypeError'> - randint() takes exactly 3 arguments (1 given)
+2016-12-11 12:08:54,884 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/lib/python2.7/random.py", line 275, in choice
+    return seq[int(self.random() * len(seq))]  # raises IndexError if seq is empty
+
+2016-12-11 12:08:54,885 - ERROR - <type 'exceptions.TypeError'> - object of type 'int' has no len()
+2016-12-11 16:49:12,326 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-11 16:49:12,341 - INFO - FSTA.main.py start
+2016-12-11 16:49:26,158 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 16:49:26,161 - ERROR - <type 'exceptions.AttributeError'> - 'installation' object has no attribute 'chek_plugin'
+2016-12-11 16:49:30,262 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 16:49:30,264 - ERROR - <type 'exceptions.AttributeError'> - 'installation' object has no attribute 'chek_plugins'
+2016-12-11 16:49:36,822 - DEBUG - Check plugins...
+2016-12-11 16:49:36,843 - INFO - Load the plugin maison.group ...
+2016-12-11 16:49:36,853 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,857 - INFO - Load the plugin exemple.group ...
+2016-12-11 16:49:36,868 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,871 - INFO - Load the plugin lumiere.scenario ...
+2016-12-11 16:49:36,886 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,889 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-11 16:49:36,899 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,902 - INFO - Load the plugin musique.scenario ...
+2016-12-11 16:49:36,910 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,913 - INFO - Load the plugin exemple.scenario ...
+2016-12-11 16:49:36,920 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,922 - INFO - Load the plugin TV.scenario ...
+2016-12-11 16:49:36,929 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,932 - INFO - Load the plugin kodi.scenario ...
+2016-12-11 16:49:36,941 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,944 - INFO - Load the plugin date.scenario ...
+2016-12-11 16:49:36,957 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,960 - INFO - Load the plugin fuel.scenario ...
+2016-12-11 16:49:36,968 - INFO - 	plugin loaded.
+2016-12-11 16:49:36,971 - INFO - Load the plugin cava.scenario ...
+2016-12-11 16:49:36,986 - INFO - 	plugin loaded.
+2016-12-11 16:53:17,785 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-11 16:53:17,793 - INFO - FSTA.main.py start
+2016-12-11 16:55:44,624 - DEBUG - Check plugins...
+2016-12-11 16:55:44,632 - INFO - Load the plugin maison.group ...
+2016-12-11 16:55:44,646 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,649 - INFO - Load the plugin exemple.group ...
+2016-12-11 16:55:44,662 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,665 - INFO - Load the plugin lumiere.scenario ...
+2016-12-11 16:55:44,680 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,683 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-11 16:55:44,693 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,695 - INFO - Load the plugin musique.scenario ...
+2016-12-11 16:55:44,704 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,706 - INFO - Load the plugin exemple.scenario ...
+2016-12-11 16:55:44,713 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,715 - INFO - Load the plugin TV.scenario ...
+2016-12-11 16:55:44,726 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,728 - INFO - Load the plugin kodi.scenario ...
+2016-12-11 16:55:44,737 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,739 - INFO - Load the plugin date.scenario ...
+2016-12-11 16:55:44,746 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,748 - INFO - Load the plugin fuel.scenario ...
+2016-12-11 16:55:44,759 - INFO - 	plugin loaded.
+2016-12-11 16:55:44,761 - INFO - Load the plugin cava.scenario ...
+2016-12-11 16:55:44,768 - INFO - 	plugin loaded.
+2016-12-11 16:55:51,544 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/installation.py", line 142, in allphrases
+    for scenario in group.scenarios:
+
+2016-12-11 16:55:51,545 - ERROR - <type 'exceptions.AttributeError'> - 'str' object has no attribute 'scenarios'
+2016-12-11 16:56:45,248 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-11 16:56:45,255 - INFO - FSTA.main.py start
+2016-12-11 16:56:54,689 - DEBUG - Check plugins...
+2016-12-11 16:56:54,698 - INFO - Load the plugin maison.group ...
+2016-12-11 16:56:54,712 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,715 - INFO - Load the plugin exemple.group ...
+2016-12-11 16:56:54,723 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,726 - INFO - Load the plugin lumiere.scenario ...
+2016-12-11 16:56:54,739 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,742 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-11 16:56:54,753 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,756 - INFO - Load the plugin musique.scenario ...
+2016-12-11 16:56:54,764 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,767 - INFO - Load the plugin exemple.scenario ...
+2016-12-11 16:56:54,774 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,777 - INFO - Load the plugin TV.scenario ...
+2016-12-11 16:56:54,790 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,793 - INFO - Load the plugin kodi.scenario ...
+2016-12-11 16:56:54,801 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,805 - INFO - Load the plugin date.scenario ...
+2016-12-11 16:56:54,817 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,820 - INFO - Load the plugin fuel.scenario ...
+2016-12-11 16:56:54,828 - INFO - 	plugin loaded.
+2016-12-11 16:56:54,831 - INFO - Load the plugin cava.scenario ...
+2016-12-11 16:56:54,839 - INFO - 	plugin loaded.
+2016-12-11 17:04:52,319 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-11 17:04:52,322 - ERROR - <type 'exceptions.ImportError'> - No module named nltk
+2016-12-24 16:46:26,739 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-24 16:46:26,817 - INFO - FSTA.main.py start
+2016-12-24 16:47:19,739 - DEBUG - Check plugins...
+2016-12-24 16:47:19,747 - INFO - Load the plugin maison.group ...
+2016-12-24 16:47:19,770 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,773 - INFO - Load the plugin exemple.group ...
+2016-12-24 16:47:19,793 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,796 - INFO - Load the plugin lumiere.scenario ...
+2016-12-24 16:47:19,804 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,807 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-24 16:47:19,814 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,817 - INFO - Load the plugin musique.scenario ...
+2016-12-24 16:47:19,824 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,827 - INFO - Load the plugin exemple.scenario ...
+2016-12-24 16:47:19,834 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,836 - INFO - Load the plugin TV.scenario ...
+2016-12-24 16:47:19,843 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,846 - INFO - Load the plugin kodi.scenario ...
+2016-12-24 16:47:19,853 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,856 - INFO - Load the plugin date.scenario ...
+2016-12-24 16:47:19,866 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,869 - INFO - Load the plugin fuel.scenario ...
+2016-12-24 16:47:19,875 - INFO - 	plugin loaded.
+2016-12-24 16:47:19,877 - INFO - Load the plugin cava.scenario ...
+2016-12-24 16:47:19,886 - INFO - 	plugin loaded.
+2016-12-24 16:51:01,317 - ERROR - 
+2016-12-24 16:51:01,318 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-24 16:51:15,953 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-24 16:51:15,960 - INFO - FSTA.main.py start
+2016-12-24 16:51:30,014 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-24 16:51:30,017 - ERROR - <type 'exceptions.AttributeError'> - 'installation' object has no attribute 'get_plugin'
+2016-12-24 16:51:43,829 - DEBUG - Check plugins...
+2016-12-24 16:51:43,836 - INFO - Load the plugin maison.group ...
+2016-12-24 16:51:43,856 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,858 - INFO - Load the plugin exemple.group ...
+2016-12-24 16:51:43,864 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,866 - INFO - Load the plugin lumiere.scenario ...
+2016-12-24 16:51:43,876 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,879 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-24 16:51:43,886 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,888 - INFO - Load the plugin musique.scenario ...
+2016-12-24 16:51:43,897 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,899 - INFO - Load the plugin exemple.scenario ...
+2016-12-24 16:51:43,907 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,910 - INFO - Load the plugin TV.scenario ...
+2016-12-24 16:51:43,921 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,925 - INFO - Load the plugin kodi.scenario ...
+2016-12-24 16:51:43,933 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,935 - INFO - Load the plugin date.scenario ...
+2016-12-24 16:51:43,963 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,966 - INFO - Load the plugin fuel.scenario ...
+2016-12-24 16:51:43,972 - INFO - 	plugin loaded.
+2016-12-24 16:51:43,975 - INFO - Load the plugin cava.scenario ...
+2016-12-24 16:51:43,994 - INFO - 	plugin loaded.
+2016-12-24 16:51:55,390 - ERROR - 
+2016-12-24 16:51:55,392 - ERROR - <type 'exceptions.SyntaxError'> - invalid syntax (<stdin>, line 1)
+2016-12-24 16:52:09,102 - ERROR -   File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <lambda>
+
+2016-12-24 16:52:09,106 - ERROR - <type 'exceptions.NameError'> - global name 'text' is not defined
+2016-12-24 16:52:27,513 - DEBUG - stop la musique : 8.15623686791
+2016-12-24 16:52:27,526 - DEBUG - éteins la musique : 8.97809128304
+2016-12-24 16:52:27,538 - DEBUG - arrête la musique : 9.39230484541
+2016-12-24 16:52:27,550 - DEBUG - baisse le volume : 8.15623686791
+2016-12-24 16:52:27,559 - DEBUG - moins fort : 7.39230484541
+2016-12-24 16:52:27,572 - DEBUG - Allume la lumière : 9.39230484541
+2016-12-24 16:52:27,584 - DEBUG - lumière s'il te plait : 8.15623686791
+2016-12-24 16:52:27,592 - DEBUG - lumière : 8.97809128304
+2016-12-24 16:52:27,605 - DEBUG - augmente le volume : 7.94281510263
+2016-12-24 16:52:27,614 - DEBUG - plus fort : 6.65064745864
+2016-12-24 16:52:27,622 - DEBUG - musique : 8.97809128304
+2016-12-24 16:52:27,634 - DEBUG - allume la musique : 9.39230484541
+2016-12-24 16:52:27,644 - DEBUG - reboot Kodi : 8.15623686791
+2016-12-24 16:52:27,656 - DEBUG - éteint la lumière : 8.97809128304
+2016-12-24 16:52:27,666 - DEBUG - coupe la télé : 7.39230484541
+2016-12-24 16:52:27,673 - DEBUG - ça va : 4.64774219888
+2016-12-24 16:52:27,684 - DEBUG - comment vas-tu : 0.0
+2016-12-24 16:52:27,692 - DEBUG - ça boom : 5.80972915046
+2016-12-24 16:52:27,703 - DEBUG - comment tu fais : 3.11219495613
+2016-12-24 16:52:27,716 - DEBUG - musique suivante : 9.39230484541
+2016-12-24 16:52:27,728 - DEBUG - change la musique : 8.97809128304
+2016-12-24 16:52:27,745 - DEBUG - Combien de fioul : 7.07568005506
+2016-12-24 16:52:27,757 - DEBUG - Quantité de fioul : 8.97809128304
+2016-12-24 16:52:27,767 - DEBUG - Cuve fioul : 7.94281510263
+2016-12-24 16:52:27,774 - DEBUG - fioul : 8.66025403784
+2016-12-24 16:52:27,785 - DEBUG - quel jour sommes-nous : 4.06774952508
+2016-12-24 16:52:27,796 - DEBUG - Quelle date sommes-nous : 3.68410091291
+2016-12-24 16:52:27,806 - DEBUG - quelle est la date : 7.23002718524
+2016-12-24 16:52:27,812 - DEBUG - Quand sommes nous : 7.94281510263
+2016-12-24 16:52:27,823 - DEBUG - quelle heure est-il : 4.30954231512
+2016-12-24 16:52:27,833 - DEBUG - il est quelle heure : 8.97809128304
+2016-12-24 16:52:27,844 - DEBUG - éteint la lumière : 8.97809128304
+2016-12-24 16:52:27,855 - DEBUG - coupe la lumière : 8.15623686791
+2016-12-24 16:52:52,239 - ERROR - 
+2016-12-24 16:52:52,240 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2016-12-24 16:52:54,502 - ERROR - 
+2016-12-24 16:52:54,504 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-24 16:53:06,350 - ERROR - 
+2016-12-24 16:53:06,351 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 3)
+2016-12-24 16:53:13,507 - DEBUG - ça va : 4.64774219888
+2016-12-24 16:53:13,518 - DEBUG - comment vas-tu : 0.0
+2016-12-24 16:53:13,526 - DEBUG - ça boom : 5.80972915046
+2016-12-24 16:53:13,536 - DEBUG - comment tu fais : 3.11219495613
+2016-12-24 16:53:13,538 - DEBUG - Distance à Ca_va : 0.0
+2016-12-24 16:53:13,548 - DEBUG - quel jour sommes-nous : 4.06774952508
+2016-12-24 16:53:13,558 - DEBUG - Quelle date sommes-nous : 3.68410091291
+2016-12-24 16:53:13,568 - DEBUG - quelle est la date : 7.23002718524
+2016-12-24 16:53:13,575 - DEBUG - Quand sommes nous : 7.94281510263
+2016-12-24 16:53:13,577 - DEBUG - Distance à date : 3.68410091291
+2016-12-24 16:53:13,588 - DEBUG - quelle heure est-il : 4.30954231512
+2016-12-24 16:53:13,598 - DEBUG - il est quelle heure : 8.97809128304
+2016-12-24 16:53:13,600 - DEBUG - Distance à Heure : 4.30954231512
+2016-12-24 16:53:13,612 - DEBUG - augmente le volume : 7.94281510263
+2016-12-24 16:53:13,621 - DEBUG - plus fort : 6.65064745864
+2016-12-24 16:53:13,623 - DEBUG - Distance à VOLUME + : 6.65064745864
+2016-12-24 16:53:13,634 - DEBUG - Combien de fioul : 7.07568005506
+2016-12-24 16:53:13,645 - DEBUG - Quantité de fioul : 8.97809128304
+2016-12-24 16:53:13,655 - DEBUG - Cuve fioul : 7.94281510263
+2016-12-24 16:53:13,661 - DEBUG - fioul : 8.66025403784
+2016-12-24 16:53:13,663 - DEBUG - Distance à Fuel : 7.07568005506
+2016-12-24 16:53:50,182 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-24 16:53:50,183 - ERROR - <type 'exceptions.NameError'> - name 'result' is not defined
+2016-12-24 16:54:39,247 - ERROR - 
+2016-12-24 16:54:39,248 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-24 16:55:45,308 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-24 16:55:45,321 - INFO - FSTA.main.py start
+2016-12-24 16:56:56,104 - ERROR - 
+2016-12-24 16:56:56,106 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-24 16:56:57,768 - ERROR - 
+2016-12-24 16:56:57,770 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-24 16:57:00,033 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-24 16:57:00,053 - INFO - FSTA.main.py start
+2016-12-24 16:57:02,138 - DEBUG - Check plugins...
+2016-12-24 16:57:02,145 - INFO - Load the plugin maison.group ...
+2016-12-24 16:57:02,150 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,153 - INFO - Load the plugin exemple.group ...
+2016-12-24 16:57:02,158 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,162 - INFO - Load the plugin lumiere.scenario ...
+2016-12-24 16:57:02,171 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,173 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-24 16:57:02,181 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,184 - INFO - Load the plugin musique.scenario ...
+2016-12-24 16:57:02,191 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,193 - INFO - Load the plugin exemple.scenario ...
+2016-12-24 16:57:02,199 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,202 - INFO - Load the plugin TV.scenario ...
+2016-12-24 16:57:02,208 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,210 - INFO - Load the plugin kodi.scenario ...
+2016-12-24 16:57:02,217 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,219 - INFO - Load the plugin date.scenario ...
+2016-12-24 16:57:02,226 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,227 - INFO - Load the plugin fuel.scenario ...
+2016-12-24 16:57:02,233 - INFO - 	plugin loaded.
+2016-12-24 16:57:02,234 - INFO - Load the plugin cava.scenario ...
+2016-12-24 16:57:02,240 - INFO - 	plugin loaded.
+2016-12-24 16:57:03,738 - DEBUG - stop la musique : 8.15623686791
+2016-12-24 16:57:03,751 - DEBUG - éteins la musique : 8.97809128304
+2016-12-24 16:57:03,762 - DEBUG - arrête la musique : 9.39230484541
+2016-12-24 16:57:03,772 - DEBUG - baisse le volume : 8.15623686791
+2016-12-24 16:57:03,781 - DEBUG - moins fort : 7.39230484541
+2016-12-24 16:57:03,792 - DEBUG - Allume la lumière : 9.39230484541
+2016-12-24 16:57:03,802 - DEBUG - lumière s'il te plait : 8.15623686791
+2016-12-24 16:57:03,809 - DEBUG - lumière : 8.97809128304
+2016-12-24 16:57:03,821 - DEBUG - augmente le volume : 7.94281510263
+2016-12-24 16:57:03,829 - DEBUG - plus fort : 6.65064745864
+2016-12-24 16:57:03,836 - DEBUG - musique : 8.97809128304
+2016-12-24 16:57:03,847 - DEBUG - allume la musique : 9.39230484541
+2016-12-24 16:57:03,856 - DEBUG - reboot Kodi : 8.15623686791
+2016-12-24 16:57:03,867 - DEBUG - éteint la lumière : 8.97809128304
+2016-12-24 16:57:03,875 - DEBUG - coupe la télé : 7.39230484541
+2016-12-24 16:57:03,881 - DEBUG - ça va : 4.64774219888
+2016-12-24 16:57:03,891 - DEBUG - comment vas-tu : 0.0
+2016-12-24 16:57:03,898 - DEBUG - ça boom : 5.80972915046
+2016-12-24 16:57:03,908 - DEBUG - comment tu fais : 3.11219495613
+2016-12-24 16:57:03,920 - DEBUG - musique suivante : 9.39230484541
+2016-12-24 16:57:03,930 - DEBUG - change la musique : 8.97809128304
+2016-12-24 16:57:03,941 - DEBUG - Combien de fioul : 7.07568005506
+2016-12-24 16:57:03,952 - DEBUG - Quantité de fioul : 8.97809128304
+2016-12-24 16:57:03,960 - DEBUG - Cuve fioul : 7.94281510263
+2016-12-24 16:57:03,966 - DEBUG - fioul : 8.66025403784
+2016-12-24 16:57:03,975 - DEBUG - quel jour sommes-nous : 4.06774952508
+2016-12-24 16:57:03,985 - DEBUG - Quelle date sommes-nous : 3.68410091291
+2016-12-24 16:57:03,994 - DEBUG - quelle est la date : 7.23002718524
+2016-12-24 16:57:04,000 - DEBUG - Quand sommes nous : 7.94281510263
+2016-12-24 16:57:04,011 - DEBUG - quelle heure est-il : 4.30954231512
+2016-12-24 16:57:04,020 - DEBUG - il est quelle heure : 8.97809128304
+2016-12-24 16:57:04,031 - DEBUG - éteint la lumière : 8.97809128304
+2016-12-24 16:57:04,041 - DEBUG - coupe la lumière : 8.15623686791
+2016-12-24 17:03:45,243 - ERROR - 
+2016-12-24 17:03:45,244 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-24 17:03:54,178 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-24 17:03:54,184 - INFO - FSTA.main.py start
+2016-12-24 17:03:57,836 - DEBUG - Check plugins...
+2016-12-24 17:03:57,843 - INFO - Load the plugin maison.group ...
+2016-12-24 17:03:57,947 - INFO - 	plugin loaded.
+2016-12-24 17:03:57,949 - INFO - Load the plugin exemple.group ...
+2016-12-24 17:03:57,967 - INFO - 	plugin loaded.
+2016-12-24 17:03:57,969 - INFO - Load the plugin lumiere.scenario ...
+2016-12-24 17:03:58,011 - INFO - 	plugin loaded.
+2016-12-24 17:03:58,258 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-24 17:03:58,267 - INFO - 	plugin loaded.
+2016-12-24 17:03:58,269 - INFO - Load the plugin musique.scenario ...
+2016-12-24 17:03:58,297 - INFO - 	plugin loaded.
+2016-12-24 17:03:58,299 - INFO - Load the plugin exemple.scenario ...
+2016-12-24 17:03:58,328 - INFO - 	plugin loaded.
+2016-12-24 17:03:58,330 - INFO - Load the plugin TV.scenario ...
+2016-12-24 17:03:58,347 - INFO - 	plugin loaded.
+2016-12-24 17:03:58,349 - INFO - Load the plugin kodi.scenario ...
+2016-12-24 17:03:58,365 - INFO - 	plugin loaded.
+2016-12-24 17:03:58,367 - INFO - Load the plugin date.scenario ...
+2016-12-24 17:03:58,399 - INFO - 	plugin loaded.
+2016-12-24 17:03:58,401 - INFO - Load the plugin fuel.scenario ...
+2016-12-24 17:03:58,413 - INFO - 	plugin loaded.
+2016-12-24 17:03:58,421 - INFO - Load the plugin cava.scenario ...
+2016-12-24 17:03:58,443 - INFO - 	plugin loaded.
+2016-12-24 17:03:59,435 - ERROR -   File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <lambda>
+
+2016-12-24 17:03:59,437 - ERROR - <type 'exceptions.AttributeError'> - 'scenario' object has no attribute 'distance_syntaxique'
+2016-12-24 17:05:45,056 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-24 17:05:45,071 - INFO - FSTA.main.py start
+2016-12-24 17:05:48,276 - DEBUG - Check plugins...
+2016-12-24 17:05:48,283 - INFO - Load the plugin maison.group ...
+2016-12-24 17:05:48,313 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,317 - INFO - Load the plugin exemple.group ...
+2016-12-24 17:05:48,324 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,333 - INFO - Load the plugin lumiere.scenario ...
+2016-12-24 17:05:48,379 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,381 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-24 17:05:48,388 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,390 - INFO - Load the plugin musique.scenario ...
+2016-12-24 17:05:48,398 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,400 - INFO - Load the plugin exemple.scenario ...
+2016-12-24 17:05:48,406 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,409 - INFO - Load the plugin TV.scenario ...
+2016-12-24 17:05:48,415 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,418 - INFO - Load the plugin kodi.scenario ...
+2016-12-24 17:05:48,425 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,427 - INFO - Load the plugin date.scenario ...
+2016-12-24 17:05:48,453 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,455 - INFO - Load the plugin fuel.scenario ...
+2016-12-24 17:05:48,462 - INFO - 	plugin loaded.
+2016-12-24 17:05:48,468 - INFO - Load the plugin cava.scenario ...
+2016-12-24 17:05:48,484 - INFO - 	plugin loaded.
+2016-12-24 17:05:49,212 - ERROR -   File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <lambda>
+
+2016-12-24 17:05:49,214 - ERROR - <type 'exceptions.AttributeError'> - 'scenario' object has no attribute 'distance_syntaxique'
+2016-12-24 17:06:03,932 - ERROR -   File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <lambda>
+
+2016-12-24 17:06:03,934 - ERROR - <type 'exceptions.AttributeError'> - 'scenario' object has no attribute 'distance'
+2016-12-24 17:06:55,652 - ERROR - 
+2016-12-24 17:06:55,654 - ERROR - <type 'exceptions.SyntaxError'> - invalid syntax (<stdin>, line 3)
+2016-12-24 17:07:01,454 - DEBUG - stop la musique : 8.15623686791
+2016-12-24 17:07:01,469 - DEBUG - éteins la musique : 8.97809128304
+2016-12-24 17:07:01,482 - DEBUG - arrête la musique : 9.39230484541
+2016-12-24 17:07:01,494 - DEBUG - baisse le volume : 8.15623686791
+2016-12-24 17:07:01,504 - DEBUG - moins fort : 7.39230484541
+2016-12-24 17:07:01,517 - DEBUG - Allume la lumière : 9.39230484541
+2016-12-24 17:07:01,529 - DEBUG - lumière s'il te plait : 8.15623686791
+2016-12-24 17:07:01,538 - DEBUG - lumière : 8.97809128304
+2016-12-24 17:07:01,552 - DEBUG - augmente le volume : 7.94281510263
+2016-12-24 17:07:01,562 - DEBUG - plus fort : 6.65064745864
+2016-12-24 17:07:01,571 - DEBUG - musique : 8.97809128304
+2016-12-24 17:07:01,583 - DEBUG - allume la musique : 9.39230484541
+2016-12-24 17:07:01,594 - DEBUG - reboot Kodi : 8.15623686791
+2016-12-24 17:07:01,607 - DEBUG - éteint la lumière : 8.97809128304
+2016-12-24 17:07:01,618 - DEBUG - coupe la télé : 7.39230484541
+2016-12-24 17:07:01,625 - DEBUG - ça va : 4.64774219888
+2016-12-24 17:07:01,637 - DEBUG - comment vas-tu : 0.0
+2016-12-24 17:07:01,646 - DEBUG - ça boom : 5.80972915046
+2016-12-24 17:07:01,657 - DEBUG - comment tu fais : 3.11219495613
+2016-12-24 17:07:01,707 - DEBUG - musique suivante : 9.39230484541
+2016-12-24 17:07:01,719 - DEBUG - change la musique : 8.97809128304
+2016-12-24 17:07:01,731 - DEBUG - Combien de fioul : 7.07568005506
+2016-12-24 17:07:01,763 - DEBUG - Quantité de fioul : 8.97809128304
+2016-12-24 17:07:01,775 - DEBUG - Cuve fioul : 7.94281510263
+2016-12-24 17:07:01,782 - DEBUG - fioul : 8.66025403784
+2016-12-24 17:07:01,793 - DEBUG - quel jour sommes-nous : 4.06774952508
+2016-12-24 17:07:01,805 - DEBUG - Quelle date sommes-nous : 3.68410091291
+2016-12-24 17:07:01,816 - DEBUG - quelle est la date : 7.23002718524
+2016-12-24 17:07:01,824 - DEBUG - Quand sommes nous : 7.94281510263
+2016-12-24 17:07:01,835 - DEBUG - quelle heure est-il : 4.30954231512
+2016-12-24 17:07:01,845 - DEBUG - il est quelle heure : 8.97809128304
+2016-12-24 17:07:01,857 - DEBUG - éteint la lumière : 8.97809128304
+2016-12-24 17:07:01,868 - DEBUG - coupe la lumière : 8.15623686791
+2016-12-24 17:08:24,085 - ERROR - 
+2016-12-24 17:08:24,086 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2016-12-24 17:08:32,531 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2016-12-24 17:08:32,538 - INFO - FSTA.main.py start
+2016-12-24 17:08:35,332 - DEBUG - Check plugins...
+2016-12-24 17:08:35,340 - INFO - Load the plugin maison.group ...
+2016-12-24 17:08:35,416 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,418 - INFO - Load the plugin exemple.group ...
+2016-12-24 17:08:35,423 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,424 - INFO - Load the plugin lumiere.scenario ...
+2016-12-24 17:08:35,468 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,470 - INFO - Load the plugin volume_denon.scenario ...
+2016-12-24 17:08:35,497 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,499 - INFO - Load the plugin musique.scenario ...
+2016-12-24 17:08:35,505 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,507 - INFO - Load the plugin exemple.scenario ...
+2016-12-24 17:08:35,518 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,520 - INFO - Load the plugin TV.scenario ...
+2016-12-24 17:08:35,544 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,546 - INFO - Load the plugin kodi.scenario ...
+2016-12-24 17:08:35,560 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,565 - INFO - Load the plugin date.scenario ...
+2016-12-24 17:08:35,618 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,619 - INFO - Load the plugin fuel.scenario ...
+2016-12-24 17:08:35,625 - INFO - 	plugin loaded.
+2016-12-24 17:08:35,627 - INFO - Load the plugin cava.scenario ...
+2016-12-24 17:08:35,659 - INFO - 	plugin loaded.
+2016-12-24 17:08:37,940 - ERROR - 
+2016-12-24 17:08:37,942 - ERROR - <type 'exceptions.SyntaxError'> - invalid syntax (<stdin>, line 3)
+2016-12-24 17:08:43,359 - DEBUG - stop la musique : 8.15623686791
+2016-12-24 17:08:43,373 - DEBUG - éteins la musique : 8.97809128304
+2016-12-24 17:08:43,385 - DEBUG - arrête la musique : 9.39230484541
+2016-12-24 17:08:43,396 - DEBUG - baisse le volume : 8.15623686791
+2016-12-24 17:08:43,406 - DEBUG - moins fort : 7.39230484541
+2016-12-24 17:08:43,418 - DEBUG - Allume la lumière : 9.39230484541
+2016-12-24 17:08:43,429 - DEBUG - lumière s'il te plait : 8.15623686791
+2016-12-24 17:08:43,437 - DEBUG - lumière : 8.97809128304
+2016-12-24 17:08:43,450 - DEBUG - augmente le volume : 7.94281510263
+2016-12-24 17:08:43,459 - DEBUG - plus fort : 6.65064745864
+2016-12-24 17:08:43,468 - DEBUG - musique : 8.97809128304
+2016-12-24 17:08:43,480 - DEBUG - allume la musique : 9.39230484541
+2016-12-24 17:08:43,490 - DEBUG - reboot Kodi : 8.15623686791
+2016-12-24 17:08:43,502 - DEBUG - éteint la lumière : 8.97809128304
+2016-12-24 17:08:43,511 - DEBUG - coupe la télé : 7.39230484541
+2016-12-24 17:08:43,518 - DEBUG - ça va : 4.64774219888
+2016-12-24 17:08:43,529 - DEBUG - comment vas-tu : 0.0
+2016-12-24 17:08:43,537 - DEBUG - ça boom : 5.80972915046
+2016-12-24 17:08:43,548 - DEBUG - comment tu fais : 3.11219495613
+2016-12-24 17:08:43,562 - DEBUG - musique suivante : 9.39230484541
+2016-12-24 17:08:43,574 - DEBUG - change la musique : 8.97809128304
+2016-12-24 17:08:43,585 - DEBUG - Combien de fioul : 7.07568005506
+2016-12-24 17:08:43,597 - DEBUG - Quantité de fioul : 8.97809128304
+2016-12-24 17:08:43,607 - DEBUG - Cuve fioul : 7.94281510263
+2016-12-24 17:08:43,614 - DEBUG - fioul : 8.66025403784
+2016-12-24 17:08:43,624 - DEBUG - quel jour sommes-nous : 4.06774952508
+2016-12-24 17:08:43,635 - DEBUG - Quelle date sommes-nous : 3.68410091291
+2016-12-24 17:08:43,645 - DEBUG - quelle est la date : 7.23002718524
+2016-12-24 17:08:43,652 - DEBUG - Quand sommes nous : 7.94281510263
+2016-12-24 17:08:43,663 - DEBUG - quelle heure est-il : 4.30954231512
+2016-12-24 17:08:43,674 - DEBUG - il est quelle heure : 8.97809128304
+2016-12-24 17:08:43,686 - DEBUG - éteint la lumière : 8.97809128304
+2016-12-24 17:08:43,697 - DEBUG - coupe la lumière : 8.15623686791
+2016-12-24 17:09:04,061 - ERROR -   File "<stdin>", line 1, in <module>
+
+2016-12-24 17:09:04,062 - ERROR - <type 'exceptions.NameError'> - name 'resuts' is not defined
+2017-01-01 18:28:51,130 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 18:28:51,172 - INFO - FSTA.main.py start
+2017-01-01 18:29:05,145 - DEBUG - Check plugins...
+2017-01-01 18:29:05,153 - INFO - Load the plugin maison.group ...
+2017-01-01 18:29:05,161 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,163 - INFO - Load the plugin exemple.group ...
+2017-01-01 18:29:05,168 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,171 - INFO - Load the plugin lumiere.scenario ...
+2017-01-01 18:29:05,179 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,181 - INFO - Load the plugin volume_denon.scenario ...
+2017-01-01 18:29:05,188 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,191 - INFO - Load the plugin musique.scenario ...
+2017-01-01 18:29:05,198 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,200 - INFO - Load the plugin exemple.scenario ...
+2017-01-01 18:29:05,207 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,209 - INFO - Load the plugin TV.scenario ...
+2017-01-01 18:29:05,216 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,218 - INFO - Load the plugin kodi.scenario ...
+2017-01-01 18:29:05,224 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,227 - INFO - Load the plugin date.scenario ...
+2017-01-01 18:29:05,234 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,237 - INFO - Load the plugin fuel.scenario ...
+2017-01-01 18:29:05,243 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,246 - INFO - Load the plugin cava.scenario ...
+2017-01-01 18:29:05,252 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,256 - INFO - Load the plugin volume.scenario ...
+2017-01-01 18:29:05,264 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,267 - INFO - Load the plugin meteo.scenario ...
+2017-01-01 18:29:05,273 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,275 - INFO - Load the plugin stop.scenario ...
+2017-01-01 18:29:05,284 - INFO - 	plugin loaded.
+2017-01-01 18:29:05,286 - INFO - Load the plugin chuck.scenario ...
+2017-01-01 18:29:05,294 - INFO - 	plugin loaded.
+2017-01-01 18:30:00,985 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 18:30:00,987 - ERROR - <type 'exceptions.NameError'> - name 'maison' is not defined
+2017-01-01 18:30:21,827 - ERROR - 
+2017-01-01 18:30:21,828 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-01-01 18:30:22,665 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 18:30:22,665 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 18:30:22,685 - INFO - FSTA.main.py start
+2017-01-01 18:30:22,685 - INFO - FSTA.main.py start
+2017-01-01 18:30:26,122 - ERROR - 
+2017-01-01 18:30:26,122 - ERROR - 
+2017-01-01 18:30:26,127 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-01-01 18:30:26,127 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-01-01 18:31:12,522 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 18:31:12,522 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 18:31:12,528 - ERROR - <type 'exceptions.NameError'> - name 'action_mqtt' is not defined
+2017-01-01 18:31:12,528 - ERROR - <type 'exceptions.NameError'> - name 'action_mqtt' is not defined
+2017-01-01 18:33:11,939 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 18:33:11,939 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 18:33:11,946 - ERROR - <type 'exceptions.AttributeError'> - 'group' object has no attribute 'always_actio'
+2017-01-01 18:33:11,946 - ERROR - <type 'exceptions.AttributeError'> - 'group' object has no attribute 'always_actio'
+2017-01-01 18:35:17,480 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 18:35:17,496 - INFO - FSTA.main.py start
+2017-01-01 18:35:32,219 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 18:35:32,221 - ERROR - <type 'exceptions.KeyError'> - 'maison'
+2017-01-01 18:35:45,486 - DEBUG - Check plugins...
+2017-01-01 18:35:45,501 - INFO - Load the plugin maison.group ...
+2017-01-01 18:35:45,508 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,509 - INFO - Load the plugin exemple.group ...
+2017-01-01 18:35:45,516 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,518 - INFO - Load the plugin lumiere.scenario ...
+2017-01-01 18:35:45,530 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,532 - INFO - Load the plugin volume_denon.scenario ...
+2017-01-01 18:35:45,540 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,542 - INFO - Load the plugin musique.scenario ...
+2017-01-01 18:35:45,551 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,552 - INFO - Load the plugin exemple.scenario ...
+2017-01-01 18:35:45,562 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,563 - INFO - Load the plugin TV.scenario ...
+2017-01-01 18:35:45,569 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,571 - INFO - Load the plugin kodi.scenario ...
+2017-01-01 18:35:45,576 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,578 - INFO - Load the plugin date.scenario ...
+2017-01-01 18:35:45,585 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,587 - INFO - Load the plugin fuel.scenario ...
+2017-01-01 18:35:45,592 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,594 - INFO - Load the plugin cava.scenario ...
+2017-01-01 18:35:45,600 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,602 - INFO - Load the plugin volume.scenario ...
+2017-01-01 18:35:45,610 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,612 - INFO - Load the plugin meteo.scenario ...
+2017-01-01 18:35:45,618 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,620 - INFO - Load the plugin stop.scenario ...
+2017-01-01 18:35:45,626 - INFO - 	plugin loaded.
+2017-01-01 18:35:45,628 - INFO - Load the plugin chuck.scenario ...
+2017-01-01 18:35:45,634 - INFO - 	plugin loaded.
+2017-01-01 18:38:00,325 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 18:38:00,332 - INFO - FSTA.main.py start
+2017-01-01 18:38:09,914 - DEBUG - Check plugins...
+2017-01-01 18:38:09,923 - INFO - Load the plugin maison.group ...
+2017-01-01 18:38:09,937 - INFO - 	plugin loaded.
+2017-01-01 18:38:09,939 - INFO - Load the plugin exemple.group ...
+2017-01-01 18:38:09,946 - INFO - 	plugin loaded.
+2017-01-01 18:38:09,949 - INFO - Load the plugin lumiere.scenario ...
+2017-01-01 18:38:09,961 - INFO - 	plugin loaded.
+2017-01-01 18:38:09,964 - INFO - Load the plugin volume_denon.scenario ...
+2017-01-01 18:38:09,971 - INFO - 	plugin loaded.
+2017-01-01 18:38:09,973 - INFO - Load the plugin musique.scenario ...
+2017-01-01 18:38:09,981 - INFO - 	plugin loaded.
+2017-01-01 18:38:09,983 - INFO - Load the plugin exemple.scenario ...
+2017-01-01 18:38:09,989 - INFO - 	plugin loaded.
+2017-01-01 18:38:09,991 - INFO - Load the plugin TV.scenario ...
+2017-01-01 18:38:09,998 - INFO - 	plugin loaded.
+2017-01-01 18:38:10,001 - INFO - Load the plugin kodi.scenario ...
+2017-01-01 18:38:10,012 - INFO - 	plugin loaded.
+2017-01-01 18:38:10,016 - INFO - Load the plugin date.scenario ...
+2017-01-01 18:38:10,023 - INFO - 	plugin loaded.
+2017-01-01 18:38:10,025 - INFO - Load the plugin fuel.scenario ...
+2017-01-01 18:38:10,031 - INFO - 	plugin loaded.
+2017-01-01 18:38:10,033 - INFO - Load the plugin cava.scenario ...
+2017-01-01 18:38:10,043 - INFO - 	plugin loaded.
+2017-01-01 18:38:10,045 - INFO - Load the plugin volume.scenario ...
+2017-01-01 18:38:10,052 - INFO - 	plugin loaded.
+2017-01-01 18:38:10,054 - INFO - Load the plugin meteo.scenario ...
+2017-01-01 18:38:10,061 - INFO - 	plugin loaded.
+2017-01-01 18:38:10,063 - INFO - Load the plugin stop.scenario ...
+2017-01-01 18:38:10,072 - INFO - 	plugin loaded.
+2017-01-01 18:38:10,074 - INFO - Load the plugin chuck.scenario ...
+2017-01-01 18:38:10,080 - INFO - 	plugin loaded.
+2017-01-01 18:41:10,752 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 18:41:10,760 - INFO - FSTA.main.py start
+2017-01-01 18:41:20,314 - ERROR - 
+2017-01-01 18:41:20,316 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-01-01 18:41:24,070 - DEBUG - Check plugins...
+2017-01-01 18:41:24,079 - INFO - Load the plugin maison.group ...
+2017-01-01 18:41:24,099 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,100 - INFO - Load the plugin exemple.group ...
+2017-01-01 18:41:24,108 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,109 - INFO - Load the plugin lumiere.scenario ...
+2017-01-01 18:41:24,120 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,122 - INFO - Load the plugin volume_denon.scenario ...
+2017-01-01 18:41:24,130 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,132 - INFO - Load the plugin musique.scenario ...
+2017-01-01 18:41:24,140 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,142 - INFO - Load the plugin exemple.scenario ...
+2017-01-01 18:41:24,151 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,152 - INFO - Load the plugin TV.scenario ...
+2017-01-01 18:41:24,160 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,162 - INFO - Load the plugin kodi.scenario ...
+2017-01-01 18:41:24,168 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,170 - INFO - Load the plugin date.scenario ...
+2017-01-01 18:41:24,176 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,178 - INFO - Load the plugin fuel.scenario ...
+2017-01-01 18:41:24,184 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,186 - INFO - Load the plugin cava.scenario ...
+2017-01-01 18:41:24,192 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,194 - INFO - Load the plugin volume.scenario ...
+2017-01-01 18:41:24,201 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,203 - INFO - Load the plugin meteo.scenario ...
+2017-01-01 18:41:24,209 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,211 - INFO - Load the plugin stop.scenario ...
+2017-01-01 18:41:24,219 - INFO - 	plugin loaded.
+2017-01-01 18:41:24,221 - INFO - Load the plugin chuck.scenario ...
+2017-01-01 18:41:24,228 - INFO - 	plugin loaded.
+2017-01-01 18:43:03,785 - ERROR - 
+2017-01-01 18:43:03,786 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-01-01 18:43:12,429 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 18:43:12,444 - INFO - FSTA.main.py start
+2017-01-01 18:43:21,384 - DEBUG - Check plugins...
+2017-01-01 18:43:21,392 - INFO - Load the plugin maison.group ...
+2017-01-01 18:43:21,402 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,405 - INFO - Load the plugin exemple.group ...
+2017-01-01 18:43:21,415 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,419 - INFO - Load the plugin lumiere.scenario ...
+2017-01-01 18:43:21,436 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,439 - INFO - Load the plugin volume_denon.scenario ...
+2017-01-01 18:43:21,448 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,453 - INFO - Load the plugin musique.scenario ...
+2017-01-01 18:43:21,462 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,465 - INFO - Load the plugin exemple.scenario ...
+2017-01-01 18:43:21,471 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,474 - INFO - Load the plugin TV.scenario ...
+2017-01-01 18:43:21,482 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,485 - INFO - Load the plugin kodi.scenario ...
+2017-01-01 18:43:21,493 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,496 - INFO - Load the plugin date.scenario ...
+2017-01-01 18:43:21,504 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,507 - INFO - Load the plugin fuel.scenario ...
+2017-01-01 18:43:21,516 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,519 - INFO - Load the plugin cava.scenario ...
+2017-01-01 18:43:21,526 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,529 - INFO - Load the plugin volume.scenario ...
+2017-01-01 18:43:21,539 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,542 - INFO - Load the plugin meteo.scenario ...
+2017-01-01 18:43:21,550 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,553 - INFO - Load the plugin stop.scenario ...
+2017-01-01 18:43:21,561 - INFO - 	plugin loaded.
+2017-01-01 18:43:21,564 - INFO - Load the plugin chuck.scenario ...
+2017-01-01 18:43:21,572 - INFO - 	plugin loaded.
+2017-01-01 18:43:36,217 - DEBUG - Check plugins...
+2017-01-01 18:43:36,503 - DEBUG - Detector start
+2017-01-01 18:43:47,658 - INFO - installation interrupted by signal.
+2017-01-01 18:43:47,659 - DEBUG - Detector stopped
+2017-01-01 19:51:05,938 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 19:51:05,973 - INFO - FSTA.main.py start
+2017-01-01 19:54:28,870 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 19:54:28,872 - ERROR - <type 'exceptions.NameError'> - name 'led' is not defined
+2017-01-01 19:56:36,971 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/max7219/led.py", line 46, in __init__
+    assert cascaded > 0, "Must have at least one device!"
+
+2017-01-01 19:56:36,973 - ERROR - <type 'exceptions.AssertionError'> - Must have at least one device!
+2017-01-01 20:00:10,447 - ERROR -   File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in t
+
+2017-01-01 20:00:10,450 - ERROR - <type 'exceptions.AttributeError'> - 'module' object has no attribute 'show_message'
+2017-01-01 20:02:00,191 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 20:02:00,193 - ERROR - <type 'exceptions.NameError'> - name 'threading' is not defined
+2017-01-01 20:02:30,615 - ERROR - 
+2017-01-01 20:02:30,617 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-01-01 20:03:12,663 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/lib/python2.7/threading.py", line 739, in start
+    raise RuntimeError("threads can only be started once")
+
+2017-01-01 20:03:12,665 - ERROR - <type 'exceptions.RuntimeError'> - threads can only be started once
+2017-01-01 20:04:34,470 - ERROR - 
+2017-01-01 20:04:34,473 - ERROR - <type 'exceptions.SyntaxError'> - invalid syntax (<stdin>, line 1)
+2017-01-01 20:04:42,695 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 20:04:42,697 - ERROR - <type 'exceptions.NameError'> - name 'function' is not defined
+2017-01-01 21:01:08,849 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 21:01:08,856 - INFO - FSTA.main.py start
+2017-01-01 21:01:23,936 - DEBUG - Check plugins...
+2017-01-01 21:01:23,949 - INFO - Load the plugin maison.group ...
+2017-01-01 21:01:23,963 - INFO - 	plugin loaded.
+2017-01-01 21:01:23,967 - INFO - Load the plugin exemple.group ...
+2017-01-01 21:01:23,975 - INFO - 	plugin loaded.
+2017-01-01 21:01:23,978 - INFO - Load the plugin lumiere.scenario ...
+2017-01-01 21:01:23,986 - ERROR - 	Error on plugin lumiere.scenario : can't set attribute
+2017-01-01 21:01:23,989 - INFO - Load the plugin volume_denon.scenario ...
+2017-01-01 21:01:23,996 - ERROR - 	Error on plugin volume_denon.scenario : can't set attribute
+2017-01-01 21:01:24,000 - INFO - Load the plugin musique.scenario ...
+2017-01-01 21:01:24,007 - ERROR - 	Error on plugin musique.scenario : can't set attribute
+2017-01-01 21:01:24,010 - INFO - Load the plugin exemple.scenario ...
+2017-01-01 21:01:24,019 - INFO - 	plugin loaded.
+2017-01-01 21:01:24,022 - INFO - Load the plugin TV.scenario ...
+2017-01-01 21:01:24,028 - ERROR - 	Error on plugin TV.scenario : can't set attribute
+2017-01-01 21:01:24,031 - INFO - Load the plugin kodi.scenario ...
+2017-01-01 21:01:24,038 - ERROR - 	Error on plugin kodi.scenario : can't set attribute
+2017-01-01 21:01:24,040 - INFO - Load the plugin date.scenario ...
+2017-01-01 21:01:24,048 - ERROR - 	Error on plugin date.scenario : can't set attribute
+2017-01-01 21:01:24,050 - INFO - Load the plugin fuel.scenario ...
+2017-01-01 21:01:24,058 - ERROR - 	Error on plugin fuel.scenario : can't set attribute
+2017-01-01 21:01:24,061 - INFO - Load the plugin cava.scenario ...
+2017-01-01 21:01:24,068 - ERROR - 	Error on plugin cava.scenario : can't set attribute
+2017-01-01 21:01:24,071 - INFO - Load the plugin volume.scenario ...
+2017-01-01 21:01:24,079 - ERROR - 	Error on plugin volume.scenario : can't set attribute
+2017-01-01 21:01:24,082 - INFO - Load the plugin meteo.scenario ...
+2017-01-01 21:01:24,092 - ERROR - 	Error on plugin meteo.scenario : can't set attribute
+2017-01-01 21:01:24,095 - INFO - Load the plugin stop.scenario ...
+2017-01-01 21:01:24,105 - ERROR - 	Error on plugin stop.scenario : can't set attribute
+2017-01-01 21:01:24,108 - INFO - Load the plugin chuck.scenario ...
+2017-01-01 21:01:24,116 - ERROR - 	Error on plugin chuck.scenario : can't set attribute
+2017-01-01 21:01:43,400 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 21:01:43,402 - ERROR - <type 'exceptions.NameError'> - name 'maison' is not defined
+2017-01-01 21:01:54,384 - ERROR -   File "<stdin>", line 5, in <module>
+
+2017-01-01 21:01:54,385 - ERROR - <type 'exceptions.NameError'> - name 'action_mqtt_random' is not defined
+2017-01-01 21:02:25,864 - ERROR - 
+2017-01-01 21:02:25,865 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-01-01 21:02:33,008 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 21:02:33,009 - ERROR - <type 'exceptions.TypeError'> - add_scenario() takes at least 2 arguments (1 given)
+2017-01-01 21:02:57,051 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/group.py", line 122, in add_scenario
+    self.scenarios[name] = scenario(name, phrases, actions, min_cosine, text)
+  File "FSTA/scenario.py", line 28, in __init__
+    self.text = text
+
+2017-01-01 21:02:57,054 - ERROR - <type 'exceptions.AttributeError'> - can't set attribute
+2017-01-01 21:36:20,805 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 21:36:20,812 - INFO - FSTA.main.py start
+2017-01-01 21:36:20,971 - ERROR -   File "<stdin>", line 1, in <module>
+  File "config.py", line 4, in <module>
+    from FSTA.installation import *
+
+2017-01-01 21:36:20,973 - ERROR - <type 'exceptions.SyntaxError'> - EOL while scanning string literal (installation.py, line 158)
+2017-01-01 21:36:21,639 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 21:36:21,641 - ERROR - <type 'exceptions.NameError'> - name 'config' is not defined
+2017-01-01 21:37:25,736 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 21:37:25,738 - ERROR - <type 'exceptions.NameError'> - name 'config' is not defined
+2017-01-01 21:37:32,847 - ERROR -   File "<stdin>", line 1, in <module>
+  File "config.py", line 13, in get_installation
+    language_analyser = cortical_language_analyser("84c53140-cdb1-11e6-a057-97f4c970893c")
+  File "FSTA/installation.py", line 64, in __init__
+    self.led_lock = threading.Rlock()
+
+2017-01-01 21:37:32,850 - ERROR - <type 'exceptions.AttributeError'> - 'module' object has no attribute 'Rlock'
+2017-01-01 21:38:24,004 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 21:38:24,012 - ERROR - <type 'exceptions.ImportError'> - No module named treading
+2017-01-01 21:38:40,704 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-01 21:38:40,707 - ERROR - <type 'exceptions.AttributeError'> - 'module' object has no attribute 'Rlock'
+2017-01-01 21:39:00,968 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-01 21:39:00,975 - INFO - FSTA.main.py start
+2017-01-02 11:02:16,659 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-01-02 11:02:16,690 - INFO - FSTA.main.py start
+2017-01-02 11:02:19,153 - ERROR -   File "<stdin>", line 1, in <module>
+  File "config.py", line 4, in <module>
+    from FSTA.installation import *
+  File "FSTA/installation.py", line 16, in <module>
+    from FSTA.group import *
+  File "FSTA/group.py", line 5, in <module>
+    from FSTA.action import *
+  File "FSTA/action.py", line 5, in <module>
+    from FSTA.scenario import *
+  File "FSTA/scenario.py", line 8, in <module>
+    from FSTA.distance_syntaxique import *
+
+2017-01-02 11:02:19,157 - ERROR - <type 'exceptions.ImportError'> - No module named distance_syntaxique
+2017-01-02 11:02:19,163 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:02:19,166 - ERROR - <type 'exceptions.NameError'> - name 'config' is not defined
+2017-01-02 11:02:28,455 - ERROR -   File "<stdin>", line 1, in <module>
+  File "config.py", line 4, in <module>
+    from FSTA.installation import *
+  File "FSTA/installation.py", line 16, in <module>
+    from FSTA.group import *
+  File "FSTA/group.py", line 5, in <module>
+    from FSTA.action import *
+  File "FSTA/action.py", line 5, in <module>
+    from FSTA.scenario import *
+  File "FSTA/scenario.py", line 8, in <module>
+    from FSTA.distance_syntaxique import *
+
+2017-01-02 11:02:28,460 - ERROR - <type 'exceptions.ImportError'> - No module named distance_syntaxique
+2017-01-02 11:06:55,849 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:06:55,850 - ERROR - <type 'exceptions.AttributeError'> - 'matrix' object has no attribute 'matrix'
+2017-01-02 11:07:07,065 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:07:07,066 - ERROR - <type 'exceptions.NameError'> - name 'led' is not defined
+2017-01-02 11:10:09,986 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:10:09,987 - ERROR - <type 'exceptions.NameError'> - name 'leg' is not defined
+2017-01-02 11:10:45,938 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:10:45,939 - ERROR - <type 'exceptions.AttributeError'> - 'module' object has no attribute 'canevas'
+2017-01-02 11:11:08,683 - ERROR - 
+2017-01-02 11:11:08,684 - ERROR - <type 'exceptions.SyntaxError'> - invalid syntax (<stdin>, line 1)
+2017-01-02 11:11:38,067 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:11:38,068 - ERROR - <type 'exceptions.AttributeError'> - 'module' object has no attribute 'init'
+2017-01-02 11:11:53,610 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:11:53,611 - ERROR - <type 'exceptions.AttributeError'> - 'module' object has no attribute 'init'
+2017-01-02 11:12:22,252 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:12:22,254 - ERROR - <type 'exceptions.AttributeError'> - 'module' object has no attribute 'show_message'
+2017-01-02 11:12:41,883 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:12:41,885 - ERROR - <type 'exceptions.NameError'> - name 'transitions' is not defined
+2017-01-02 11:13:20,619 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-01-02 11:13:20,621 - ERROR - <type 'exceptions.AttributeError'> - 'matrix' object has no attribute 'matrix'
+2017-07-11 21:34:21,453 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-07-11 21:34:21,473 - ERROR - 
+2017-07-11 21:34:21,475 - ERROR - <type 'exceptions.IndentationError'> - expected an indented block (<stdin>, line 2)
+2017-07-11 21:34:21,479 - ERROR - 
+2017-07-11 21:34:21,481 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,484 - ERROR - 
+2017-07-11 21:34:21,486 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,490 - ERROR - 
+2017-07-11 21:34:21,492 - ERROR - <type 'exceptions.IndentationError'> - expected an indented block (<stdin>, line 2)
+2017-07-11 21:34:21,496 - ERROR - 
+2017-07-11 21:34:21,497 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,506 - ERROR - 
+2017-07-11 21:34:21,508 - ERROR - <type 'exceptions.IndentationError'> - expected an indented block (<stdin>, line 2)
+2017-07-11 21:34:21,513 - ERROR - 
+2017-07-11 21:34:21,514 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,521 - ERROR - 
+2017-07-11 21:34:21,522 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,530 - ERROR - 
+2017-07-11 21:34:21,532 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,536 - ERROR - 
+2017-07-11 21:34:21,538 - ERROR - <type 'exceptions.IndentationError'> - expected an indented block (<stdin>, line 2)
+2017-07-11 21:34:21,542 - ERROR - 
+2017-07-11 21:34:21,544 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,548 - ERROR - 
+2017-07-11 21:34:21,551 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,556 - ERROR - 
+2017-07-11 21:34:21,557 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,568 - ERROR - 
+2017-07-11 21:34:21,570 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,575 - ERROR - 
+2017-07-11 21:34:21,577 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,579 - ERROR - 
+2017-07-11 21:34:21,580 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,590 - ERROR - 
+2017-07-11 21:34:21,591 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,597 - ERROR - 
+2017-07-11 21:34:21,598 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,609 - ERROR - 
+2017-07-11 21:34:21,610 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,614 - ERROR - 
+2017-07-11 21:34:21,615 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,621 - ERROR - 
+2017-07-11 21:34:21,622 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,629 - ERROR - 
+2017-07-11 21:34:21,630 - ERROR - <type 'exceptions.IndentationError'> - expected an indented block (<stdin>, line 2)
+2017-07-11 21:34:21,641 - ERROR - 
+2017-07-11 21:34:21,642 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,645 - ERROR - 
+2017-07-11 21:34:21,646 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,655 - ERROR - 
+2017-07-11 21:34:21,656 - ERROR - <type 'exceptions.IndentationError'> - expected an indented block (<stdin>, line 2)
+2017-07-11 21:34:21,661 - ERROR - 
+2017-07-11 21:34:21,662 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,671 - ERROR - 
+2017-07-11 21:34:21,672 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,676 - ERROR - 
+2017-07-11 21:34:21,677 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,685 - ERROR - 
+2017-07-11 21:34:21,686 - ERROR - <type 'exceptions.IndentationError'> - expected an indented block (<stdin>, line 2)
+2017-07-11 21:34:21,688 - ERROR - 
+2017-07-11 21:34:21,689 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,700 - ERROR - 
+2017-07-11 21:34:21,701 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,704 - ERROR - 
+2017-07-11 21:34:21,705 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,707 - ERROR - 
+2017-07-11 21:34:21,708 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:34:21,715 - ERROR - 
+2017-07-11 21:34:21,716 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:37:29,630 - ERROR - 
+2017-07-11 21:37:29,631 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-11 21:37:55,196 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-07-11 21:38:11,156 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-07-11 21:38:11,158 - ERROR - <type 'exceptions.NameError'> - name 'mqtt' is not defined
+2017-07-11 21:38:39,250 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-07-11 21:40:25,852 - INFO - MQTT connection.
+2017-07-11 21:40:25,869 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2245, in _packet_handle
+    return self._handle_connack()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2306, in _handle_connack
+    self.on_connect(self, self._userdata, flags_dict, result)
+  File "mqtt_speak.py", line 56, in on_mqtt_connect
+    mqttc.message_callback_add(topic, on_mqtt_message)
+
+2017-07-11 21:40:25,878 - ERROR - <type 'exceptions.NameError'> - global name 'mqttc' is not defined
+2017-07-11 21:40:39,891 - INFO - MQTT connection.
+2017-07-11 21:40:39,894 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2245, in _packet_handle
+    return self._handle_connack()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2306, in _handle_connack
+    self.on_connect(self, self._userdata, flags_dict, result)
+  File "mqtt_speak.py", line 56, in on_mqtt_connect
+    mqttc.message_callback_add(topic, on_mqtt_message)
+
+2017-07-11 21:40:39,900 - ERROR - <type 'exceptions.NameError'> - global name 'mqttc' is not defined
+2017-07-11 21:41:40,144 - INFO - MQTT connection.
+2017-07-11 21:41:40,147 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2245, in _packet_handle
+    return self._handle_connack()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2306, in _handle_connack
+    self.on_connect(self, self._userdata, flags_dict, result)
+  File "mqtt_speak.py", line 56, in on_mqtt_connect
+    mqttc.message_callback_add(topic, on_mqtt_message)
+
+2017-07-11 21:41:40,153 - ERROR - <type 'exceptions.NameError'> - global name 'mqttc' is not defined
+2017-07-11 21:42:14,346 - WARNING - 
+2017-07-11 21:42:53,358 - WARNING - 
+2017-07-11 21:42:54,990 - WARNING - 
+2017-07-11 21:43:25,613 - WARNING - 
+2017-07-11 21:43:29,605 - WARNING - 
+2017-07-11 21:44:20,076 - WARNING - 
+2017-07-11 21:44:58,177 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-07-11 21:44:58,178 - ERROR - <type 'exceptions.NameError'> - name 'text' is not defined
+2017-07-11 21:45:12,701 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/gtts/tts.py", line 93, in save
+    with open(savefile, 'wb') as f:
+
+2017-07-11 21:45:12,702 - ERROR - <type 'exceptions.IOError'> - [Errno 13] Permission denied: 'tts.mp3'
+2017-07-11 21:45:53,012 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-07-11 21:46:02,043 - ERROR - 
+2017-07-11 21:46:02,045 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:46:02,060 - ERROR - 
+2017-07-11 21:46:02,063 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:46:02,081 - ERROR - 
+2017-07-11 21:46:02,083 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:46:03,286 - ERROR - 
+2017-07-11 21:46:03,288 - ERROR - <type 'exceptions.IndentationError'> - unexpected indent (<stdin>, line 1)
+2017-07-11 21:46:26,748 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-11 21:46:32,030 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-11 21:46:32,083 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-11 21:46:37,439 - DEBUG - "GET /translate_tts?q=Salut+les+amis.+Je+suis+a+votre+service.&tl=fr&client=tw-ob&textlen=40&idx=0&total=1&ie=UTF-8&tk=118944.494531 HTTP/1.1" 200 14016
+2017-07-11 21:46:41,094 - INFO - 'Salut les amis. Je suis a votre service.' speaked with gTTS.
+2017-07-11 21:46:50,209 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-11 21:46:55,477 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-11 21:46:55,518 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-11 21:47:00,819 - DEBUG - "GET /translate_tts?q=TEST.&tl=fr&client=tw-ob&textlen=5&idx=0&total=1&ie=UTF-8&tk=516981.112662 HTTP/1.1" 200 3456
+2017-07-11 21:47:01,834 - INFO - 'TEST.' speaked with gTTS.
+2017-07-11 21:47:04,750 - INFO - MQTT connection.
+2017-07-11 21:47:04,761 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2245, in _packet_handle
+    return self._handle_connack()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2306, in _handle_connack
+    self.on_connect(self, self._userdata, flags_dict, result)
+  File "mqtt_speak.py", line 56, in on_mqtt_connect
+    mqttc.message_callback_add(topic, on_mqtt_message)
+
+2017-07-11 21:47:04,762 - ERROR - <type 'exceptions.NameError'> - global name 'mqttc' is not defined
+2017-07-12 20:44:38,458 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-07-12 20:45:40,312 - INFO - 'Salut' speaked with pyttsx.
+2017-07-12 20:45:58,652 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/mqtt_speak.py", line 105, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 181, in runAndWait
+    self.proxy.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/driver.py", line 193, in runAndWait
+    self._driver.startLoop()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/drivers/espeak.py", line 118, in startLoop
+    time.sleep(0.01)
+
+2017-07-12 20:45:58,658 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:46:04,186 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/mqtt_speak.py", line 105, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 178, in runAndWait
+    raise RuntimeError('run loop already started')
+
+2017-07-12 20:46:04,188 - ERROR - <type 'exceptions.RuntimeError'> - run loop already started
+2017-07-12 20:46:26,008 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/mqtt_speak.py", line 105, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 178, in runAndWait
+    raise RuntimeError('run loop already started')
+
+2017-07-12 20:46:26,010 - ERROR - <type 'exceptions.RuntimeError'> - run loop already started
+2017-07-12 20:46:29,686 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-07-12 20:46:29,688 - ERROR - <type 'exceptions.AttributeError'> - 'Engine' object has no attribute 'stossp'
+2017-07-12 20:46:43,504 - ERROR -   File "<stdin>", line 1, in <module>
+  File "FSTA/mqtt_speak.py", line 105, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 178, in runAndWait
+    raise RuntimeError('run loop already started')
+
+2017-07-12 20:46:43,506 - ERROR - <type 'exceptions.RuntimeError'> - run loop already started
+2017-07-12 20:46:53,594 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-07-12 20:47:13,442 - INFO - 'Météo' speaked with pyttsx.
+2017-07-12 20:48:48,894 - ERROR -   File "<stdin>", line 1, in <module>
+
+2017-07-12 20:48:48,896 - ERROR - <type 'exceptions.NameError'> - name 'encode' is not defined
+2017-07-12 20:56:56,262 - ERROR - 
+2017-07-12 20:56:56,265 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:56:57,926 - ERROR - 
+2017-07-12 20:56:57,928 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 

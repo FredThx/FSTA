@@ -1,0 +1,458 @@
+2017-07-11 22:25:16,698 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-11 22:25:16,708 - ERROR -   File "mqtt_speak.py", line 102, in <module>
+    self = mqtt_speak('T-HOME/PI-SALON/SPEAK')
+  File "mqtt_speak.py", line 27, in __init__
+    self.speak("Bonjour à tous.")
+
+2017-07-11 22:25:16,709 - ERROR - <type 'exceptions.AttributeError'> - mqtt_speak instance has no attribute 'speak'
+2017-07-11 22:27:16,493 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-11 22:27:16,806 - WARNING - global name 'gTTS' is not defined
+2017-07-11 22:27:16,808 - INFO - MQTT connection.
+2017-07-11 22:27:29,563 - ERROR -   File "mqtt_speak.py", line 106, in <module>
+    self = mqtt_speak('T-HOME/PI-SALON/SPEAK')
+  File "mqtt_speak.py", line 34, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-11 22:27:29,565 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-11 22:32:39,645 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-11 22:32:39,681 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-11 22:32:44,958 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-11 22:32:45,005 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-11 22:32:50,308 - DEBUG - "GET /translate_tts?q=Bonjour+%C3%A0+tous.&tl=fr&client=tw-ob&textlen=16&idx=0&total=1&ie=UTF-8&tk=571347.978103 HTTP/1.1" 200 6240
+2017-07-11 22:32:52,019 - INFO - 'Bonjour à tous.' speaked with gTTS.
+2017-07-11 22:32:52,022 - INFO - MQTT connection.
+2017-07-11 22:32:58,035 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Salut ma couille
+2017-07-11 22:32:58,056 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-11 22:33:03,326 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-11 22:33:03,383 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-11 22:33:08,651 - DEBUG - "GET /translate_tts?q=Salut+ma+couille&tl=fr&client=tw-ob&textlen=16&idx=0&total=1&ie=UTF-8&tk=284508.134200 HTTP/1.1" 200 6240
+2017-07-11 22:33:10,379 - INFO - 'Salut ma couille' speaked with gTTS.
+2017-07-11 22:34:25,774 - ERROR -   File "mqtt_speak.py", line 110, in <module>
+  File "mqtt_speak.py", line 41, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-11 22:34:25,776 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:04:16,827 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:04:16,864 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:04:22,901 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-12 20:04:23,151 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:04:28,279 - WARNING - HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: /translate_tts?q=Initialisation+de+la+voix.&tl=fr&client=tw-ob&textlen=26&idx=0&total=1&ie=UTF-8&tk=240758.390924 (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7651f1f0>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+2017-07-12 20:04:28,282 - INFO - MQTT connection.
+2017-07-12 20:04:39,206 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Salut ma couille
+2017-07-12 20:04:39,219 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:04:44,930 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-12 20:04:44,979 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:04:52,409 - DEBUG - "GET /translate_tts?q=Salut+ma+couille&tl=fr&client=tw-ob&textlen=16&idx=0&total=1&ie=UTF-8&tk=775010.886808 HTTP/1.1" 200 6240
+2017-07-12 20:04:54,113 - INFO - 'Salut ma couille' speaked with gTTS.
+2017-07-12 20:07:03,247 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 42, in __init__
+    self.speak("Initialisation de la voix.")
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 20:07:03,249 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:07:06,299 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:07:06,313 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 41, in __init__
+    logging.info('mqtt_speak initialised with topic %s on %s:%s. Mode is %s and language %s'%(topic, mqtt_host, mqtt-port, mode, language))
+
+2017-07-12 20:07:06,316 - ERROR - <type 'exceptions.NameError'> - global name 'port' is not defined
+2017-07-12 20:07:22,438 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:07:22,446 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is gTTS and language fr
+2017-07-12 20:07:22,476 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:07:28,173 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-12 20:07:28,219 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:07:34,013 - DEBUG - "GET /translate_tts?q=Initialisation+de+la+voix.&tl=fr&client=tw-ob&textlen=26&idx=0&total=1&ie=UTF-8&tk=240758.390924 HTTP/1.1" 200 9504
+2017-07-12 20:07:36,552 - INFO - 'Initialisation de la voix.' speaked with gTTS.
+2017-07-12 20:07:36,555 - INFO - MQTT connection.
+2017-07-12 20:07:41,792 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 20:07:41,797 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:21:12,414 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:21:12,422 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is gTTS and language fr
+2017-07-12 20:21:12,453 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:21:24,163 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-12 20:21:24,213 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:21:40,389 - DEBUG - "GET /translate_tts?q=Initialisation+de+la+voix.&tl=fr&client=tw-ob&textlen=26&idx=0&total=1&ie=UTF-8&tk=240758.390924 HTTP/1.1" 200 9504
+2017-07-12 20:21:42,920 - INFO - 'Initialisation de la voix.' speaked with gTTS.
+2017-07-12 20:21:42,923 - INFO - MQTT connection.
+2017-07-12 20:22:05,954 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 20:22:05,956 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:22:08,039 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:22:08,221 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 20:22:10,883 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 20:22:10,885 - INFO - MQTT connection.
+2017-07-12 20:22:17,791 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Salut ma couille
+2017-07-12 20:22:19,445 - INFO - 'Salut ma couille' speaked with pyttsx.
+2017-07-12 20:23:08,991 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19degrés.
+2017-07-12 20:25:01,094 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2239, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2414, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2568, in _handle_on_message
+    t[1](self, self._userdata, message)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 52, in on_mqtt_message
+    self.speak(msg.payload)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 48, in speak
+    self.speaker.speak(text)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 105, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 181, in runAndWait
+    self.proxy.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/driver.py", line 193, in runAndWait
+    self._driver.startLoop()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/drivers/espeak.py", line 118, in startLoop
+    time.sleep(0.01)
+
+2017-07-12 20:25:01,096 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:25:06,566 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:25:06,748 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 20:25:09,406 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 20:25:09,409 - INFO - MQTT connection.
+2017-07-12 20:25:14,676 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Salut ma couille
+2017-07-12 20:25:16,342 - INFO - 'Salut ma couille' speaked with pyttsx.
+2017-07-12 20:26:13,412 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Salut ma couille
+2017-07-12 20:26:15,059 - INFO - 'Salut ma couille' speaked with pyttsx.
+2017-07-12 20:26:55,387 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.
+2017-07-12 20:28:26,964 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2239, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2414, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2568, in _handle_on_message
+    t[1](self, self._userdata, message)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 52, in on_mqtt_message
+    self.speak(msg.payload)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 48, in speak
+    self.speaker.speak(text)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 105, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 181, in runAndWait
+    self.proxy.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/driver.py", line 193, in runAndWait
+    self._driver.startLoop()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/drivers/espeak.py", line 118, in startLoop
+    time.sleep(0.01)
+
+2017-07-12 20:28:26,966 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:30:46,196 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:30:46,382 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 20:30:49,040 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 20:30:49,043 - INFO - MQTT connection.
+2017-07-12 20:30:49,183 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal.
+2017-07-12 20:31:03,196 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2239, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2414, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2568, in _handle_on_message
+    t[1](self, self._userdata, message)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 52, in on_mqtt_message
+    self.speak(msg.payload)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 48, in speak
+    self.speaker.speak(text)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 105, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 181, in runAndWait
+    self.proxy.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/driver.py", line 193, in runAndWait
+    self._driver.startLoop()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/drivers/espeak.py", line 118, in startLoop
+    time.sleep(0.01)
+
+2017-07-12 20:31:03,217 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:31:04,868 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:31:05,053 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 20:31:07,718 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 20:31:07,719 - INFO - MQTT connection.
+2017-07-12 20:31:07,925 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Meteo à Epinal.
+2017-07-12 20:31:22,459 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2239, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2414, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2568, in _handle_on_message
+    t[1](self, self._userdata, message)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 52, in on_mqtt_message
+    self.speak(msg.payload)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 48, in speak
+    self.speaker.speak(text)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 105, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 181, in runAndWait
+    self.proxy.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/driver.py", line 193, in runAndWait
+    self._driver.startLoop()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/drivers/espeak.py", line 118, in startLoop
+    time.sleep(0.01)
+
+2017-07-12 20:31:22,460 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:31:23,932 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:31:24,114 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 20:31:26,780 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 20:31:26,783 - INFO - MQTT connection.
+2017-07-12 20:31:26,981 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Meteo a Epinal.
+2017-07-12 20:31:28,991 - INFO - 'Meteo a Epinal.' speaked with pyttsx.
+2017-07-12 20:33:20,938 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 20:33:20,943 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:43:17,840 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:43:18,026 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 20:43:20,683 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 20:43:20,687 - INFO - MQTT connection.
+2017-07-12 20:44:18,819 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 20:44:18,821 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 20:57:16,893 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 20:57:17,076 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 20:57:19,727 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 20:57:19,730 - INFO - MQTT connection.
+2017-07-12 20:57:26,704 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Méteo a Epinal.
+2017-07-12 20:57:28,721 - INFO - 'Méteo a Epinal.' speaked with pyttsx.
+2017-07-12 20:58:22,992 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.
+2017-07-12 20:58:56,778 - INFO - 'Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.' speaked with pyttsx.
+2017-07-12 21:00:30,981 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 21:00:30,983 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 21:02:48,726 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 21:02:48,915 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 21:03:14,735 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 21:03:14,916 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 21:04:47,188 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 21:04:47,371 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 21:04:47,382 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 42, in __init__
+    self.speak("Initialisation de la voix.")
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 48, in speak
+    self.speaker.speak(text)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 106, in speak
+    self.engine.runAndWait(phrase)
+
+2017-07-12 21:04:47,384 - ERROR - <type 'exceptions.TypeError'> - runAndWait() takes exactly 1 argument (2 given)
+2017-07-12 21:06:08,642 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 21:06:08,824 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 21:06:08,835 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 42, in __init__
+    self.speak("Initialisation de la voix.")
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 48, in speak
+    self.speaker.speak(text)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 107, in speak
+    self.engine.runAndWait(phrase)
+
+2017-07-12 21:06:08,837 - ERROR - <type 'exceptions.TypeError'> - runAndWait() takes exactly 1 argument (2 given)
+2017-07-12 21:06:28,281 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 21:06:28,464 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 21:06:31,106 - INFO - 'Initialisation de la voix' speaked with pyttsx.
+2017-07-12 21:06:31,108 - INFO - MQTT connection.
+2017-07-12 21:06:37,906 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.
+2017-07-12 21:06:39,913 - INFO - 'Météo à Epinal' speaked with pyttsx.
+2017-07-12 21:06:44,376 - INFO - ' Aujourd'hui, le temps est pluies modérées' speaked with pyttsx.
+2017-07-12 21:06:48,726 - INFO - ' La température est comprise entre 15 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:06:48,799 - INFO - ' Demain, le temps sera ciel dégagé' speaked with pyttsx.
+2017-07-12 21:06:48,870 - INFO - ' La température sera comprise entre 14 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:06:48,949 - INFO - 'Après demain, le temps sera légères pluies' speaked with pyttsx.
+2017-07-12 21:06:49,019 - INFO - 'La température sera comprise entre 11 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:06:58,718 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 21:06:58,720 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 21:07:26,873 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 21:07:27,055 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 21:07:29,697 - INFO - 'Initialisation de la voix' speaked with pyttsx.
+2017-07-12 21:07:29,700 - INFO - MQTT connection.
+2017-07-12 21:07:31,360 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.
+2017-07-12 21:07:33,359 - INFO - 'Météo à Epinal' speaked with pyttsx.
+2017-07-12 21:07:36,547 - INFO - ' Aujourd'hui, le temps est pluies modérées' speaked with pyttsx.
+2017-07-12 21:07:40,888 - INFO - ' La température est comprise entre 15 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:07:40,961 - INFO - ' Demain, le temps sera ciel dégagé' speaked with pyttsx.
+2017-07-12 21:07:41,031 - INFO - ' La température sera comprise entre 14 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:07:41,110 - INFO - 'Après demain, le temps sera légères pluies' speaked with pyttsx.
+2017-07-12 21:07:41,180 - INFO - 'La température sera comprise entre 11 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:07:52,887 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.
+2017-07-12 21:07:52,951 - INFO - 'Météo à Epinal' speaked with pyttsx.
+2017-07-12 21:07:53,015 - INFO - ' Aujourd'hui, le temps est pluies modérées' speaked with pyttsx.
+2017-07-12 21:07:53,080 - INFO - ' La température est comprise entre 15 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:07:53,154 - INFO - ' Demain, le temps sera ciel dégagé' speaked with pyttsx.
+2017-07-12 21:07:53,232 - INFO - ' La température sera comprise entre 14 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:07:53,311 - INFO - 'Après demain, le temps sera légères pluies' speaked with pyttsx.
+2017-07-12 21:07:53,380 - INFO - 'La température sera comprise entre 11 et 19 degrés' speaked with pyttsx.
+2017-07-12 21:08:14,145 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Méteo a Epinal.
+2017-07-12 21:08:14,208 - INFO - 'Méteo a Epinal' speaked with pyttsx.
+2017-07-12 21:08:15,935 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Méteo a Epinal.
+2017-07-12 21:08:15,998 - INFO - 'Méteo a Epinal' speaked with pyttsx.
+2017-07-12 21:08:16,304 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Méteo a Epinal.
+2017-07-12 21:08:16,367 - INFO - 'Méteo a Epinal' speaked with pyttsx.
+2017-07-12 21:08:16,522 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Méteo a Epinal.
+2017-07-12 21:08:16,586 - INFO - 'Méteo a Epinal' speaked with pyttsx.
+2017-07-12 21:08:47,295 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 21:08:47,296 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 21:09:16,840 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 21:09:17,021 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 21:09:19,675 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 21:09:19,678 - INFO - MQTT connection.
+2017-07-12 21:09:22,536 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Méteo a Epinal.
+2017-07-12 21:09:24,536 - INFO - 'Méteo a Epinal.' speaked with pyttsx.
+2017-07-12 21:09:24,539 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Méteo a Epinal.
+2017-07-12 21:09:26,923 - INFO - 'Méteo a Epinal.' speaked with pyttsx.
+2017-07-12 21:09:26,926 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Méteo a Epinal.
+2017-07-12 21:09:29,268 - INFO - 'Méteo a Epinal.' speaked with pyttsx.
+2017-07-12 21:09:34,118 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.
+2017-07-12 21:09:51,176 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 43, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 897, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1177, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1766, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2239, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2414, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2568, in _handle_on_message
+    t[1](self, self._userdata, message)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 52, in on_mqtt_message
+    self.speak(msg.payload.decode('utf8'))
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 48, in speak
+    self.speaker.speak(text)
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 107, in speak
+    self.engine.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/engine.py", line 181, in runAndWait
+    self.proxy.runAndWait()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/driver.py", line 193, in runAndWait
+    self._driver.startLoop()
+  File "/usr/local/lib/python2.7/dist-packages/pyttsx/drivers/espeak.py", line 118, in startLoop
+    time.sleep(0.01)
+
+2017-07-12 21:09:51,179 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-07-12 21:10:32,339 - INFO - my_logging logger is started. Console : DEBUG. File (mqtt_speak.log) : DEBUG
+2017-07-12 21:10:32,520 - INFO - mqtt_speak initialised with topic T-HOME/PI-SALON/SPEAK on localhost:1883. Mode is pyttsx and language french
+2017-07-12 21:10:35,352 - INFO - 'Initialisation de la voix.' speaked with pyttsx.
+2017-07-12 21:10:35,355 - INFO - MQTT connection.
+2017-07-12 21:10:35,964 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.
+2017-07-12 21:11:03,492 - INFO - 'Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.' speaked with pyttsx.
+2017-07-12 21:11:09,641 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.
+2017-07-12 21:11:37,505 - INFO - 'Météo à Epinal. Aujourd'hui, le temps est pluies modérées. La température est comprise entre 15 et 19 degrés. Demain, le temps sera ciel dégagé. La température sera comprise entre 14 et 19 degrés.Après demain, le temps sera légères pluies.La température sera comprise entre 11 et 19 degrés.' speaked with pyttsx.
+2017-07-12 21:12:18,359 - ERROR -   File "mqtt_speak.py", line 8, in <module>
+    mqtt_speak('T-HOME/PI-SALON/SPEAK', mode = 'pyttsx')
+  File "/home/pi/Devlopp/FSTA/FSTA/mqtt_speak.py", line 44, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 21:12:18,365 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 

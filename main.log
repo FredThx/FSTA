@@ -1,0 +1,1040 @@
+2017-02-23 19:56:01,189 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-02-23 19:56:01,190 - INFO - FSTA.main.py start
+2017-02-23 19:56:03,114 - ERROR -   File "main.py", line 9, in <module>
+    import config
+  File "/home/pi/Devlopp/FSTA/config.py", line 4, in <module>
+    from FSTA.installation import *
+  File "/home/pi/Devlopp/FSTA/FSTA/installation.py", line 16, in <module>
+    from FSTA.fred_language_analyser import *
+  File "/home/pi/Devlopp/FSTA/FSTA/fred_language_analyser.py", line 4, in <module>
+    from nltk.tokenize import WordPunctTokenizer
+  File "/usr/local/lib/python2.7/dist-packages/nltk/__init__.py", line 137, in <module>
+    from nltk.stem import *
+  File "/usr/local/lib/python2.7/dist-packages/nltk/stem/__init__.py", line 29, in <module>
+    from nltk.stem.snowball import SnowballStemmer
+  File "/usr/local/lib/python2.7/dist-packages/nltk/stem/snowball.py", line 24, in <module>
+    from nltk.corpus import stopwords
+  File "/usr/local/lib/python2.7/dist-packages/nltk/corpus/__init__.py", line 66, in <module>
+    from nltk.corpus.reader import *
+  File "/usr/local/lib/python2.7/dist-packages/nltk/corpus/reader/__init__.py", line 92, in <module>
+    from nltk.corpus.reader.framenet import *
+  File "/usr/local/lib/python2.7/dist-packages/nltk/corpus/reader/framenet.py", line 8, in <module>
+    from __future__ import print_function, unicode_literals
+
+2017-02-23 19:56:03,116 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2017-02-23 19:56:51,219 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-02-23 19:56:51,221 - INFO - FSTA.main.py start
+2017-02-23 19:56:53,599 - DEBUG - Check plugins...
+2017-02-23 19:56:53,604 - INFO - Load the plugin exemple.group ...
+2017-02-23 19:56:53,608 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,609 - INFO - Load the plugin maison.group ...
+2017-02-23 19:56:53,613 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,615 - INFO - Load the plugin TV.scenario ...
+2017-02-23 19:56:53,622 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,623 - INFO - Load the plugin cava.scenario ...
+2017-02-23 19:56:53,628 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,629 - INFO - Load the plugin chuck.scenario ...
+2017-02-23 19:56:53,634 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,635 - INFO - Load the plugin date.scenario ...
+2017-02-23 19:56:53,640 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,642 - INFO - Load the plugin exemple.scenario ...
+2017-02-23 19:56:53,647 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,648 - INFO - Load the plugin fuel.scenario ...
+2017-02-23 19:56:53,653 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,654 - INFO - Load the plugin kodi.scenario ...
+2017-02-23 19:56:53,659 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,660 - INFO - Load the plugin lumiere.scenario ...
+2017-02-23 19:56:53,665 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,667 - INFO - Load the plugin musique.scenario ...
+2017-02-23 19:56:53,674 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,677 - INFO - Load the plugin meteo.scenario ...
+2017-02-23 19:56:53,682 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,683 - INFO - Load the plugin stop.scenario ...
+2017-02-23 19:56:53,689 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,691 - INFO - Load the plugin ta_gueule.scenario ...
+2017-02-23 19:56:53,695 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,697 - INFO - Load the plugin volume.scenario ...
+2017-02-23 19:56:53,703 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,706 - INFO - Load the plugin volume_denon.scenario ...
+2017-02-23 19:56:53,711 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,712 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-02-23 19:56:53,718 - INFO - 	plugin loaded.
+2017-02-23 19:56:53,887 - DEBUG - Detector start
+2017-02-23 19:56:59,941 - INFO - Keyword 1 detected at time: 2017-02-23 19:56:59
+2017-02-23 19:56:59,943 - INFO - maison : I listen ...
+2017-02-23 19:57:00,157 - INFO - Calibration started ...
+2017-02-23 19:57:01,119 - INFO - energy_threshold is changed from 300 to 433
+2017-02-23 19:57:05,057 - INFO - Audio captured
+2017-02-23 19:57:05,943 - INFO - Text found with Google API: ça va
+2017-02-23 19:57:05,946 - INFO - Running action :  
+2017-02-23 19:57:05,956 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 19:57:05,959 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 19:57:05,986 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 19:57:06,913 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 19:57:07,065 - DEBUG - [0.23501260410566568, 0.19422345390623635, 0.23694929182983218, 0.17531674600385935, 0.19914203215608667, 0.18002449671633372, 0.2600890120622171, 0.23501260410566568, 0.4237232182886086, 0.21602734585576602, 0.14467284665112365, 0.40675258402903675, 0.23694929182983218, 0.4237232182886086, 0.13125987524635255, 0.38270363045242356, 0.38956352546013817, 0.22329496034871152, 0.13979035613822094, 0.033974119062513915, 0.24016267404343125, 0.2147097186281178, 0.11489227137092096, 0.10326994983867543, 0.0, 0.053093187320189895, 1.0, 0.4524374126916349, 0.6220962160689508, 0.3987596575774056, 0.31562162396695315, 0.34280834730866183, 0.32261815748174655, 0.29906974318305424, 0.3525189061584985, 0.28875699341812133, 0.3005599367458896, 0.42051774847442575, 0.05188106719705753, 0.35235228363520754, 0.3819652417246359, 0.3659807004343569, 0.3359221590204125, 0.22688049482852388, 0.49157440546180176, 0.115479347224433, 0.115479347224433, 0.13578453857161657, 0.18410852713178294, 0.18150015529760147, 0.22770347954757025, 0.19933501945604795, 0.4078314066157804, 0.20175128973050482, 0.2912088528836935, 0.2689879403857993, 0.19001147836742224, 0.19775936861549345, 0.2727103762138521, 0.345630278767214, 0.243073843048801, 0.14426857777671348, 0.1684415794939041, 0.08472142796255815, 0.12468737823504164, 0.21479440352337512, 0.27071226053633085]
+2017-02-23 19:57:07,070 - INFO - Best scénario found : Ca_va with cosine=1.0
+2017-02-23 19:57:07,071 - DEBUG - Running scenario : Ca_va
+2017-02-23 19:57:07,073 - INFO - Running random mqtt action :  
+2017-02-23 19:57:07,090 - DEBUG - Detector stopped
+2017-02-23 19:57:07,091 - DEBUG - Check plugins...
+2017-02-23 19:57:07,281 - DEBUG - Detector start
+2017-02-23 20:20:34,568 - INFO - Keyword 1 detected at time: 2017-02-23 20:20:34
+2017-02-23 20:20:34,570 - INFO - maison : I listen ...
+2017-02-23 20:20:34,772 - INFO - Calibration started ...
+2017-02-23 20:20:35,734 - INFO - energy_threshold is changed from 433 to 734
+2017-02-23 20:21:19,514 - INFO - Audio captured
+2017-02-23 20:21:29,366 - INFO - Text found with Google API: ça va
+2017-02-23 20:21:29,367 - INFO - Running action :  
+2017-02-23 20:21:29,374 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 20:21:29,375 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 20:21:29,387 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 20:21:30,137 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 20:21:30,278 - DEBUG - [0.23501260410566568, 0.19422345390623635, 0.23694929182983218, 0.17531674600385935, 0.19914203215608667, 0.18002449671633372, 0.2600890120622171, 0.23501260410566568, 0.4237232182886086, 0.21602734585576602, 0.14467284665112365, 0.40675258402903675, 0.23694929182983218, 0.4237232182886086, 0.13125987524635255, 0.38270363045242356, 0.38956352546013817, 0.22329496034871152, 0.13979035613822094, 0.033974119062513915, 0.24016267404343125, 0.2147097186281178, 0.11489227137092096, 0.10326994983867543, 0.0, 0.053093187320189895, 1.0, 0.4524374126916349, 0.6220962160689508, 0.3987596575774056, 0.31562162396695315, 0.34280834730866183, 0.32261815748174655, 0.29906974318305424, 0.3525189061584985, 0.28875699341812133, 0.3005599367458896, 0.42051774847442575, 0.05188106719705753, 0.35235228363520754, 0.3819652417246359, 0.3659807004343569, 0.3359221590204125, 0.22688049482852388, 0.49157440546180176, 0.115479347224433, 0.115479347224433, 0.13578453857161657, 0.18410852713178294, 0.18150015529760147, 0.22770347954757025, 0.19933501945604795, 0.4078314066157804, 0.20175128973050482, 0.2912088528836935, 0.2689879403857993, 0.19001147836742224, 0.19775936861549345, 0.2727103762138521, 0.345630278767214, 0.243073843048801, 0.14426857777671348, 0.1684415794939041, 0.08472142796255815, 0.12468737823504164, 0.21479440352337512, 0.27071226053633085]
+2017-02-23 20:21:30,282 - INFO - Best scénario found : Ca_va with cosine=1.0
+2017-02-23 20:21:30,283 - DEBUG - Running scenario : Ca_va
+2017-02-23 20:21:30,285 - INFO - Running random mqtt action :  
+2017-02-23 20:21:30,295 - DEBUG - Detector stopped
+2017-02-23 20:21:30,296 - DEBUG - Check plugins...
+2017-02-23 20:21:30,302 - INFO - Load the plugin maison.group ...
+2017-02-23 20:21:30,307 - INFO - 	plugin loaded.
+2017-02-23 20:21:30,558 - DEBUG - Detector start
+2017-02-23 20:21:33,039 - INFO - Keyword 1 detected at time: 2017-02-23 20:21:33
+2017-02-23 20:21:33,041 - INFO - maison : I listen ...
+2017-02-23 20:21:33,231 - INFO - Calibration started ...
+2017-02-23 20:21:34,257 - INFO - energy_threshold is changed from 737 to 294
+2017-02-23 20:21:44,781 - INFO - Audio captured
+2017-02-23 20:21:47,029 - INFO - Text found with Google API: maison
+2017-02-23 20:21:47,031 - INFO - Running action :  
+2017-02-23 20:21:47,044 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 20:21:47,046 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 20:21:47,059 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 20:21:47,658 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 20:21:47,811 - DEBUG - [0.10883710187798111, 0.09916741443469873, 0.0801958169620843, 0.06251858736100573, 0.1070468958834154, 0.14084411657549076, 0.2012195121951219, 0.10883710187798111, 0.289679652674689, 0.1657078216518793, 0.09072875683637008, 0.24941835847037339, 0.0801958169620843, 0.289679652674689, 0.07317073170731705, 0.17608416197462426, 0.19544573949816546, 0.09684669325829942, 0.07969708913291729, 0.018938850476964253, 0.14760107464301322, 0.1663980040471701, 0.04929904427290466, 0.09036800488347747, 0.0, 0.01664817895530067, 0.2771041810756331, 0.2269898461251129, 0.2409335508443179, 0.14659530829477202, 0.1387826787110842, 0.1527816271995952, 0.16767156735177471, 0.09916741443469873, 0.16325565281697166, 0.0905441610055945, 0.19768495710741266, 0.173780487804878, 0.0325362003934596, 0.14228368158021992, 0.15140865979493376, 0.17380949401039997, 0.1680854015493532, 0.15090693500932414, 0.24791853608674683, 0.14484124500866663, 0.14484124500866663, 0.1379720548656678, 0.06806067605366428, 0.10685545204716396, 0.10848356930445542, 0.06928213707733273, 0.17925306536292834, 0.07012195121951219, 0.1565365353434593, 0.0837939965075192, 0.10256981959741417, 0.1436031875461444, 0.15649346286165638, 0.16858745146884338, 0.11890243902439022, 0.06462516249209722, 0.15737437508115232, 0.04250511420422255, 0.07407971974871921, 0.07347497722630277, 0.13581753550784403]
+2017-02-23 20:21:47,815 - INFO - Best scénario found : False with cosine=0
+2017-02-23 20:21:47,818 - INFO - The text no math with scenarios.
+2017-02-23 20:21:48,321 - DEBUG - Detector stopped
+2017-02-23 20:21:48,336 - DEBUG - Check plugins...
+2017-02-23 20:21:48,376 - INFO - Load the plugin maison.group ...
+2017-02-23 20:21:48,383 - INFO - 	plugin loaded.
+2017-02-23 20:21:48,576 - DEBUG - Detector start
+2017-02-23 20:21:54,379 - INFO - Keyword 1 detected at time: 2017-02-23 20:21:54
+2017-02-23 20:21:54,382 - INFO - maison : I listen ...
+2017-02-23 20:21:54,552 - INFO - Calibration started ...
+2017-02-23 20:21:55,514 - INFO - energy_threshold is changed from 158 to 129
+2017-02-23 20:22:00,339 - INFO - Audio captured
+2017-02-23 20:22:00,755 - WARNING - Google Speech Recognition could not understand audio
+2017-02-23 20:22:00,760 - INFO - None text captured.
+2017-02-23 20:22:01,263 - DEBUG - Detector stopped
+2017-02-23 20:22:01,266 - DEBUG - Check plugins...
+2017-02-23 20:22:01,273 - INFO - Load the plugin maison.group ...
+2017-02-23 20:22:01,282 - INFO - 	plugin loaded.
+2017-02-23 20:22:01,488 - DEBUG - Detector start
+2017-02-23 20:22:14,318 - INFO - Keyword 1 detected at time: 2017-02-23 20:22:14
+2017-02-23 20:22:14,321 - INFO - maison : I listen ...
+2017-02-23 20:22:14,523 - INFO - Calibration started ...
+2017-02-23 20:22:15,485 - INFO - energy_threshold is changed from 98 to 98
+2017-02-23 20:22:18,009 - INFO - Audio captured
+2017-02-23 20:22:18,392 - WARNING - Google Speech Recognition could not understand audio
+2017-02-23 20:22:18,395 - INFO - None text captured.
+2017-02-23 20:22:18,899 - DEBUG - Detector stopped
+2017-02-23 20:22:18,902 - DEBUG - Check plugins...
+2017-02-23 20:22:18,907 - INFO - Load the plugin maison.group ...
+2017-02-23 20:22:18,913 - INFO - 	plugin loaded.
+2017-02-23 20:22:19,118 - DEBUG - Detector start
+2017-02-23 20:39:50,565 - INFO - Keyword 1 detected at time: 2017-02-23 20:39:50
+2017-02-23 20:39:50,584 - INFO - maison : I listen ...
+2017-02-23 20:39:50,758 - INFO - Calibration started ...
+2017-02-23 20:39:51,720 - INFO - energy_threshold is changed from 110 to 280
+2017-02-23 20:39:55,773 - INFO - Audio captured
+2017-02-23 20:39:56,295 - WARNING - Google Speech Recognition could not understand audio
+2017-02-23 20:39:56,299 - INFO - None text captured.
+2017-02-23 20:39:56,802 - DEBUG - Detector stopped
+2017-02-23 20:39:56,806 - DEBUG - Check plugins...
+2017-02-23 20:39:56,811 - INFO - Load the plugin maison.group ...
+2017-02-23 20:39:56,822 - INFO - 	plugin loaded.
+2017-02-23 20:39:57,319 - DEBUG - Detector start
+2017-02-23 20:49:52,157 - INFO - installation interrupted by signal.
+2017-02-23 20:49:52,160 - DEBUG - Detector stopped
+2017-02-23 20:49:54,062 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-02-23 20:49:54,063 - INFO - FSTA.main.py start
+2017-02-23 20:49:54,756 - ERROR -   File "main.py", line 9, in <module>
+    import config
+  File "/home/pi/Devlopp/FSTA/config.py", line 4, in <module>
+    from FSTA.installation import *
+  File "/home/pi/Devlopp/FSTA/FSTA/installation.py", line 15, in <module>
+    from FSTA.group import *
+
+2017-02-23 20:49:54,757 - ERROR - <type 'exceptions.SyntaxError'> - invalid syntax (group.py, line 179)
+2017-02-23 20:50:14,315 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-02-23 20:50:14,317 - INFO - FSTA.main.py start
+2017-02-23 20:50:16,702 - DEBUG - Check plugins...
+2017-02-23 20:50:16,707 - INFO - Load the plugin exemple.group ...
+2017-02-23 20:50:16,722 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,725 - INFO - Load the plugin maison.group ...
+2017-02-23 20:50:16,730 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,732 - INFO - Load the plugin TV.scenario ...
+2017-02-23 20:50:16,746 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,748 - INFO - Load the plugin cava.scenario ...
+2017-02-23 20:50:16,755 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,756 - INFO - Load the plugin chuck.scenario ...
+2017-02-23 20:50:16,761 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,763 - INFO - Load the plugin date.scenario ...
+2017-02-23 20:50:16,768 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,770 - INFO - Load the plugin exemple.scenario ...
+2017-02-23 20:50:16,833 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,837 - INFO - Load the plugin fuel.scenario ...
+2017-02-23 20:50:16,867 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,870 - INFO - Load the plugin kodi.scenario ...
+2017-02-23 20:50:16,875 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,877 - INFO - Load the plugin lumiere.scenario ...
+2017-02-23 20:50:16,882 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,883 - INFO - Load the plugin musique.scenario ...
+2017-02-23 20:50:16,891 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,892 - INFO - Load the plugin meteo.scenario ...
+2017-02-23 20:50:16,898 - INFO - 	plugin loaded.
+2017-02-23 20:50:16,900 - INFO - Load the plugin stop.scenario ...
+2017-02-23 20:50:17,048 - INFO - 	plugin loaded.
+2017-02-23 20:50:17,049 - INFO - Load the plugin ta_gueule.scenario ...
+2017-02-23 20:50:17,064 - INFO - 	plugin loaded.
+2017-02-23 20:50:17,066 - INFO - Load the plugin volume.scenario ...
+2017-02-23 20:50:17,086 - INFO - 	plugin loaded.
+2017-02-23 20:50:17,088 - INFO - Load the plugin volume_denon.scenario ...
+2017-02-23 20:50:17,095 - INFO - 	plugin loaded.
+2017-02-23 20:50:17,097 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-02-23 20:50:17,124 - INFO - 	plugin loaded.
+2017-02-23 20:50:17,288 - DEBUG - Detector start
+2017-02-23 20:50:54,330 - INFO - Keyword 1 detected at time: 2017-02-23 20:50:54
+2017-02-23 20:50:54,332 - INFO - maison : I listen ...
+2017-02-23 20:50:54,528 - INFO - Calibration started ...
+2017-02-23 20:50:55,490 - INFO - energy_threshold is changed from 300 to 167
+2017-02-23 20:50:58,581 - INFO - Audio captured
+2017-02-23 20:50:59,085 - WARNING - Google Speech Recognition could not understand audio
+2017-02-23 20:50:59,096 - INFO - None text captured.
+2017-02-23 20:50:59,599 - DEBUG - Detector stopped
+2017-02-23 20:50:59,601 - DEBUG - Check plugins...
+2017-02-23 20:50:59,784 - DEBUG - Detector start
+2017-02-23 20:52:57,596 - INFO - installation interrupted by signal.
+2017-02-23 20:52:57,598 - DEBUG - Detector stopped
+2017-02-23 20:52:58,841 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-02-23 20:52:58,843 - INFO - FSTA.main.py start
+2017-02-23 20:53:00,988 - DEBUG - Check plugins...
+2017-02-23 20:53:00,993 - INFO - Load the plugin exemple.group ...
+2017-02-23 20:53:00,997 - INFO - 	plugin loaded.
+2017-02-23 20:53:00,998 - INFO - Load the plugin maison.group ...
+2017-02-23 20:53:01,002 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,004 - INFO - Load the plugin TV.scenario ...
+2017-02-23 20:53:01,011 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,012 - INFO - Load the plugin cava.scenario ...
+2017-02-23 20:53:01,017 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,019 - INFO - Load the plugin chuck.scenario ...
+2017-02-23 20:53:01,022 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,023 - INFO - Load the plugin date.scenario ...
+2017-02-23 20:53:01,028 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,029 - INFO - Load the plugin exemple.scenario ...
+2017-02-23 20:53:01,032 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,035 - INFO - Load the plugin fuel.scenario ...
+2017-02-23 20:53:01,039 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,040 - INFO - Load the plugin kodi.scenario ...
+2017-02-23 20:53:01,043 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,044 - INFO - Load the plugin lumiere.scenario ...
+2017-02-23 20:53:01,049 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,050 - INFO - Load the plugin musique.scenario ...
+2017-02-23 20:53:01,056 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,057 - INFO - Load the plugin meteo.scenario ...
+2017-02-23 20:53:01,061 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,064 - INFO - Load the plugin stop.scenario ...
+2017-02-23 20:53:01,070 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,071 - INFO - Load the plugin ta_gueule.scenario ...
+2017-02-23 20:53:01,075 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,076 - INFO - Load the plugin volume.scenario ...
+2017-02-23 20:53:01,081 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,082 - INFO - Load the plugin volume_denon.scenario ...
+2017-02-23 20:53:01,087 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,088 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-02-23 20:53:01,094 - INFO - 	plugin loaded.
+2017-02-23 20:53:01,262 - DEBUG - Detector start
+2017-02-23 20:53:06,933 - INFO - Keyword 1 detected at time: 2017-02-23 20:53:06
+2017-02-23 20:53:06,934 - INFO - maison : I listen ...
+2017-02-23 20:53:06,935 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN//maison/before , payload : maison
+2017-02-23 20:53:07,125 - INFO - Calibration started ...
+2017-02-23 20:53:08,089 - INFO - energy_threshold is changed from 300 to 296
+2017-02-23 20:53:10,459 - INFO - Audio captured
+2017-02-23 20:53:11,051 - WARNING - Google Speech Recognition could not understand audio
+2017-02-23 20:53:11,052 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN//maison/before_s2t , payload : maison
+2017-02-23 20:53:11,064 - INFO - None text captured.
+2017-02-23 20:53:11,566 - DEBUG - Detector stopped
+2017-02-23 20:53:11,567 - DEBUG - Check plugins...
+2017-02-23 20:53:11,767 - DEBUG - Detector start
+2017-02-23 20:54:23,708 - INFO - installation interrupted by signal.
+2017-02-23 20:54:23,711 - DEBUG - Detector stopped
+2017-02-23 20:54:25,172 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-02-23 20:54:25,174 - INFO - FSTA.main.py start
+2017-02-23 20:54:27,292 - DEBUG - Check plugins...
+2017-02-23 20:54:27,297 - INFO - Load the plugin exemple.group ...
+2017-02-23 20:54:27,300 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,302 - INFO - Load the plugin maison.group ...
+2017-02-23 20:54:27,306 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,308 - INFO - Load the plugin TV.scenario ...
+2017-02-23 20:54:27,315 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,316 - INFO - Load the plugin cava.scenario ...
+2017-02-23 20:54:27,321 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,322 - INFO - Load the plugin chuck.scenario ...
+2017-02-23 20:54:27,327 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,328 - INFO - Load the plugin date.scenario ...
+2017-02-23 20:54:27,333 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,334 - INFO - Load the plugin exemple.scenario ...
+2017-02-23 20:54:27,339 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,341 - INFO - Load the plugin fuel.scenario ...
+2017-02-23 20:54:27,345 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,347 - INFO - Load the plugin kodi.scenario ...
+2017-02-23 20:54:27,351 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,352 - INFO - Load the plugin lumiere.scenario ...
+2017-02-23 20:54:27,357 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,359 - INFO - Load the plugin musique.scenario ...
+2017-02-23 20:54:27,366 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,369 - INFO - Load the plugin meteo.scenario ...
+2017-02-23 20:54:27,374 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,375 - INFO - Load the plugin stop.scenario ...
+2017-02-23 20:54:27,380 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,381 - INFO - Load the plugin ta_gueule.scenario ...
+2017-02-23 20:54:27,385 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,386 - INFO - Load the plugin volume.scenario ...
+2017-02-23 20:54:27,391 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,392 - INFO - Load the plugin volume_denon.scenario ...
+2017-02-23 20:54:27,398 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,399 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-02-23 20:54:27,404 - INFO - 	plugin loaded.
+2017-02-23 20:54:27,577 - DEBUG - Detector start
+2017-02-23 20:54:46,040 - INFO - Keyword 1 detected at time: 2017-02-23 20:54:46
+2017-02-23 20:54:46,042 - INFO - maison : I listen ...
+2017-02-23 20:54:46,082 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 20:54:46,263 - INFO - Calibration started ...
+2017-02-23 20:54:47,289 - INFO - energy_threshold is changed from 300 to 225
+2017-02-23 20:54:51,540 - INFO - Audio captured
+2017-02-23 20:54:52,545 - WARNING - Google Speech Recognition could not understand audio
+2017-02-23 20:54:52,547 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 20:54:52,559 - INFO - None text captured.
+2017-02-23 20:54:53,062 - DEBUG - Detector stopped
+2017-02-23 20:54:53,064 - DEBUG - Check plugins...
+2017-02-23 20:54:53,492 - DEBUG - Detector start
+2017-02-23 20:55:55,097 - INFO - Keyword 1 detected at time: 2017-02-23 20:55:55
+2017-02-23 20:55:55,100 - INFO - maison : I listen ...
+2017-02-23 20:55:55,102 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 20:55:55,273 - INFO - Calibration started ...
+2017-02-23 20:55:56,234 - INFO - energy_threshold is changed from 225 to 203
+2017-02-23 20:56:16,550 - INFO - Audio captured
+2017-02-23 20:56:20,199 - INFO - Text found with Google API: non rien
+2017-02-23 20:56:20,202 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 20:56:20,214 - INFO - Running action :  
+2017-02-23 20:56:20,219 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 20:56:20,222 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 20:56:20,248 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 20:56:21,182 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 20:56:21,330 - DEBUG - [0.25411854164994985, 0.20079605559884872, 0.250057417733905, 0.15508638440561487, 0.22798460249619412, 0.20822946319653207, 0.2885858791655629, 0.25411854164994985, 0.42490152000400194, 0.20348455090889345, 0.11450715310358613, 0.40693307007458185, 0.250057417733905, 0.42490152000400194, 0.11774303869954966, 0.416457980801338, 0.38947673314558456, 0.2695633770330234, 0.1347829367592205, 0.03585358038823594, 0.25091407983187286, 0.21387653429588108, 0.0890216724214234, 0.13001911409469774, 0.0, 0.07564093584889489, 0.46753147261762334, 0.5002378998915981, 0.3247217813019748, 0.3526174634906612, 0.1895121345920454, 0.24130418518999994, 0.3114977335622919, 0.29711286275602006, 0.3777437781283038, 0.27099305064560075, 0.27328370154426596, 0.5125285213980397, 0.03449322309936316, 0.22038591468166324, 0.3080259638041602, 0.39316397843995676, 0.3852418832700783, 0.2840529567008104, 0.5093363361531773, 0.16536510681165564, 0.16536510681165564, 0.1763087317453306, 0.207996285062171, 0.20932674635134593, 0.17603381144674646, 0.13686222536283973, 0.2929981732024401, 0.1362125349661457, 0.21567183027647233, 0.2638306832330952, 0.1187908324428106, 0.1334578336197303, 0.2454737574268061, 0.3067221615871163, 0.20547314596588076, 0.12234340523103501, 0.1599838491763185, 0.08851416742396571, 0.087261719067456, 0.14331226285543797, 0.17655528711161136]
+2017-02-23 20:56:21,335 - INFO - Best scénario found : LUMIERE ON with cosine=0.512528521398
+2017-02-23 20:56:21,337 - DEBUG - Running scenario : LUMIERE ON
+2017-02-23 20:56:21,339 - INFO - Running action : ON
+2017-02-23 20:56:21,350 - DEBUG - Detector stopped
+2017-02-23 20:56:21,352 - DEBUG - Check plugins...
+2017-02-23 20:56:21,781 - DEBUG - Detector start
+2017-02-23 20:56:42,316 - INFO - Keyword 1 detected at time: 2017-02-23 20:56:42
+2017-02-23 20:56:42,320 - INFO - maison : I listen ...
+2017-02-23 20:56:42,322 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 20:56:42,505 - INFO - Calibration started ...
+2017-02-23 20:56:43,467 - INFO - energy_threshold is changed from 160 to 208
+2017-02-23 20:56:48,340 - INFO - Audio captured
+2017-02-23 20:56:49,133 - INFO - Text found with Google API: éteins la lumière
+2017-02-23 20:56:49,135 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 20:56:49,145 - INFO - Running action :  
+2017-02-23 20:56:49,151 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 20:56:49,154 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 20:56:49,187 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 20:56:49,843 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 20:56:49,994 - DEBUG - [0.2285089350849005, 0.1618795669403618, 0.2889759946395693, 0.16613955554405554, 0.3062773806795861, 0.2628526774728476, 0.2319445458675922, 0.2285089350849005, 0.2140943264716192, 0.33187140253349473, 0.08632206622970622, 0.21506723302108283, 0.2889759946395693, 0.2140943264716192, 0.1596501419608102, 0.25023843591494954, 0.2286769589047669, 0.3542998128850478, 0.20473075621333142, 0.07017011142797998, 1.0, 0.709537979923259, 0.07118951460795896, 0.3125, 0.0, 0.03289758474798845, 0.24016267404343125, 0.24439821893375047, 0.14850701853560508, 0.12353966950711821, 0.11464177193299967, 0.135856656995526, 0.20100498865570696, 0.20660944727914599, 0.291236878049383, 0.19595947576991166, 0.7449314301903235, 0.20483414440254896, 0.03214653124210249, 0.05750984614986537, 0.14512978516677424, 0.23557540879272168, 0.25021564403146873, 0.18743949856252418, 0.20021946437360538, 0.09687213071850237, 0.09687213071850237, 0.0745498005646403, 0.34583425062254103, 0.3419734626197106, 0.14655814911953044, 0.10714285714285714, 0.19006523813018622, 0.08434347122457898, 0.23628882852046407, 0.1982613153794008, 0.08047698952009502, 0.08384014768473214, 0.14136614586774995, 0.22281223150029167, 0.09639253854237598, 0.04469582637089474, 0.07880978916833403, 0.0104990131391452, 0.03253000243161777, 0.0791945516022682, 0.10958925093990117]
+2017-02-23 20:56:49,999 - INFO - Best scénario found : LUMIERE OFF with cosine=1.0
+2017-02-23 20:56:50,000 - DEBUG - Running scenario : LUMIERE OFF
+2017-02-23 20:56:50,003 - INFO - Running action : OFF
+2017-02-23 20:56:50,055 - DEBUG - Detector stopped
+2017-02-23 20:56:50,058 - DEBUG - Check plugins...
+2017-02-23 20:56:50,235 - DEBUG - Detector start
+2017-02-23 20:57:43,415 - INFO - Keyword 1 detected at time: 2017-02-23 20:57:43
+2017-02-23 20:57:43,418 - INFO - maison : I listen ...
+2017-02-23 20:57:43,420 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 20:57:43,592 - INFO - Calibration started ...
+2017-02-23 20:57:44,552 - INFO - energy_threshold is changed from 148 to 393
+2017-02-23 20:57:49,870 - INFO - Audio captured
+2017-02-23 20:57:51,332 - INFO - Text found with Google API: et toi le mien
+2017-02-23 20:57:51,335 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 20:57:51,345 - INFO - Running action :  
+2017-02-23 20:57:51,351 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 20:57:51,354 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 20:57:51,366 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 20:57:52,156 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 20:57:52,309 - DEBUG - [0.11444359895775812, 0.12457902693221948, 0.1035215423569567, 0.11669427839220559, 0.09951060358890701, 0.09321369008840265, 0.13380861985426926, 0.11444359895775812, 0.20855997578672344, 0.11302306067124611, 0.05653478132625326, 0.2686936671182147, 0.1035215423569567, 0.20855997578672344, 0.07136459725561027, 0.1729140149489254, 0.1881132124569314, 0.10147653439052584, 0.0991055703971334, 0.04156057568076287, 0.13661293238945568, 0.11371023410055045, 0.044383527392158756, 0.0638995974079712, 0.0, 0.02435585701677936, 0.2578178094877908, 0.2511889437156584, 0.2150448809723035, 0.3185438410165612, 0.18306478104485036, 0.21393634613070905, 0.1913333638656686, 0.18608006554432782, 0.17083609699491428, 0.25861975211245564, 0.15973697708828127, 0.2586966650515872, 0.05711954779775399, 0.22392685853639452, 0.29919971261352163, 0.19396909457377665, 0.20492051101283418, 0.17346446788030562, 0.27912009831649176, 0.09779954348257647, 0.09779954348257647, 0.08988613335615836, 0.08356853135121495, 0.07986259114092654, 0.1684255249712845, 0.15424040753648222, 0.2126723668236303, 0.15611005649664747, 0.1797083881495209, 0.14839655523276016, 0.09930242928710932, 0.0954944384995343, 0.16353278962877657, 0.20179562671365292, 0.13380861985426926, 0.061454216345243305, 0.2018495626243556, 0.046637915481003954, 0.05418836098792721, 0.14983733227598123, 0.1589580450369761]
+2017-02-23 20:57:52,314 - INFO - Best scénario found : Chuck with cosine=0.299199712614
+2017-02-23 20:57:52,316 - DEBUG - Running scenario : Chuck
+2017-02-23 20:57:52,319 - INFO - Running action : CHUCK...
+2017-02-23 20:57:52,329 - DEBUG - Detector stopped
+2017-02-23 20:57:52,331 - DEBUG - Check plugins...
+2017-02-23 20:57:52,504 - DEBUG - Detector start
+2017-02-23 20:59:17,028 - INFO - Keyword 1 detected at time: 2017-02-23 20:59:17
+2017-02-23 20:59:17,031 - INFO - maison : I listen ...
+2017-02-23 20:59:17,032 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 20:59:17,200 - INFO - Calibration started ...
+2017-02-23 20:59:18,162 - INFO - energy_threshold is changed from 214 to 128
+2017-02-23 20:59:28,087 - INFO - Audio captured
+2017-02-23 20:59:30,225 - INFO - Text found with Google API: ta gueule
+2017-02-23 20:59:30,228 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 20:59:30,242 - INFO - Running action :  
+2017-02-23 20:59:30,250 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 20:59:30,252 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 20:59:30,264 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 20:59:31,029 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 20:59:31,193 - DEBUG - [0.14275633623419612, 0.11836781548102661, 0.14504851796323845, 0.09627248992456831, 0.12897963481204708, 0.11620310162457971, 0.18748505440195307, 0.14275633623419612, 0.26383509714724057, 0.14754177663086884, 0.07134119911295213, 0.30045228905104066, 0.14504851796323845, 0.26383509714724057, 0.09597449213433312, 0.21720196846604115, 0.20332818395190458, 0.12455398875648334, 0.11280034010225636, 0.020797258270192576, 0.14113496640665685, 0.12822884135213675, 0.08883954728703596, 0.07497795090353646, 0.0, 0.0, 0.2793824300673341, 0.26843774609657967, 0.20227490556786912, 0.29039570731345193, 0.14490584179431157, 0.1677735913103623, 0.15711968670365709, 0.17676260445166642, 0.18923514338021347, 0.2067491177068598, 0.18847528340427558, 0.252212037469294, 0.0381107966983353, 0.24462681866078834, 0.2729738641616111, 0.21044073678360484, 0.1886808324850559, 0.1530890413554611, 0.2872392322339579, 0.10929867724419785, 0.10929867724419785, 0.09153777730532725, 0.11210887321173278, 0.11053846302309284, 0.11831830970464971, 0.08820935400416054, 0.20324397049205978, 0.08704663240090678, 0.15598057152678912, 0.13237451163672284, 0.13251136747832068, 0.13380139498238702, 0.13584306246253686, 0.16509463324087606, 0.7320844981409597, 0.1277399150558234, 0.7654452067773054, 0.06223467040124489, 0.07231015260621873, 0.1092097803793525, 0.12428739040125246]
+2017-02-23 20:59:31,206 - INFO - Best scénario found : ta_gueule with cosine=0.765445206777
+2017-02-23 20:59:31,207 - DEBUG - Running scenario : ta_gueule
+2017-02-23 20:59:31,210 - INFO - Running random mqtt action :  
+2017-02-23 20:59:31,227 - DEBUG - Detector stopped
+2017-02-23 20:59:31,229 - DEBUG - Check plugins...
+2017-02-23 20:59:31,673 - DEBUG - Detector start
+2017-02-23 21:00:07,942 - INFO - Keyword 1 detected at time: 2017-02-23 21:00:07
+2017-02-23 21:00:07,945 - INFO - maison : I listen ...
+2017-02-23 21:00:07,947 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 21:00:08,138 - INFO - Calibration started ...
+2017-02-23 21:00:09,099 - INFO - energy_threshold is changed from 110 to 118
+2017-02-23 21:00:14,541 - INFO - Audio captured
+2017-02-23 21:00:15,655 - WARNING - Google Speech Recognition could not understand audio
+2017-02-23 21:00:15,657 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 21:00:15,667 - INFO - None text captured.
+2017-02-23 21:00:16,170 - DEBUG - Detector stopped
+2017-02-23 21:00:16,173 - DEBUG - Check plugins...
+2017-02-23 21:00:16,356 - DEBUG - Detector start
+2017-02-23 21:02:48,207 - INFO - Keyword 1 detected at time: 2017-02-23 21:02:48
+2017-02-23 21:02:48,210 - INFO - maison : I listen ...
+2017-02-23 21:02:48,212 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 21:02:48,410 - INFO - Calibration started ...
+2017-02-23 21:02:49,372 - INFO - energy_threshold is changed from 124 to 107
+2017-02-23 21:02:53,430 - INFO - Audio captured
+2017-02-23 21:02:54,319 - INFO - Text found with Google API: quelle heure est-il
+2017-02-23 21:02:54,321 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 21:02:54,330 - INFO - Running action :  
+2017-02-23 21:02:54,337 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 21:02:54,339 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 21:02:54,352 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 21:02:55,189 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 21:02:55,341 - DEBUG - [0.15391890556522317, 0.19359756097560976, 0.1701210179900549, 0.1600609756097561, 0.16084887021628338, 0.1375315746524755, 0.1897115754402932, 0.15391890556522317, 0.23870470963109755, 0.13775759218318182, 0.087916000395631, 0.24691157767754549, 0.1701210179900549, 0.23870470963109755, 0.21558133572760593, 0.27460491922850633, 0.24912550081821844, 0.18693449479411187, 0.11270870433342904, 0.04352331620045339, 0.20660944727914599, 0.1919734667456567, 0.09385300753065652, 0.09371974928126209, 0.0, 0.04708816093480111, 0.29906974318305424, 0.28191448904373706, 0.19537356378138881, 0.2530487804878049, 0.19787710339384446, 0.16050605945555832, 0.16756720589841845, 1.0, 0.7487513426974919, 0.7042682926829268, 0.2096765605638349, 0.29965805666137224, 0.0460131358645194, 0.21341463414634146, 0.24288712971414067, 0.2851953692914554, 0.45323116792863044, 0.39176829268292684, 0.3048780487804878, 0.08508591128032371, 0.08508591128032371, 0.12042682926829268, 0.17531674600385935, 0.16261441869958815, 0.14559143832107377, 0.09797973788495583, 0.21022126703729127, 0.09916741443469873, 0.14912139482703266, 0.20737956103616054, 0.181319537456031, 0.18000766912915492, 0.1565014470183342, 0.17803990867540742, 0.13366042815111567, 0.09596347033023339, 0.11890243902439024, 0.05259739535560022, 0.05820252464746485, 0.12909944487358055, 0.16006250060273536]
+2017-02-23 21:02:55,346 - INFO - Best scénario found : Heure with cosine=1.0
+2017-02-23 21:02:55,348 - DEBUG - Running scenario : Heure
+2017-02-23 21:02:55,350 - INFO - Running action :  
+2017-02-23 21:02:55,359 - DEBUG - Detector stopped
+2017-02-23 21:02:55,361 - DEBUG - Check plugins...
+2017-02-23 21:02:55,545 - DEBUG - Detector start
+2017-02-23 21:03:34,113 - INFO - Keyword 1 detected at time: 2017-02-23 21:03:34
+2017-02-23 21:03:34,116 - INFO - maison : I listen ...
+2017-02-23 21:03:34,117 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 21:03:34,284 - INFO - Calibration started ...
+2017-02-23 21:03:35,246 - INFO - energy_threshold is changed from 114 to 139
+2017-02-23 21:03:45,424 - INFO - Audio captured
+2017-02-23 21:03:47,510 - INFO - Text found with Google API: météo
+2017-02-23 21:03:47,513 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 21:03:47,523 - INFO - Running action :  
+2017-02-23 21:03:47,533 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 21:03:47,536 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 21:03:47,549 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 21:03:48,164 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 21:03:48,315 - DEBUG - [0.13604637734747638, 0.11856973465018326, 0.11557632444535679, 0.10779066786380297, 0.17841149313902566, 0.15202222106560906, 0.15548780487804875, 0.13604637734747638, 0.15510406599904605, 0.12987910345687836, 0.07392713520000525, 0.12470917923518669, 0.11557632444535679, 0.15510406599904605, 0.9999999999999998, 0.1326661494329361, 0.12858272335405624, 0.16490112635872603, 0.11954563369937593, 0.08049011452709808, 0.1596501419608102, 0.12698795045705086, 0.07205244932193758, 0.12350294000741922, 0.0, 0.049944536865902014, 0.13125987524635255, 0.10476454436543671, 0.10167837925540021, 0.06251858736100573, 0.09100503522038308, 0.09603416566831699, 0.14755097926956173, 0.21558133572760593, 0.2970345905419901, 0.20695808229850168, 0.15171171126847946, 0.0823170731707317, 0.0325362003934596, 0.04527208050279725, 0.07683424526907086, 0.11141634231435896, 0.09861010224228721, 0.0905441610055945, 0.10347904114925084, 0.0846764201589128, 0.0846764201589128, 0.08623253429104237, 0.16042873641220864, 0.13008489814437352, 0.06863246221302281, 0.06024533658898498, 0.09399855866592584, 0.05792682926829267, 0.11088004586828368, 0.07497357582251718, 0.12670389479680572, 0.11749351708320904, 0.09389607771699383, 0.09852513397529808, 0.06707317073170731, 0.012925032498419444, 0.06251858736100573, 0.010626278551055638, 0.0, 0.06902194830349653, 0.06338151657032721]
+2017-02-23 21:03:48,320 - INFO - Best scénario found : meteo with cosine=1.0
+2017-02-23 21:03:48,321 - DEBUG - Running scenario : meteo
+2017-02-23 21:03:48,324 - INFO - Running action :  
+2017-02-23 21:03:48,333 - DEBUG - Detector stopped
+2017-02-23 21:03:48,335 - DEBUG - Check plugins...
+2017-02-23 21:03:48,761 - DEBUG - Detector start
+2017-02-23 21:03:55,702 - INFO - Keyword 1 detected at time: 2017-02-23 21:03:55
+2017-02-23 21:03:55,706 - INFO - maison : I listen ...
+2017-02-23 21:03:55,708 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 21:03:55,884 - INFO - Calibration started ...
+2017-02-23 21:03:56,847 - INFO - energy_threshold is changed from 102 to 337
+2017-02-23 21:03:58,953 - INFO - Audio captured
+2017-02-23 21:03:59,712 - INFO - Text found with Google API: légère pluie
+2017-02-23 21:03:59,714 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 21:03:59,722 - INFO - Running action :  
+2017-02-23 21:03:59,728 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 21:03:59,730 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 21:03:59,742 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 21:04:00,497 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 21:04:00,651 - DEBUG - [0.25190275419400676, 0.20735369785678331, 0.2725934480600648, 0.20253151883685813, 0.3159347215029842, 0.28003889699261664, 0.3182475786078964, 0.25190275419400676, 0.2789131780391547, 0.2187225196196314, 0.07516460280028289, 0.2704996018190677, 0.2725934480600648, 0.2789131780391547, 0.22959289599569666, 0.19064008191675094, 0.19557966740359867, 0.27517761442748834, 0.22778753825948234, 0.07413509266270378, 0.2717626231203664, 0.24813556992013164, 0.06786053909474647, 0.2088754045470585, 0.0, 0.024826051230968052, 0.20842364354492726, 0.15839650836000238, 0.16480929413503922, 0.10448054543171253, 0.14079733648049297, 0.1074058515591797, 0.18002500520953926, 0.19449455380364947, 0.26542773428496014, 0.1800280167438739, 0.24851584838463417, 0.14548460736360977, 0.029111125486979104, 0.06911789928559445, 0.11963139784816448, 0.16614596885881405, 0.17712730460674053, 0.1446653705977558, 0.18485019576379907, 0.12959385570987497, 0.12959385570987497, 0.12055447549812984, 0.3316654501627973, 0.30310131388642314, 0.10564739084279634, 0.06064124648140408, 0.13528253950894226, 0.059103121741466466, 0.13616748712038254, 0.11015774231446501, 0.06523033194315057, 0.11680557103757166, 0.1316849575143852, 0.1616146146190331, 0.11138665251276372, 0.043366569978359484, 0.13341361955126368, 0.015846089618050944, 0.04296014883525509, 0.07802509286402227, 0.09282783054926844]
+2017-02-23 21:04:00,655 - INFO - Best scénario found : False with cosine=0
+2017-02-23 21:04:00,658 - INFO - The text no math with scenarios.
+2017-02-23 21:04:01,161 - DEBUG - Detector stopped
+2017-02-23 21:04:01,163 - DEBUG - Check plugins...
+2017-02-23 21:04:01,319 - DEBUG - Detector start
+2017-02-23 21:16:00,818 - INFO - installation interrupted by signal.
+2017-02-23 21:16:00,823 - DEBUG - Detector stopped
+2017-02-23 21:16:02,613 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-02-23 21:16:02,615 - INFO - FSTA.main.py start
+2017-02-23 21:16:04,748 - DEBUG - Check plugins...
+2017-02-23 21:16:04,753 - INFO - Load the plugin exemple.group ...
+2017-02-23 21:16:04,757 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,758 - INFO - Load the plugin maison.group ...
+2017-02-23 21:16:04,762 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,764 - INFO - Load the plugin TV.scenario ...
+2017-02-23 21:16:04,771 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,772 - INFO - Load the plugin cava.scenario ...
+2017-02-23 21:16:04,777 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,779 - INFO - Load the plugin chuck.scenario ...
+2017-02-23 21:16:04,783 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,784 - INFO - Load the plugin date.scenario ...
+2017-02-23 21:16:04,789 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,791 - INFO - Load the plugin exemple.scenario ...
+2017-02-23 21:16:04,796 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,797 - INFO - Load the plugin fuel.scenario ...
+2017-02-23 21:16:04,802 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,803 - INFO - Load the plugin kodi.scenario ...
+2017-02-23 21:16:04,807 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,809 - INFO - Load the plugin lumiere.scenario ...
+2017-02-23 21:16:04,813 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,815 - INFO - Load the plugin musique.scenario ...
+2017-02-23 21:16:04,822 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,825 - INFO - Load the plugin meteo.scenario ...
+2017-02-23 21:16:04,830 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,831 - INFO - Load the plugin stop.scenario ...
+2017-02-23 21:16:04,837 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,839 - INFO - Load the plugin ta_gueule.scenario ...
+2017-02-23 21:16:04,843 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,845 - INFO - Load the plugin volume.scenario ...
+2017-02-23 21:16:04,850 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,854 - INFO - Load the plugin volume_denon.scenario ...
+2017-02-23 21:16:04,858 - INFO - 	plugin loaded.
+2017-02-23 21:16:04,860 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-02-23 21:16:04,865 - INFO - 	plugin loaded.
+2017-02-23 21:16:05,033 - DEBUG - Detector start
+2017-02-23 21:16:36,561 - INFO - Keyword 1 detected at time: 2017-02-23 21:16:36
+2017-02-23 21:16:36,563 - INFO - maison : I listen ...
+2017-02-23 21:16:36,564 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 21:16:36,746 - INFO - Calibration started ...
+2017-02-23 21:16:37,708 - INFO - energy_threshold is changed from 300 to 492
+2017-02-23 21:16:40,460 - INFO - Audio captured
+2017-02-23 21:16:40,463 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 21:16:41,328 - INFO - Text found with Google API: ça va
+2017-02-23 21:16:41,330 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : ça va
+2017-02-23 21:16:41,338 - INFO - Running action :  
+2017-02-23 21:16:41,343 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 21:16:41,346 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 21:16:41,372 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 21:16:42,251 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 21:16:42,402 - DEBUG - [0.23501260410566568, 0.19422345390623635, 0.23694929182983218, 0.17531674600385935, 0.19914203215608667, 0.18002449671633372, 0.2600890120622171, 0.23501260410566568, 0.4237232182886086, 0.21602734585576602, 0.14467284665112365, 0.40675258402903675, 0.23694929182983218, 0.4237232182886086, 0.13125987524635255, 0.38270363045242356, 0.38956352546013817, 0.22329496034871152, 0.13979035613822094, 0.033974119062513915, 0.24016267404343125, 0.2147097186281178, 0.11489227137092096, 0.10326994983867543, 0.0, 0.053093187320189895, 1.0, 0.4524374126916349, 0.6220962160689508, 0.3987596575774056, 0.31562162396695315, 0.34280834730866183, 0.32261815748174655, 0.29906974318305424, 0.3525189061584985, 0.28875699341812133, 0.3005599367458896, 0.42051774847442575, 0.05188106719705753, 0.35235228363520754, 0.3819652417246359, 0.3659807004343569, 0.3359221590204125, 0.22688049482852388, 0.49157440546180176, 0.115479347224433, 0.115479347224433, 0.13578453857161657, 0.18410852713178294, 0.18150015529760147, 0.22770347954757025, 0.19933501945604795, 0.4078314066157804, 0.20175128973050482, 0.2912088528836935, 0.2689879403857993, 0.19001147836742224, 0.19775936861549345, 0.2727103762138521, 0.345630278767214, 0.243073843048801, 0.14426857777671348, 0.1684415794939041, 0.08472142796255815, 0.12468737823504164, 0.21479440352337512, 0.27071226053633085]
+2017-02-23 21:16:42,405 - INFO - Best scénario found : Ca_va with cosine=1.0
+2017-02-23 21:16:42,406 - DEBUG - Running scenario : Ca_va
+2017-02-23 21:16:42,408 - INFO - Running random mqtt action :  
+2017-02-23 21:16:42,421 - DEBUG - Detector stopped
+2017-02-23 21:16:42,422 - DEBUG - Check plugins...
+2017-02-23 21:16:42,844 - DEBUG - Detector start
+2017-02-23 21:18:18,750 - INFO - Keyword 1 detected at time: 2017-02-23 21:18:18
+2017-02-23 21:18:18,751 - INFO - maison : I listen ...
+2017-02-23 21:18:18,752 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 21:18:18,937 - INFO - Calibration started ...
+2017-02-23 21:18:19,898 - INFO - energy_threshold is changed from 520 to 653
+2017-02-23 21:18:22,139 - INFO - Audio captured
+2017-02-23 21:18:22,141 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 21:18:22,801 - INFO - Text found with Google API: comment vas-tu
+2017-02-23 21:18:22,802 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : comment vas-tu
+2017-02-23 21:18:22,810 - INFO - Running action :  
+2017-02-23 21:18:22,817 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 21:18:22,819 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 21:18:22,831 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 21:18:23,740 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 21:18:23,894 - DEBUG - [0.2056103669788593, 0.14404389951139848, 0.20488014022168843, 0.11729288960213877, 0.1596539896497829, 0.14297451592506716, 0.23572022482223262, 0.2056103669788593, 0.3918974582048731, 0.17527130181454717, 0.10264004785593346, 0.39607049639085523, 0.20488014022168843, 0.3918974582048731, 0.10476454436543671, 0.37068838834700646, 0.3755689826616771, 0.18988136121228488, 0.08875134033648525, 0.00451938453788867, 0.24439821893375047, 0.1818190751836257, 0.1049732920010751, 0.0833829217538678, 0.0, 0.03178208630818641, 0.4524374126916349, 1.0, 0.31226130485079723, 0.5576556681084142, 0.19327741517115343, 0.25625, 0.25607375986579195, 0.28191448904373706, 0.3203193085565387, 0.26339455910655724, 0.2720711724828752, 0.5005417119681976, 0.037267799624996496, 0.2654523290995772, 0.3537573175456644, 0.34882564994160653, 0.33799594580599973, 0.22429692923917763, 0.4547671684574152, 0.11273024052990943, 0.11273024052990943, 0.10906180963005885, 0.14849227903725454, 0.14634182315230265, 0.1690610431136579, 0.13801311186847084, 0.2816904857828256, 0.1367759329215424, 0.213749996851877, 0.23573984946527007, 0.1526167551860403, 0.13499546295062392, 0.19845716389598875, 0.2737735499891375, 0.21825946742799315, 0.14187803195454102, 0.17285267941367818, 0.09128709291752768, 0.10999438818457405, 0.13814162116372328, 0.20310383337967816]
+2017-02-23 21:18:23,898 - INFO - Best scénario found : Ca_va with cosine=1.0
+2017-02-23 21:18:23,899 - DEBUG - Running scenario : Ca_va
+2017-02-23 21:18:23,901 - INFO - Running random mqtt action :  
+2017-02-23 21:18:23,910 - DEBUG - Detector stopped
+2017-02-23 21:18:23,911 - DEBUG - Check plugins...
+2017-02-23 21:18:24,094 - DEBUG - Detector start
+2017-02-23 21:21:54,077 - INFO - Keyword 1 detected at time: 2017-02-23 21:21:54
+2017-02-23 21:21:54,078 - INFO - maison : I listen ...
+2017-02-23 21:21:54,079 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-02-23 21:21:54,248 - INFO - Calibration started ...
+2017-02-23 21:21:55,210 - INFO - energy_threshold is changed from 680 to 227
+2017-02-23 21:22:02,759 - INFO - Audio captured
+2017-02-23 21:22:02,761 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-02-23 21:22:04,586 - INFO - Text found with Google API: comment vas-tu ce matin dans lequel il fait si beau
+2017-02-23 21:22:04,587 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : comment vas-tu ce matin dans lequel il fait si beau
+2017-02-23 21:22:04,594 - INFO - Running action :  
+2017-02-23 21:22:04,602 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-02-23 21:22:04,604 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-02-23 21:22:04,615 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-02-23 21:22:05,641 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-02-23 21:22:05,792 - DEBUG - [0.1138358572409463, 0.1951219512195122, 0.10507474640562214, 0.16920731707317074, 0.08515528423215002, 0.07429866676627987, 0.22851621587126228, 0.1138358572409463, 0.35805706444664637, 0.12509022738472833, 0.06177881108882178, 0.3286809962590703, 0.10507474640562214, 0.35805706444664637, 0.2004906422266735, 0.19102950902852614, 0.2636729753185524, 0.09069099252387605, 0.09016696346674323, 0.036827421400383635, 0.14483961252558689, 0.1130166376809108, 0.08580846402802882, 0.03620990313139672, 0.0, 0.011772040233700277, 0.3093824929479871, 0.5617712080944541, 0.22663333398641103, 0.4024390243902439, 0.20109461727016714, 0.21297919427756776, 0.16598638320126355, 0.3521341463414634, 0.31906106466124384, 0.33689024390243905, 0.19342256362090196, 0.3125929368050286, 0.04141182227806746, 0.2820121951219512, 0.2972171455712511, 0.19223113289258317, 0.1917516479698052, 0.1798780487804878, 0.32164634146341464, 0.083510246256614, 0.083510246256614, 0.10213414634146341, 0.07218924835453033, 0.06734536532003145, 0.14559143832107377, 0.12779965811081195, 0.238044670027521, 0.12934880143656355, 0.18909207797654656, 0.1559244819820756, 0.17705319539824202, 0.14462154613795353, 0.1565014470183342, 0.1842326011510738, 0.16384181515298052, 0.10510284845692229, 0.18597560975609756, 0.08265304984451463, 0.0756632820417043, 0.12437629445137638, 0.16646500062684477]
+2017-02-23 21:22:05,796 - INFO - Best scénario found : Ca_va with cosine=0.561771208094
+2017-02-23 21:22:05,797 - DEBUG - Running scenario : Ca_va
+2017-02-23 21:22:05,799 - INFO - Running random mqtt action :  
+2017-02-23 21:22:05,808 - DEBUG - Detector stopped
+2017-02-23 21:22:05,809 - DEBUG - Check plugins...
+2017-02-23 21:22:05,987 - DEBUG - Detector start
+2017-02-23 21:30:01,360 - INFO - installation interrupted by signal.
+2017-02-23 21:30:01,361 - DEBUG - Detector stopped
+2017-04-04 21:34:45,106 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-04-04 21:34:45,129 - INFO - FSTA.main.py start
+2017-04-04 21:34:47,351 - DEBUG - Check plugins...
+2017-04-04 21:34:47,375 - INFO - Load the plugin exemple.group ...
+2017-04-04 21:34:47,393 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,394 - INFO - Load the plugin maison.group ...
+2017-04-04 21:34:47,408 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,411 - INFO - Load the plugin TV.scenario ...
+2017-04-04 21:34:47,417 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,418 - INFO - Load the plugin cava.scenario ...
+2017-04-04 21:34:47,423 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,426 - INFO - Load the plugin chuck.scenario ...
+2017-04-04 21:34:47,431 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,433 - INFO - Load the plugin date.scenario ...
+2017-04-04 21:34:47,438 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,441 - INFO - Load the plugin exemple.scenario ...
+2017-04-04 21:34:47,459 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,460 - INFO - Load the plugin fuel.scenario ...
+2017-04-04 21:34:47,466 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,470 - INFO - Load the plugin kodi.scenario ...
+2017-04-04 21:34:47,475 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,477 - INFO - Load the plugin lumiere.scenario ...
+2017-04-04 21:34:47,483 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,485 - INFO - Load the plugin musique.scenario ...
+2017-04-04 21:34:47,493 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,497 - INFO - Load the plugin meteo.scenario ...
+2017-04-04 21:34:47,502 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,504 - INFO - Load the plugin stop.scenario ...
+2017-04-04 21:34:47,528 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,531 - INFO - Load the plugin ta_gueule.scenario ...
+2017-04-04 21:34:47,536 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,538 - INFO - Load the plugin volume.scenario ...
+2017-04-04 21:34:47,544 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,546 - INFO - Load the plugin volume_denon.scenario ...
+2017-04-04 21:34:47,550 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,552 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-04-04 21:34:47,558 - INFO - 	plugin loaded.
+2017-04-04 21:34:47,762 - DEBUG - Detector start
+2017-04-04 21:34:54,713 - INFO - Keyword 1 detected at time: 2017-04-04 21:34:54
+2017-04-04 21:34:54,715 - INFO - maison : I listen ...
+2017-04-04 21:34:54,716 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-04 21:34:54,939 - INFO - Calibration started ...
+2017-04-04 21:34:55,901 - INFO - energy_threshold is changed from 300 to 200
+2017-04-04 21:34:59,457 - INFO - Audio captured
+2017-04-04 21:34:59,460 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-04-04 21:35:00,022 - INFO - Text found with Google API: ça va
+2017-04-04 21:35:00,024 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-04-04 21:35:00,025 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-04-04 21:35:00,051 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-04-04 21:35:00,409 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-04-04 21:35:00,461 - DEBUG - [0.23501260410566568, 0.19422345390623635, 0.23694929182983218, 0.17531674600385935, 0.19914203215608667, 0.18002449671633372, 0.2600890120622171, 0.23501260410566568, 0.4237232182886086, 0.21602734585576602, 0.14467284665112365, 0.40675258402903675, 0.23694929182983218, 0.4237232182886086, 0.13125987524635255, 0.38270363045242356, 0.38956352546013817, 0.22329496034871152, 0.13979035613822094, 0.033974119062513915, 0.24016267404343125, 0.2147097186281178, 0.11489227137092096, 0.10326994983867543, 0.0, 0.053093187320189895, 1.0, 0.4524374126916349, 0.6220962160689508, 0.3987596575774056, 0.31562162396695315, 0.34280834730866183, 0.32261815748174655, 0.29906974318305424, 0.3525189061584985, 0.28875699341812133, 0.3005599367458896, 0.42051774847442575, 0.05188106719705753, 0.35235228363520754, 0.3819652417246359, 0.3659807004343569, 0.3359221590204125, 0.22688049482852388, 0.49157440546180176, 0.115479347224433, 0.115479347224433, 0.13578453857161657, 0.18410852713178294, 0.18150015529760147, 0.22770347954757025, 0.19933501945604795, 0.4078314066157804, 0.20175128973050482, 0.2912088528836935, 0.2689879403857993, 0.19001147836742224, 0.19775936861549345, 0.2727103762138521, 0.345630278767214, 0.243073843048801, 0.14426857777671348, 0.1684415794939041, 0.08472142796255815, 0.12468737823504164, 0.21479440352337512, 0.27071226053633085]
+2017-04-04 21:35:00,465 - INFO - Best scénario found : Ca_va with cosine=1.0
+2017-04-04 21:35:00,466 - INFO - Running action :  
+2017-04-04 21:35:00,469 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : {"text": "\u00e7a va", "scenario": "Ca_va"}
+2017-04-04 21:35:00,472 - DEBUG - Running scenario : Ca_va
+2017-04-04 21:35:00,474 - INFO - Running random mqtt action :  
+2017-04-04 21:35:00,478 - DEBUG - Detector stopped
+2017-04-04 21:35:00,479 - DEBUG - Check plugins...
+2017-04-04 21:35:00,890 - DEBUG - Detector start
+2017-04-04 21:37:02,333 - INFO - installation interrupted by signal.
+2017-04-04 21:37:02,335 - DEBUG - Detector stopped
+2017-04-04 21:46:36,305 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-04-04 21:46:36,307 - INFO - FSTA.main.py start
+2017-04-04 21:46:38,649 - DEBUG - Check plugins...
+2017-04-04 21:46:38,654 - INFO - Load the plugin exemple.group ...
+2017-04-04 21:46:38,658 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,659 - INFO - Load the plugin maison.group ...
+2017-04-04 21:46:38,663 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,665 - INFO - Load the plugin TV.scenario ...
+2017-04-04 21:46:38,670 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,673 - INFO - Load the plugin cava.scenario ...
+2017-04-04 21:46:38,678 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,679 - INFO - Load the plugin chuck.scenario ...
+2017-04-04 21:46:38,684 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,685 - INFO - Load the plugin date.scenario ...
+2017-04-04 21:46:38,690 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,691 - INFO - Load the plugin exemple.scenario ...
+2017-04-04 21:46:38,695 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,696 - INFO - Load the plugin fuel.scenario ...
+2017-04-04 21:46:38,701 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,704 - INFO - Load the plugin kodi.scenario ...
+2017-04-04 21:46:38,708 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,710 - INFO - Load the plugin lumiere.scenario ...
+2017-04-04 21:46:38,715 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,716 - INFO - Load the plugin musique.scenario ...
+2017-04-04 21:46:38,723 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,724 - INFO - Load the plugin meteo.scenario ...
+2017-04-04 21:46:38,729 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,732 - INFO - Load the plugin stop.scenario ...
+2017-04-04 21:46:38,738 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,740 - INFO - Load the plugin ta_gueule.scenario ...
+2017-04-04 21:46:38,744 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,746 - INFO - Load the plugin volume.scenario ...
+2017-04-04 21:46:38,751 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,753 - INFO - Load the plugin volume_denon.scenario ...
+2017-04-04 21:46:38,758 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,762 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-04-04 21:46:38,767 - INFO - 	plugin loaded.
+2017-04-04 21:46:38,921 - DEBUG - Detector start
+2017-04-04 21:47:29,793 - INFO - Keyword 1 detected at time: 2017-04-04 21:47:29
+2017-04-04 21:47:29,795 - INFO - maison : I listen ...
+2017-04-04 21:47:29,797 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-04 21:47:30,012 - INFO - Calibration started ...
+2017-04-04 21:47:30,973 - INFO - energy_threshold is changed from 300 to 200
+2017-04-04 21:47:37,028 - INFO - Audio captured
+2017-04-04 21:47:37,030 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-04-04 21:47:38,257 - INFO - Text found with Google API: éteins la lumière
+2017-04-04 21:47:38,260 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-04-04 21:47:38,262 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-04-04 21:47:38,287 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-04-04 21:47:38,782 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-04-04 21:47:38,837 - DEBUG - [0.2285089350849005, 0.1618795669403618, 0.2889759946395693, 0.16613955554405554, 0.3062773806795861, 0.2628526774728476, 0.2319445458675922, 0.2285089350849005, 0.2140943264716192, 0.33187140253349473, 0.08632206622970622, 0.21506723302108283, 0.2889759946395693, 0.2140943264716192, 0.1596501419608102, 0.25023843591494954, 0.2286769589047669, 0.3542998128850478, 0.20473075621333142, 0.07017011142797998, 1.0, 0.709537979923259, 0.07118951460795896, 0.3125, 0.0, 0.03289758474798845, 0.24016267404343125, 0.24439821893375047, 0.14850701853560508, 0.12353966950711821, 0.11464177193299967, 0.135856656995526, 0.20100498865570696, 0.20660944727914599, 0.291236878049383, 0.19595947576991166, 0.7449314301903235, 0.20483414440254896, 0.03214653124210249, 0.05750984614986537, 0.14512978516677424, 0.23557540879272168, 0.25021564403146873, 0.18743949856252418, 0.20021946437360538, 0.09687213071850237, 0.09687213071850237, 0.0745498005646403, 0.34583425062254103, 0.3419734626197106, 0.14655814911953044, 0.10714285714285714, 0.19006523813018622, 0.08434347122457898, 0.23628882852046407, 0.1982613153794008, 0.08047698952009502, 0.08384014768473214, 0.14136614586774995, 0.22281223150029167, 0.09639253854237598, 0.04469582637089474, 0.07880978916833403, 0.0104990131391452, 0.03253000243161777, 0.0791945516022682, 0.10958925093990117]
+2017-04-04 21:47:38,841 - INFO - Best scénario found : LUMIERE OFF with cosine=1.0
+2017-04-04 21:47:38,842 - INFO - Running action :  
+2017-04-04 21:47:38,846 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : {"text": "\u00e9teins la lumi\u00e8re", "scenario": "LUMIERE OFF"}
+2017-04-04 21:47:38,850 - DEBUG - Running scenario : LUMIERE OFF
+2017-04-04 21:47:38,852 - INFO - Running action : OFF
+2017-04-04 21:47:38,857 - DEBUG - Detector stopped
+2017-04-04 21:47:38,859 - DEBUG - Check plugins...
+2017-04-04 21:47:39,036 - DEBUG - Detector start
+2017-04-04 21:48:07,843 - INFO - installation interrupted by signal.
+2017-04-04 21:48:07,844 - DEBUG - Detector stopped
+2017-04-04 21:48:14,212 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-04-04 21:48:14,214 - INFO - FSTA.main.py start
+2017-04-04 21:48:16,347 - DEBUG - Check plugins...
+2017-04-04 21:48:16,351 - INFO - Load the plugin exemple.group ...
+2017-04-04 21:48:16,354 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,355 - INFO - Load the plugin maison.group ...
+2017-04-04 21:48:16,366 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,368 - INFO - Load the plugin TV.scenario ...
+2017-04-04 21:48:16,374 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,375 - INFO - Load the plugin cava.scenario ...
+2017-04-04 21:48:16,380 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,381 - INFO - Load the plugin chuck.scenario ...
+2017-04-04 21:48:16,390 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,391 - INFO - Load the plugin date.scenario ...
+2017-04-04 21:48:16,396 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,399 - INFO - Load the plugin exemple.scenario ...
+2017-04-04 21:48:16,403 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,404 - INFO - Load the plugin fuel.scenario ...
+2017-04-04 21:48:16,409 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,410 - INFO - Load the plugin kodi.scenario ...
+2017-04-04 21:48:16,414 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,415 - INFO - Load the plugin lumiere.scenario ...
+2017-04-04 21:48:16,420 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,421 - INFO - Load the plugin musique.scenario ...
+2017-04-04 21:48:16,427 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,430 - INFO - Load the plugin meteo.scenario ...
+2017-04-04 21:48:16,434 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,435 - INFO - Load the plugin stop.scenario ...
+2017-04-04 21:48:16,440 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,441 - INFO - Load the plugin ta_gueule.scenario ...
+2017-04-04 21:48:16,446 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,447 - INFO - Load the plugin volume.scenario ...
+2017-04-04 21:48:16,452 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,453 - INFO - Load the plugin volume_denon.scenario ...
+2017-04-04 21:48:16,457 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,460 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-04-04 21:48:16,465 - INFO - 	plugin loaded.
+2017-04-04 21:48:16,619 - DEBUG - Detector start
+2017-04-04 21:50:36,978 - INFO - Keyword 1 detected at time: 2017-04-04 21:50:36
+2017-04-04 21:50:36,979 - INFO - maison : I listen ...
+2017-04-04 21:50:36,980 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-04 21:50:37,191 - INFO - Calibration started ...
+2017-04-04 21:50:38,153 - INFO - energy_threshold is changed from 300 to 200
+2017-04-04 21:50:41,070 - INFO - Audio captured
+2017-04-04 21:50:41,072 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-04-04 21:50:41,566 - INFO - Text found with Google API: ça va
+2017-04-04 21:50:41,568 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-04-04 21:50:41,569 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-04-04 21:50:41,594 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-04-04 21:50:41,926 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 19189
+2017-04-04 21:50:41,977 - DEBUG - [0.23501260410566568, 0.19422345390623635, 0.23694929182983218, 0.17531674600385935, 0.19914203215608667, 0.18002449671633372, 0.2600890120622171, 0.23501260410566568, 0.4237232182886086, 0.21602734585576602, 0.14467284665112365, 0.40675258402903675, 0.23694929182983218, 0.4237232182886086, 0.13125987524635255, 0.38270363045242356, 0.38956352546013817, 0.22329496034871152, 0.13979035613822094, 0.033974119062513915, 0.24016267404343125, 0.2147097186281178, 0.11489227137092096, 0.10326994983867543, 0.0, 0.053093187320189895, 1.0, 0.4524374126916349, 0.6220962160689508, 0.3987596575774056, 0.31562162396695315, 0.34280834730866183, 0.32261815748174655, 0.29906974318305424, 0.3525189061584985, 0.28875699341812133, 0.3005599367458896, 0.42051774847442575, 0.05188106719705753, 0.35235228363520754, 0.3819652417246359, 0.3659807004343569, 0.3359221590204125, 0.22688049482852388, 0.49157440546180176, 0.115479347224433, 0.115479347224433, 0.13578453857161657, 0.18410852713178294, 0.18150015529760147, 0.22770347954757025, 0.19933501945604795, 0.4078314066157804, 0.20175128973050482, 0.2912088528836935, 0.2689879403857993, 0.19001147836742224, 0.19775936861549345, 0.2727103762138521, 0.345630278767214, 0.243073843048801, 0.14426857777671348, 0.1684415794939041, 0.08472142796255815, 0.12468737823504164, 0.21479440352337512, 0.27071226053633085]
+2017-04-04 21:50:41,981 - INFO - Best scénario found : Ca_va with cosine=1.0
+2017-04-04 21:50:41,982 - INFO - Running action :  
+2017-04-04 21:50:41,986 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : {"text": "\u00e7a va", "scenario": "Ca_va"}
+2017-04-04 21:50:41,991 - DEBUG - Running scenario : Ca_va
+2017-04-04 21:50:41,993 - INFO - Running random mqtt action :  
+2017-04-04 21:50:42,008 - DEBUG - Detector stopped
+2017-04-04 21:50:42,009 - DEBUG - Check plugins...
+2017-04-04 21:50:42,455 - DEBUG - Detector start
+2017-04-04 21:56:10,137 - INFO - Keyword 1 detected at time: 2017-04-04 21:56:10
+2017-04-04 21:56:10,139 - INFO - maison : I listen ...
+2017-04-04 21:56:10,139 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-04 21:56:10,325 - INFO - Calibration started ...
+2017-04-04 21:56:11,287 - INFO - energy_threshold is changed from 92 to 200
+2017-04-04 21:56:17,437 - INFO - Audio captured
+2017-04-04 21:56:17,439 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-04-04 21:56:18,632 - INFO - Text found with Google API: donne-moi la météo s'il te plaît
+2017-04-04 21:56:18,634 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-04-04 21:56:18,636 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-04-04 21:56:18,648 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-04-04 21:56:19,160 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-04-04 21:56:19,211 - DEBUG - [0.07856277471558266, 0.1676829268292683, 0.07171768405463098, 0.16463414634146342, 0.0946169824801667, 0.07429866676627987, 0.09916741443469873, 0.07856277471558266, 0.15806122664761865, 0.10133891838762801, 0.06177881108882178, 0.16193551523007854, 0.07171768405463098, 0.15806122664761865, 0.5109277656744261, 0.13303840807343786, 0.1345641391280888, 0.08698931935963622, 0.06950370100561458, 0.026783579200279007, 0.08945976067756836, 0.07276413658907956, 0.061674833520145717, 0.05750984614986537, 0.0, 0.011772040233700277, 0.18562949576879226, 0.17285267941367818, 0.15004689698410661, 0.2301829268292683, 0.1994858603320058, 0.1975459193299179, 0.18811790096143202, 0.2149390243902439, 0.1972085977554422, 0.2728658536585366, 0.11865417768341045, 0.17893250865391291, 0.0460131358645194, 0.19207317073170732, 0.2412891880712845, 0.15283950729984072, 0.14262519270481377, 0.11432926829268293, 0.18597560975609756, 0.06460226597209763, 0.06460226597209763, 0.06554878048780488, 0.08765837300192968, 0.06570279543417704, 0.16281193102571692, 0.1810495156569836, 0.19476382093160807, 0.181088322011189, 0.19677874781299154, 0.1621614612613586, 0.1429224589359303, 0.116928058579622, 0.17072885129272822, 0.19042529362674013, 0.08838834764831843, 0.06854533595016671, 0.15396341463414634, 0.05259739535560022, 0.05238227218271837, 0.16688464825121388, 0.1760687506630089]
+2017-04-04 21:56:19,215 - INFO - Best scénario found : meteo with cosine=0.510927765674
+2017-04-04 21:56:19,216 - INFO - Running action :  
+2017-04-04 21:56:19,220 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : {"text": "donne-moi la m\u00e9t\u00e9o s'il te pla\u00eet", "scenario": "meteo"}
+2017-04-04 21:56:19,224 - DEBUG - Running scenario : meteo
+2017-04-04 21:56:19,226 - INFO - Running action :  
+2017-04-04 21:56:19,233 - DEBUG - Detector stopped
+2017-04-04 21:56:19,234 - DEBUG - Check plugins...
+2017-04-04 21:56:19,390 - DEBUG - Detector start
+2017-04-04 21:57:04,842 - INFO - installation interrupted by signal.
+2017-04-04 21:57:04,843 - DEBUG - Detector stopped
+2017-04-12 19:44:57,649 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-04-12 19:44:57,676 - INFO - FSTA.main.py start
+2017-04-12 19:45:00,003 - DEBUG - Check plugins...
+2017-04-12 19:45:00,033 - INFO - Load the plugin exemple.group ...
+2017-04-12 19:45:00,050 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,054 - INFO - Load the plugin maison.group ...
+2017-04-12 19:45:00,065 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,067 - INFO - Load the plugin TV.scenario ...
+2017-04-12 19:45:00,073 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,075 - INFO - Load the plugin cava.scenario ...
+2017-04-12 19:45:00,080 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,084 - INFO - Load the plugin chuck.scenario ...
+2017-04-12 19:45:00,089 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,090 - INFO - Load the plugin date.scenario ...
+2017-04-12 19:45:00,096 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,097 - INFO - Load the plugin exemple.scenario ...
+2017-04-12 19:45:00,102 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,103 - INFO - Load the plugin fuel.scenario ...
+2017-04-12 19:45:00,108 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,111 - INFO - Load the plugin kodi.scenario ...
+2017-04-12 19:45:00,116 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,118 - INFO - Load the plugin lumiere.scenario ...
+2017-04-12 19:45:00,123 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,125 - INFO - Load the plugin musique.scenario ...
+2017-04-12 19:45:00,133 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,134 - INFO - Load the plugin meteo.scenario ...
+2017-04-12 19:45:00,140 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,142 - INFO - Load the plugin stop.scenario ...
+2017-04-12 19:45:00,151 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,153 - INFO - Load the plugin ta_gueule.scenario ...
+2017-04-12 19:45:00,159 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,160 - INFO - Load the plugin volume.scenario ...
+2017-04-12 19:45:00,168 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,169 - INFO - Load the plugin volume_denon.scenario ...
+2017-04-12 19:45:00,175 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,176 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-04-12 19:45:00,182 - INFO - 	plugin loaded.
+2017-04-12 19:45:00,355 - DEBUG - Detector start
+2017-04-12 19:45:09,794 - INFO - Keyword 1 detected at time: 2017-04-12 19:45:09
+2017-04-12 19:45:09,796 - INFO - maison : I listen ...
+2017-04-12 19:45:09,798 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-12 19:45:10,049 - INFO - Calibration started ...
+2017-04-12 19:45:11,170 - INFO - energy_threshold is changed from 300 to 1116
+2017-04-12 19:45:15,123 - INFO - Audio captured
+2017-04-12 19:45:15,126 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-04-12 19:45:15,753 - INFO - Text found with Google API: quelle heure est-il
+2017-04-12 19:45:15,756 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-04-12 19:45:15,759 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-04-12 19:45:15,786 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-04-12 19:45:16,233 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-04-12 19:45:16,289 - DEBUG - [0.15391890556522317, 0.19359756097560976, 0.1701210179900549, 0.1600609756097561, 0.16084887021628338, 0.1375315746524755, 0.1897115754402932, 0.15391890556522317, 0.23870470963109755, 0.13775759218318182, 0.087916000395631, 0.24691157767754549, 0.1701210179900549, 0.23870470963109755, 0.21558133572760593, 0.27460491922850633, 0.24912550081821844, 0.18693449479411187, 0.11270870433342904, 0.04352331620045339, 0.20660944727914599, 0.1919734667456567, 0.09385300753065652, 0.09371974928126209, 0.0, 0.04708816093480111, 0.29906974318305424, 0.28191448904373706, 0.19537356378138881, 0.2530487804878049, 0.19787710339384446, 0.16050605945555832, 0.16756720589841845, 1.0, 0.7487513426974919, 0.7042682926829268, 0.2096765605638349, 0.29965805666137224, 0.0460131358645194, 0.21341463414634146, 0.24288712971414067, 0.2851953692914554, 0.45323116792863044, 0.39176829268292684, 0.3048780487804878, 0.08508591128032371, 0.08508591128032371, 0.12042682926829268, 0.17531674600385935, 0.16261441869958815, 0.14559143832107377, 0.09797973788495583, 0.21022126703729127, 0.09916741443469873, 0.14912139482703266, 0.20737956103616054, 0.181319537456031, 0.18000766912915492, 0.1565014470183342, 0.17803990867540742, 0.13366042815111567, 0.09596347033023339, 0.11890243902439024, 0.05259739535560022, 0.05820252464746485, 0.12909944487358055, 0.16006250060273536]
+2017-04-12 19:45:16,293 - INFO - Best scénario found : Heure with cosine=1.0
+2017-04-12 19:45:16,295 - INFO - Running action :  
+2017-04-12 19:45:16,300 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : {"text": "quelle heure est-il", "scenario": "Heure"}
+2017-04-12 19:45:16,304 - DEBUG - Running scenario : Heure
+2017-04-12 19:45:16,308 - INFO - Running action :  
+2017-04-12 19:45:16,314 - DEBUG - Detector stopped
+2017-04-12 19:45:16,316 - DEBUG - Check plugins...
+2017-04-12 19:45:16,521 - DEBUG - Detector start
+2017-04-12 19:54:42,880 - INFO - installation interrupted by signal.
+2017-04-12 19:54:42,881 - DEBUG - Detector stopped
+2017-04-12 19:54:45,212 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-04-12 19:54:45,213 - INFO - FSTA.main.py start
+2017-04-12 19:54:47,648 - DEBUG - Check plugins...
+2017-04-12 19:54:47,653 - INFO - Load the plugin exemple.group ...
+2017-04-12 19:54:47,657 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,659 - INFO - Load the plugin maison.group ...
+2017-04-12 19:54:47,664 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,665 - INFO - Load the plugin TV.scenario ...
+2017-04-12 19:54:47,671 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,675 - INFO - Load the plugin cava.scenario ...
+2017-04-12 19:54:47,679 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,680 - INFO - Load the plugin chuck.scenario ...
+2017-04-12 19:54:47,684 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,685 - INFO - Load the plugin date.scenario ...
+2017-04-12 19:54:47,689 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,690 - INFO - Load the plugin exemple.scenario ...
+2017-04-12 19:54:47,694 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,695 - INFO - Load the plugin fuel.scenario ...
+2017-04-12 19:54:47,699 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,702 - INFO - Load the plugin kodi.scenario ...
+2017-04-12 19:54:47,705 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,706 - INFO - Load the plugin lumiere.scenario ...
+2017-04-12 19:54:47,711 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,712 - INFO - Load the plugin musique.scenario ...
+2017-04-12 19:54:47,719 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,720 - INFO - Load the plugin meteo.scenario ...
+2017-04-12 19:54:47,723 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,724 - INFO - Load the plugin stop.scenario ...
+2017-04-12 19:54:47,732 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,733 - INFO - Load the plugin ta_gueule.scenario ...
+2017-04-12 19:54:47,737 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,738 - INFO - Load the plugin volume.scenario ...
+2017-04-12 19:54:47,743 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,744 - INFO - Load the plugin volume_denon.scenario ...
+2017-04-12 19:54:47,749 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,750 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-04-12 19:54:47,755 - INFO - 	plugin loaded.
+2017-04-12 19:54:47,911 - DEBUG - Detector start
+2017-04-12 19:55:14,248 - INFO - installation interrupted by signal.
+2017-04-12 19:55:14,249 - DEBUG - Detector stopped
+2017-04-12 20:05:37,275 - INFO - my_logging logger is started. Console : DEBUG. File (main.log) : DEBUG
+2017-04-12 20:05:37,277 - INFO - FSTA.main.py start
+2017-04-12 20:05:39,430 - DEBUG - Check plugins...
+2017-04-12 20:05:39,435 - INFO - Load the plugin exemple.group ...
+2017-04-12 20:05:39,439 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,441 - INFO - Load the plugin maison.group ...
+2017-04-12 20:05:39,445 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,447 - INFO - Load the plugin TV.scenario ...
+2017-04-12 20:05:39,453 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,457 - INFO - Load the plugin cava.scenario ...
+2017-04-12 20:05:39,462 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,464 - INFO - Load the plugin chuck.scenario ...
+2017-04-12 20:05:39,468 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,470 - INFO - Load the plugin date.scenario ...
+2017-04-12 20:05:39,475 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,477 - INFO - Load the plugin exemple.scenario ...
+2017-04-12 20:05:39,481 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,484 - INFO - Load the plugin fuel.scenario ...
+2017-04-12 20:05:39,489 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,490 - INFO - Load the plugin kodi.scenario ...
+2017-04-12 20:05:39,495 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,497 - INFO - Load the plugin lumiere.scenario ...
+2017-04-12 20:05:39,502 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,503 - INFO - Load the plugin musique.scenario ...
+2017-04-12 20:05:39,511 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,514 - INFO - Load the plugin meteo.scenario ...
+2017-04-12 20:05:39,519 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,521 - INFO - Load the plugin stop.scenario ...
+2017-04-12 20:05:39,527 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,528 - INFO - Load the plugin ta_gueule.scenario ...
+2017-04-12 20:05:39,534 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,535 - INFO - Load the plugin volume.scenario ...
+2017-04-12 20:05:39,543 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,545 - INFO - Load the plugin volume_denon.scenario ...
+2017-04-12 20:05:39,550 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,551 - INFO - Load the plugin chauffage_epinal.scenario ...
+2017-04-12 20:05:39,557 - INFO - 	plugin loaded.
+2017-04-12 20:05:39,744 - DEBUG - Detector start
+2017-04-12 20:05:45,324 - INFO - Keyword 1 detected at time: 2017-04-12 20:05:45
+2017-04-12 20:05:45,326 - INFO - maison : I listen ...
+2017-04-12 20:05:45,327 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-12 20:05:45,544 - INFO - Calibration started ...
+2017-04-12 20:05:46,569 - INFO - energy_threshold is changed from 300 to 861
+2017-04-12 20:05:52,190 - WARNING - Audio capture error : listening timed out
+2017-04-12 20:05:52,192 - INFO - None text captured.
+2017-04-12 20:05:52,695 - DEBUG - Detector stopped
+2017-04-12 20:05:52,696 - DEBUG - Check plugins...
+2017-04-12 20:05:52,851 - DEBUG - Detector start
+2017-04-12 20:06:07,764 - INFO - Keyword 1 detected at time: 2017-04-12 20:06:07
+2017-04-12 20:06:07,765 - INFO - maison : I listen ...
+2017-04-12 20:06:07,766 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-12 20:06:07,984 - INFO - Calibration started ...
+2017-04-12 20:06:09,024 - INFO - energy_threshold is changed from 988 to 986
+2017-04-12 20:06:14,915 - INFO - Audio captured
+2017-04-12 20:06:14,918 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-04-12 20:06:15,261 - WARNING - Google Speech Recognition could not understand audio
+2017-04-12 20:06:15,264 - INFO - None text captured.
+2017-04-12 20:06:15,767 - DEBUG - Detector stopped
+2017-04-12 20:06:15,768 - DEBUG - Check plugins...
+2017-04-12 20:06:16,010 - DEBUG - Detector start
+2017-04-12 20:08:24,222 - INFO - Keyword 1 detected at time: 2017-04-12 20:08:24
+2017-04-12 20:08:24,223 - INFO - maison : I listen ...
+2017-04-12 20:08:24,224 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-12 20:08:24,452 - INFO - Calibration started ...
+2017-04-12 20:08:25,503 - INFO - energy_threshold is changed from 967 to 870
+2017-04-12 20:08:28,566 - INFO - Audio captured
+2017-04-12 20:08:28,569 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-04-12 20:08:29,146 - INFO - Text found with Google API: quelle heure est-il
+2017-04-12 20:08:29,149 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-04-12 20:08:29,151 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-04-12 20:08:29,181 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-04-12 20:08:29,713 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-04-12 20:08:29,764 - DEBUG - [0.15391890556522317, 0.19359756097560976, 0.1701210179900549, 0.1600609756097561, 0.16084887021628338, 0.1375315746524755, 0.1897115754402932, 0.15391890556522317, 0.23870470963109755, 0.13775759218318182, 0.087916000395631, 0.24691157767754549, 0.1701210179900549, 0.23870470963109755, 0.21558133572760593, 0.27460491922850633, 0.24912550081821844, 0.18693449479411187, 0.11270870433342904, 0.04352331620045339, 0.20660944727914599, 0.1919734667456567, 0.09385300753065652, 0.09371974928126209, 0.0, 0.04708816093480111, 0.29906974318305424, 0.28191448904373706, 0.19537356378138881, 0.2530487804878049, 0.19787710339384446, 0.16050605945555832, 0.16756720589841845, 1.0, 0.7487513426974919, 0.7042682926829268, 0.2096765605638349, 0.29965805666137224, 0.0460131358645194, 0.21341463414634146, 0.24288712971414067, 0.2851953692914554, 0.45323116792863044, 0.39176829268292684, 0.3048780487804878, 0.08508591128032371, 0.08508591128032371, 0.12042682926829268, 0.17531674600385935, 0.16261441869958815, 0.14559143832107377, 0.09797973788495583, 0.21022126703729127, 0.09916741443469873, 0.14912139482703266, 0.20737956103616054, 0.181319537456031, 0.18000766912915492, 0.1565014470183342, 0.17803990867540742, 0.13366042815111567, 0.09596347033023339, 0.11890243902439024, 0.05259739535560022, 0.05820252464746485, 0.12909944487358055, 0.16006250060273536]
+2017-04-12 20:08:29,769 - INFO - Best scénario found : Heure with cosine=1.0
+2017-04-12 20:08:29,770 - INFO - Running action :  
+2017-04-12 20:08:29,774 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : {"text": "quelle heure est-il", "scenario": "Heure"}
+2017-04-12 20:08:29,778 - DEBUG - Running scenario : Heure
+2017-04-12 20:08:29,780 - INFO - Running action :  
+2017-04-12 20:08:29,785 - DEBUG - Detector stopped
+2017-04-12 20:08:29,787 - DEBUG - Check plugins...
+2017-04-12 20:08:30,186 - DEBUG - Detector start
+2017-04-12 20:09:05,048 - INFO - Keyword 1 detected at time: 2017-04-12 20:09:05
+2017-04-12 20:09:05,049 - INFO - maison : I listen ...
+2017-04-12 20:09:05,050 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-12 20:09:05,227 - INFO - Calibration started ...
+2017-04-12 20:09:06,256 - INFO - energy_threshold is changed from 871 to 915
+2017-04-12 20:09:11,867 - WARNING - Audio capture error : listening timed out
+2017-04-12 20:09:11,870 - INFO - None text captured.
+2017-04-12 20:09:12,373 - DEBUG - Detector stopped
+2017-04-12 20:09:12,374 - DEBUG - Check plugins...
+2017-04-12 20:09:12,529 - DEBUG - Detector start
+2017-04-12 20:10:32,124 - INFO - Keyword 1 detected at time: 2017-04-12 20:10:32
+2017-04-12 20:10:32,126 - INFO - maison : I listen ...
+2017-04-12 20:10:32,127 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before , payload : maison
+2017-04-12 20:10:32,321 - INFO - Calibration started ...
+2017-04-12 20:10:33,338 - INFO - energy_threshold is changed from 929 to 262
+2017-04-12 20:10:36,978 - INFO - Audio captured
+2017-04-12 20:10:36,980 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/before_s2t , payload : maison
+2017-04-12 20:10:37,603 - INFO - Text found with Google API: allume la musique
+2017-04-12 20:10:37,605 - DEBUG - (u'baisse le volume de la musique', u'moins fort la musique', u'augmente le volume de la musique', u'plus fort la musique', u'Baisse la temp\xe9rature', u'Baisse le chauffage', u'Parle-moins fort', u'Baisse le volume', u'Parler moins fort', u'Allume le chauffage', u'red\xe9marre', u'Parle plus fort', u'Augmente le volume', u'Parler plus fort', u'm\xe9t\xe9o', u'quel temps fait-il', u'Combien de fioul', u'Quantit\xe9 de fioul', u'Cuve fioul', u'fioul', u'\xe9teins la lumi\xe8re', u'coupe la lumi\xe8re', u'reboot Kodi', u'Eteins le chauffage', u'\xe9teins-toi', u'shutdown', u'\xe7a va', u'comment vas-tu', u'\xe7a boom', u'comment tu fais', u'musique pause', u'musique reprend', u'musique continue', u'quelle heure est-il', u'il est quelle heure', u'tu \xe0 quelle heure', u'Allume la lumi\xe8re', u'Eclaire nous', u'Chuck Norris', u'Fais nous une blague de Chuck', u"As tu de l'humour", u'quel jour sommes-nous', u'Quelle date sommes-nous', u'quelle est la date', u'Quand sommes nous', u'France Inter', u'Ecoutons France Inter', u'mettre France Inter', u'Augmente la temp\xe9rature', u'Augmente le chauffage', u'stop la musique', u'\xe9teins la musique', u'arr\xeate la musique', u'musique', u'allume la musique', u'musique al\xe9atoire', u'\xe9teins la t\xe9l\xe9', u'coupe la t\xe9l\xe9', u'musique suivante', u'change la musique', u"t'as gueule", u'tais-toi', u'ferme ta gueule', u'encul\xe9', u'connard', u'musique play', u'musique joue')
+2017-04-12 20:10:37,607 - DEBUG - ('VOLUME -', 'VOLUME -', 'VOLUME +', 'VOLUME +', 'CHAUFFAGE MOINS', 'CHAUFFAGE MOINS', 'Volume-', 'Volume-', 'Volume-', 'CHAUFFAGE', 'Reboot', 'Volume+', 'Volume+', 'Volume+', 'meteo', 'meteo', 'Fuel', 'Fuel', 'Fuel', 'Fuel', 'LUMIERE OFF', 'LUMIERE OFF', 'REBOOT KODI', 'CHAUFFAGE BAS', 'Stop', 'Stop', 'Ca_va', 'Ca_va', 'Ca_va', 'Ca_va', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'MUSIQUE PAUSE', 'Heure', 'Heure', 'Heure', 'LUMIERE ON', 'LUMIERE ON', 'Chuck', 'Chuck', 'Chuck', 'date', 'date', 'date', 'date', 'FRANCE INTER', 'FRANCE INTER', 'FRANCE INTER', 'CHAUFFAGE PLUS', 'CHAUFFAGE PLUS', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE OFF', 'MUSIQUE ON', 'MUSIQUE ON', 'MUSIQUE ON', 'TV OFF', 'TV OFF', 'MUSIQUE NEXT', 'MUSIQUE NEXT', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'ta_gueule', 'MUSIQUE PLAY', 'MUSIQUE PLAY')
+2017-04-12 20:10:37,618 - INFO - Starting new HTTP connection (1): languages.cortical.io
+2017-04-12 20:10:38,046 - DEBUG - "POST /rest/compare/bulk?retina_name=fr_general HTTP/1.1" 200 None
+2017-04-12 20:10:38,098 - DEBUG - [0.1584597154407767, 0.4919468695324789, 0.16315545461567682, 0.4781108638268779, 0.1447209143504991, 0.13710512101176336, 0.13696946842552687, 0.1584597154407767, 0.20006745429667336, 0.5301593641994721, 0.08866250241171603, 0.19241536874951456, 0.16315545461567682, 0.20006745429667336, 0.11088004586828368, 0.19781186590285715, 0.16871648053150987, 0.14185796631153558, 0.10419357964132232, 0.03714012607528791, 0.23628882852046407, 0.1826742978049819, 0.07842422039333931, 0.12458865503806288, 0.0, 0.03561599279702235, 0.2912088528836935, 0.213749996851877, 0.2254051763825571, 0.2167640893877485, 0.5792028783222007, 0.5712105498396034, 0.5834938870965743, 0.14912139482703266, 0.19726617636504853, 0.1798680741728126, 0.5753595851384706, 0.18480007644713944, 0.051044220919056256, 0.19062941194383556, 0.2304459153056505, 0.22723330994419777, 0.21095981131658306, 0.15065872879432166, 0.2259880931914825, 0.08263029452516282, 0.08263029452516282, 0.07379203042987183, 0.14040426835463796, 0.1490865374101979, 0.5904682532065688, 0.7217549671170539, 0.6344599498474576, 0.7131108832313146, 1.0, 0.5739568411452615, 0.18070785265479541, 0.15050431216467766, 0.5563917120128536, 0.6135982823705802, 0.13262123133265302, 0.08295283206667203, 0.10146404184107377, 0.05304400418103682, 0.0645663997972124, 0.5541253412403659, 0.574660912045508]
+2017-04-12 20:10:38,102 - INFO - Best scénario found : MUSIQUE ON with cosine=1.0
+2017-04-12 20:10:38,103 - INFO - Running action :  
+2017-04-12 20:10:38,106 - DEBUG - MQTT SEND topic : T-HOME/SALON/LISTEN/maison/text , payload : {"text": "allume la musique", "scenario": "MUSIQUE ON"}
+2017-04-12 20:10:38,109 - DEBUG - Running scenario : MUSIQUE ON
+2017-04-12 20:10:38,258 - DEBUG - Created SoCo instance for ip: 192.168.0.14
+2017-04-12 20:10:38,262 - INFO - Sending GetZoneGroupState None to 192.168.0.14
+2017-04-12 20:10:38,303 - DEBUG - Sending {u'SOAPACTION': u'urn:schemas-upnp-org:service:ZoneGroupTopology:1#GetZoneGroupState', u'Content-Type': u'text/xml; charset="utf-8"'}, <?xml version="1.0" ?>
+<s:Envelope s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <u:GetZoneGroupState xmlns:u="urn:schemas-upnp-org:service:ZoneGroupTopology:1"/>
+  </s:Body>
+</s:Envelope>
+
+2017-04-12 20:10:38,313 - INFO - Starting new HTTP connection (1): 192.168.0.14
+2017-04-12 20:10:38,320 - DEBUG - "POST /ZoneGroupTopology/Control HTTP/1.1" 200 1122
+2017-04-12 20:10:38,325 - DEBUG - Received {'CONTENT-LENGTH': '1122', 'Connection': 'close', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/35.3-39010 (ZPS12)'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetZoneGroupStateResponse xmlns:u="urn:schemas-upnp-org:service:ZoneGroupTopology:1"><ZoneGroupState>&lt;ZoneGroups&gt;&lt;ZoneGroup Coordinator=&quot;RINCON_949F3E804E2801400&quot; ID=&quot;RINCON_949F3E804E2801400:0&quot;&gt;&lt;ZoneGroupMember UUID=&quot;RINCON_949F3E804E2801400&quot; Location=&quot;http://192.168.0.14:1400/xml/device_description.xml&quot; ZoneName=&quot;Salon&quot; Icon=&quot;x-rincon-roomicon:den&quot; Configuration=&quot;1&quot; SoftwareVersion=&quot;35.3-39010&quot; MinCompatibleVersion=&quot;34.0-00000&quot; LegacyCompatibleVersion=&quot;25.0-00000&quot; BootSeq=&quot;18&quot; WirelessMode=&quot;1&quot; WirelessLeafOnly=&quot;0&quot; HasConfiguredSSID=&quot;1&quot; ChannelFreq=&quot;2437&quot; BehindWifiExtender=&quot;0&quot; WifiEnabled=&quot;1&quot; Orientation=&quot;0&quot; RoomCalibrationState=&quot;4&quot; SecureRegState=&quot;2&quot;/&gt;&lt;/ZoneGroup&gt;&lt;/ZoneGroups&gt;</ZoneGroupState></u:GetZoneGroupStateResponse></s:Body></s:Envelope>
+2017-04-12 20:10:38,327 - INFO - Received status 200 from 192.168.0.14
+2017-04-12 20:10:38,331 - DEBUG - Dispatching method SetAVTransportURI
+2017-04-12 20:10:38,333 - INFO - Sending SetAVTransportURI [(u'InstanceID', 0), (u'CurrentURI', 'x-sonosapi-radio:pxIasSYsGYc?sid=151&flags=8300&sn=1'), (u'CurrentURIMetaData', u'')] to 192.168.0.14
+2017-04-12 20:10:38,337 - DEBUG - Sending {u'SOAPACTION': u'urn:schemas-upnp-org:service:AVTransport:1#SetAVTransportURI', u'Content-Type': u'text/xml; charset="utf-8"'}, <?xml version="1.0" ?>
+<s:Envelope s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <u:SetAVTransportURI xmlns:u="urn:schemas-upnp-org:service:AVTransport:1">
+      <InstanceID>0</InstanceID>
+      <CurrentURI>x-sonosapi-radio:pxIasSYsGYc?sid=151&amp;flags=8300&amp;sn=1</CurrentURI>
+      <CurrentURIMetaData/>
+    </u:SetAVTransportURI>
+  </s:Body>
+</s:Envelope>
+
+2017-04-12 20:10:38,346 - INFO - Starting new HTTP connection (1): 192.168.0.14
+2017-04-12 20:10:38,374 - DEBUG - "POST /MediaRenderer/AVTransport/Control HTTP/1.1" 200 266
+2017-04-12 20:10:38,379 - DEBUG - Received {'CONTENT-LENGTH': '266', 'Connection': 'close', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/35.3-39010 (ZPS12)'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:SetAVTransportURIResponse xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"></u:SetAVTransportURIResponse></s:Body></s:Envelope>
+2017-04-12 20:10:38,383 - INFO - Received status 200 from 192.168.0.14
+2017-04-12 20:10:38,385 - DEBUG - Cache hit
+2017-04-12 20:10:38,386 - DEBUG - Dispatching method Play
+2017-04-12 20:10:38,387 - INFO - Sending Play [(u'InstanceID', 0), (u'Speed', 1)] to 192.168.0.14
+2017-04-12 20:10:38,391 - DEBUG - Sending {u'SOAPACTION': u'urn:schemas-upnp-org:service:AVTransport:1#Play', u'Content-Type': u'text/xml; charset="utf-8"'}, <?xml version="1.0" ?>
+<s:Envelope s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <u:Play xmlns:u="urn:schemas-upnp-org:service:AVTransport:1">
+      <InstanceID>0</InstanceID>
+      <Speed>1</Speed>
+    </u:Play>
+  </s:Body>
+</s:Envelope>
+
+2017-04-12 20:10:38,400 - INFO - Starting new HTTP connection (1): 192.168.0.14
+2017-04-12 20:10:40,679 - DEBUG - "POST /MediaRenderer/AVTransport/Control HTTP/1.1" 200 240
+2017-04-12 20:10:40,684 - DEBUG - Received {'CONTENT-LENGTH': '240', 'Connection': 'close', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/35.3-39010 (ZPS12)'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:PlayResponse xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"></u:PlayResponse></s:Body></s:Envelope>
+2017-04-12 20:10:40,686 - INFO - Received status 200 from 192.168.0.14
+2017-04-12 20:10:40,688 - DEBUG - Detector stopped
+2017-04-12 20:10:40,690 - DEBUG - Check plugins...
+2017-04-12 20:10:41,095 - DEBUG - Detector start
+2017-04-12 20:12:47,921 - INFO - installation interrupted by signal.
+2017-04-12 20:12:47,923 - DEBUG - Detector stopped

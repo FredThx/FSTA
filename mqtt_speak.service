@@ -1,0 +1,11 @@
+[Unit]
+Description= Parle selon message MQTT
+After=network-online.target
+
+[Service]
+ExecStart=/opt/FSTA/mqtt_speak.sh
+User=root
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

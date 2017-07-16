@@ -1,0 +1,22 @@
+2017-07-12 19:59:21,844 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2017-07-12 19:59:30,761 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 19:59:41,577 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-12 19:59:41,622 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 19:59:47,465 - DEBUG - "GET /translate_tts?q=Bonjour+%C3%A0+tous.&tl=fr&client=tw-ob&textlen=16&idx=0&total=1&ie=UTF-8&tk=716645.832540 HTTP/1.1" 200 6240
+2017-07-12 19:59:49,194 - INFO - 'Bonjour à tous.' speaked with gTTS.
+2017-07-12 19:59:49,197 - INFO - MQTT connection.
+2017-07-12 20:00:28,738 - INFO - MQTT : T-HOME/PI-SALON/SPEAK => Salut ma couille
+2017-07-12 20:00:28,757 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:00:44,595 - DEBUG - "GET / HTTP/1.1" 200 None
+2017-07-12 20:00:44,638 - INFO - Starting new HTTPS connection (1): translate.google.com
+2017-07-12 20:00:51,053 - DEBUG - "GET /translate_tts?q=Salut+ma+couille&tl=fr&client=tw-ob&textlen=16&idx=0&total=1&ie=UTF-8&tk=775010.886808 HTTP/1.1" 200 6240
+2017-07-12 20:00:52,914 - INFO - 'Salut ma couille' speaked with gTTS.
+2017-07-12 20:03:46,434 - ERROR -   File "<stdin>", line 1, in <module>
+  File "mqtt_speak.py", line 42, in __init__
+    self.mqttc.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1378, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 882, in loop
+    socklist = select.select(rlist, wlist, [], timeout)
+
+2017-07-12 20:03:46,435 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
