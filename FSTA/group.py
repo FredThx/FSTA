@@ -120,7 +120,16 @@ class group(object):
 			logging.warning("Audio capture error : %s"%(e.message))
 			if self.mqtt_before_s2t_topic:
 				self.installation.mqtt_send(self.mqtt_before_s2t_topic, self.name)
+		# Analyse du text
 		if text:
+			text0=text
+			# Suppression des phrases de politesse (ex : "s'il te plait")
+			for civility_sentence in self.installation.civility_sentences:
+				text = text.replace(civility_sentence,'')
+			if text != text0:
+				logging.info("Text simplified by civility rule : %s"%(text))
+			del text0
+			# On découpe les ordres s'il existe des and_words ex :"et"
 			texts = re.split(self.installation._and_words,text)
 			if len(texts)>1:
 				logging.info("Text splited : %s"%(texts))

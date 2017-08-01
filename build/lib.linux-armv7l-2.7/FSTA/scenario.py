@@ -62,7 +62,7 @@ class scenario(object):
 		"""Function called if phrases match
 		- text		phrase dicted
 		"""
-		logging.debug("Running scenario : %s"%(self.name))
+		logging.info("Running scenario : %s"%(self.name))
 		self.installation.show_message(self.text)
 		for action in self.actions:
 			action.run(text)

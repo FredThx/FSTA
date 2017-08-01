@@ -12,5 +12,6 @@ def get_installation():
 		google_API_key = "AIzaSyDtizHAgEhUw5WjW9aRs84GUNk7o-fXwvA",
 		mqtt_base_topic = 'T-HOME/SALON/LISTEN',
 		language_analyser = cortical_language_analyser("84c53140-cdb1-11e6-a057-97f4c970893c"),
-		and_words = ["et"]
+		and_words = ["et"],
+		civility_sentences = [u"s'il te plaît", u"peux-tu"]
 		)

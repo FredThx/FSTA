@@ -35,7 +35,8 @@ class installation(object):
 					mqtt_base_topic = None, 
 					listen_timeout = 5, 
 					language_analyser = fred_language_analyser(), 
-					and_words = []):
+					and_words = [],
+					civility_sentences = []):
 		"""Initialisation
 			- groups			:	list of groups of scenarios
 			- mqtt_host		:	mqtt host (default localhost)
@@ -44,6 +45,7 @@ class installation(object):
 			- language		:	language for reconition (default : fr-Fr)
 			- led			:	a max7219.led
 			- and_words		:	list of words for spliting sentences (ex : 'et')
+			- civility_sentences:	list of sentence to ignore (ex 'Please')
 		"""
 		self.eyes = eyes
 		self.eyes.show_message("* Hello *")
@@ -69,6 +71,7 @@ class installation(object):
 		self.plugins = {}
 		self.language_analyser = language_analyser
 		self.and_words = and_words
+		self.civility_sentences = civility_sentences
 		
 	@property
 	def and_words(self):
@@ -87,10 +90,10 @@ class installation(object):
 		while not self.interrupted:
 			self.check_plugin()
 			self.detector = snowboydecoder.HotwordDetector(self.hotwords, sensitivity=0.5*len(self.hotwords))
-			logging.debug("Detector start")
+			logging.info("Detector start")
 			self.on_action = False
 			self.detector.start(detected_callback=self.callbacks,interrupt_check=self.interrupt_callback,sleep_time=0.03)
-			logging.debug("Detector stopped")
+			logging.info("Detector stopped")
 		self.detector.terminate()
 		self.eyes.clear()
 	
