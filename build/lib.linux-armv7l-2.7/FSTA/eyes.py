@@ -23,7 +23,7 @@ def thread(function):
 class eyes(object):
 	'''Eyes for FSTA
 	'''
-	def __init__(self, nb = 1, brightness = 0, speed = 2):
+	def __init__(self, nb = 1, brightness = 0, speed = 2, sleep_timeout = 600):
 		'''Init the leds
 			- nb			:	nb of cascaded led(s)
 			- brightness	:	(0-15) (be careful, high level draw more current and may cause crashes)
@@ -35,7 +35,27 @@ class eyes(object):
 		self.brightness = brightness
 		self.dev.clear()
 		self.speed=speed
-		
+		self.sleep_timeout = sleep_timeout
+		self.sleep_time = sleep_timeout
+		self.is_alive = True		
+		self.sleeper_th = threading.Thread(None, self.sleeper)
+		self.sleeper_th.start()
+	
+	def __del__(self):
+		self.is_alive = False	
+	
+	def sleeper(self):
+		while self.is_alive:
+			self.sleep_time -= 1
+			if self.sleep_time < 0:
+				self.sleep_time = 0
+				self.clear()
+			else:
+				time.sleep(1)
+
+	def sleep_init(self):
+		self.sleep_time = self.sleep_timeout
+
 	@property
 	def delay(self):
 		if self.speed>0:
@@ -49,6 +69,7 @@ class eyes(object):
 			- char		:	the character
 			- id		:	the id of the eye (None : both eyes)
 		'''
+		self.sleep_init()
 		try:
 			code = ord(char)
 		except:
@@ -65,6 +86,7 @@ class eyes(object):
 			- duration		:	in seconds
 			- intensity		:	(1-15)
 		'''
+		self.sleep_init()
 		self.dev.brightness(min(15,self.brightness+intensity))
 		time.sleep(duration)
 		self.dev.brightness(self.brightness)
@@ -75,6 +97,7 @@ class eyes(object):
 			- duration		in seconds
 			- speed			(1-5) speed of mouvement
 		'''
+		self.sleep_init()
 		fin = time.time() + duration
 		down = False
 		while time.time()<fin:
@@ -98,6 +121,7 @@ class eyes(object):
 	def show_message(self, text):
 		'''Scroll a text on eyes
 		'''
+		self.sleep_init()
 		self.dev.show_message(text, delay = self.delay, always_scroll=True)
 		self.close_eye()
 	
@@ -136,6 +160,7 @@ class eyes(object):
 		''' Open one or both eyes
 			- id	the id eye
 		'''
+		self.sleep_init()
 		self.draw(self.opened_eye, id)
 		
 	@thread
@@ -143,6 +168,7 @@ class eyes(object):
 		''' Close one or both eyes
 			- id	the id eye
 		'''
+		self.sleep_init()
 		self.draw(self.closed_eye, id)
 	
 	@thread
@@ -153,6 +179,7 @@ class eyes(object):
 			delay	:	in seconds
 			repeat	:	nb of repetition (None = 1)
 		'''
+		self.sleep_init()
 		if delay==None:
 			delay = self.delay*15
 		for i in range(repeat):

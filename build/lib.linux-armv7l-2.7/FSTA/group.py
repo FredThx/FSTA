@@ -193,6 +193,7 @@ class group(object):
 		texts, scenario_names = zip(*self.allphrases())
 		logging.debug(texts)
 		logging.debug(scenario_names)
+		cosines = []
 		try:
 			cosines = self.installation.language_analyser.get_cosines(text, texts)
 		except Exception as e:
