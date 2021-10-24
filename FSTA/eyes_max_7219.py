@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*
 
+import max7219.led as led
 import time
 import threading
 import functools
@@ -22,18 +23,27 @@ def thread(function):
 class eyes(object):
 	'''Eyes for FSTA
 	'''
-	def __init__(self, nb, speed = 2, sleep_timeout = 600):
+	def __init__(self, nb = 1, brightness = 0, speed = 2, sleep_timeout = 600):
+		'''Init the leds
+			- nb			:	nb of cascaded led(s)
+			- brightness	:	(0-15) (be careful, high level draw more current and may cause crashes)
+			- speed			:	(1-5) the speed of scolling
+		'''
+		self.dev = led.matrix(cascaded = nb)
 		self.nb = nb
+		self.dev.brightness(brightness)
+		self.brightness = brightness
+		self.dev.clear()
 		self.speed=speed
 		self.sleep_timeout = sleep_timeout
 		self.sleep_time = sleep_timeout
-		self.is_alive = True
+		self.is_alive = True		
 		self.sleeper_th = threading.Thread(None, self.sleeper)
 		self.sleeper_th.start()
-
+	
 	def __del__(self):
-		self.is_alive = False
-
+		self.is_alive = False	
+	
 	def sleeper(self):
 		while self.is_alive:
 			self.sleep_time -= 1
@@ -52,7 +62,7 @@ class eyes(object):
 			return 0.05/self.speed
 		else:
 			return 0.05
-
+	
 	@thread
 	def show_car(self, char, id=None):
 		'''Show a charater on one or both eyes
@@ -64,15 +74,12 @@ class eyes(object):
 			code = ord(char)
 		except:
 			code = 32
-		text = "["
-		for i in range(self.nb):
-			if id==None or id == i:
-				text += char + "|"
-			else:
-				text += " |"
-		text += "]"
-		print(text)
-
+		if id!=None:
+			self.dev.letter(id,code)
+		else:
+			for i in range(self.nb):
+				self.dev.letter(i, code)
+	
 	@thread
 	def flash(self, duration = 0.1, intensity = 4):
 		'''Increase brightness during duration secondes
@@ -80,32 +87,62 @@ class eyes(object):
 			- intensity		:	(1-15)
 		'''
 		self.sleep_init()
-		print(f"Flash eyes during {duration} secondes.")
+		self.dev.brightness(min(15,self.brightness+intensity))
 		time.sleep(duration)
-
+		self.dev.brightness(self.brightness)
+	
 	@thread
 	def	vibre(self, duration = 1):
 		'''down and up the text
 			- duration		in seconds
 			- speed			(1-5) speed of mouvement
 		'''
-		print(f"Vibre eyes during {duration} secondes.")
-
+		self.sleep_init()
+		fin = time.time() + duration
+		down = False
+		while time.time()<fin:
+			if down:
+				self.dev.scroll_up()
+			else:
+				self.dev.scroll_down()
+			down = not down
+			time.sleep(self.delay*10)
+		if down:
+			self.dev.scroll_up()
+		
 	@thread
 	def clear(self, id=None):
 		'''Clear the eyes
 			- id	:	id of the eye
 		'''
-		print(f"Clear eyes.")
-
+		self.dev.clear(id)
+		
 	@thread
 	def show_message(self, text):
 		'''Scroll a text on eyes
 		'''
 		self.sleep_init()
-		print(f"Eyes : <{text}>")
+		self.dev.show_message(text, delay = self.delay, always_scroll=True)
 		self.close_eye()
-
+	
+	opened_eye = [
+				0b00001000,
+				0b00010100,
+				0b00100100,
+				0b00100100,
+				0b00100100,
+				0b00100100,
+				0b00010100,
+				0b00001000]
+	closed_eye = [
+				0b00001000,
+				0b00011000,
+				0b00011000,
+				0b00011000,
+				0b00011000,
+				0b00011000,
+				0b00011000,
+				0b00001000]
 	@thread
 	def draw(self, bytes, id = None):
 		'''Draw a bytesarray
@@ -114,26 +151,26 @@ class eyes(object):
 		'''
 		for i in range(self.nb):
 			if id==None or id==i:
-				print(f"Eye {i} :")
 				for c in range(8):
-					print(f"\t{bytes[c]:08b}")
-
+					self.dev.set_byte(i,c+1,bytes[c],False)
+		self.dev.flush()
+		
 	@thread
 	def open_eye(self, id = None):
 		''' Open one or both eyes
 			- id	the id eye
 		'''
 		self.sleep_init()
-		print(f"Open eye {'all' if id is None else id}")
-
+		self.draw(self.opened_eye, id)
+		
 	@thread
 	def close_eye(self, id = None):
 		''' Close one or both eyes
 			- id	the id eye
 		'''
 		self.sleep_init()
-		print(f"Open eye {'all' if id is None else id}")
-
+		self.draw(self.closed_eye, id)
+	
 	@thread
 	def cligne(self, id = None, delay = None, repeat = 1):
 		''' Open one or both eye(s)

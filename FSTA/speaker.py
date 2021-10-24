@@ -8,7 +8,10 @@ from FUTIL.my_logging import *
 try:
 	import pyttsx
 except ImportError:
-	pass
+	try:
+		import pyttsx3 as pyttsx
+	except ImportError:
+		pass
 try:
 	from gtts import gTTS
 	import os
@@ -27,17 +30,20 @@ class TTS(object):
 	'''
 	def __init__(self, language):
 		self.language = language
-		
+
 class googleTTS(TTS):
 	'''A google TTS class
 	'''
-	def __init__(self, tmp = 'tts.mp3', language = 'fr'):
+	def __init__(self, tmp = 'tts.mp3', language = 'fr', module = None, device = None):
 		'''Initialisation
 			- tmp		:	tmp file
-			- language
+			- language	:   default : 'fr'
+			- module 	:	audio module (None : default audio module, 'alsa' : alsa module)
+			- device	:	audio device (None : default device, 'hw:2,0' : alsa device n° 2, sous-périphérique #0)
 		'''
 		self.tmp=tmp
 		TTS.__init__(self,language)
+		self.cmd = f"mpg123{f' -o {module}' if module else ''}{f' -a {device}' if device else ''}"
 
 	def speak(self, text):
 		'''Speak the text
@@ -46,11 +52,11 @@ class googleTTS(TTS):
 		for text in text.split('.'):
 			try:
 				gTTS(text=text, lang=self.language).save(self.tmp)
-				os.system('mpg123 %s'%(self.tmp))
+				os.system(f'mpg123 {self.tmp}')
 				logging.info("'%s' speaked with gTTS."%(text))
 			except Exception as e:
-				logging.warning(e.message)
-			
+				logging.warning(e)
+
 class localTTS(TTS):
 	''' A local tts
 	'''
@@ -68,7 +74,7 @@ class localTTS(TTS):
 		self.engine.say(text)
 		self.engine.runAndWait()
 		logging.info("'%s' speaked with pyttsx."%(text))
-				
+
 class mqtt_speaker(speaker):
 	''' A mqtt-test to speak class
 	'''
@@ -86,7 +92,7 @@ class mqtt_speaker(speaker):
 		self.mqttc = mqtt.Client()
 		self.mqttc.on_connect = self.on_mqtt_connect
 		self.mqttc.on_disconnect = self.on_mqtt_disconnect
-		#self.mqttc.message_callback_add(self.topic, self.on_mqtt_message)		
+		#self.mqttc.message_callback_add(self.topic, self.on_mqtt_message)
 
 	def run(self):
 		''' Run forever
@@ -95,7 +101,7 @@ class mqtt_speaker(speaker):
 		self.tts.speak("Salut les amis. Je suis a votre service.")
 		self.mqttc.loop_forever()
 
-	
+
 	def on_mqtt_message(self, client, userdata, msg):
 		'''Speak on mqtt reception
 		'''
@@ -108,7 +114,7 @@ class mqtt_speaker(speaker):
 		logging.info("MQTT connection.")
 		mqttc.message_callback_add(self.topic, self.on_mqtt_message)
 		mqttc.subscribe(self.topic)
-		
+
 	def on_mqtt_disconnect(client, userdata, rc):
 		''' Reconnect when connection fail
 		'''

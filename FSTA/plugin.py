@@ -3,6 +3,7 @@
 
 import time
 import logging
+from FSTA.execfile import execfile
 
 class plugin(object):
 	'''Plugin for FSTA
@@ -14,7 +15,7 @@ class plugin(object):
 		'''
 		self.file_name = file_name
 		self.loaded_date = time.time()
-	
+
 	def load(self, maison):
 		'''Load the plugin with 'maison' as installation name
 		'''

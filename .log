@@ -1264,3 +1264,182 @@
 2017-07-12 20:56:56,265 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
 2017-07-12 20:56:57,926 - ERROR - 
 2017-07-12 20:56:57,928 - ERROR - <type 'exceptions.KeyboardInterrupt'> - 
+2021-10-23 15:17:15,103 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2021-10-23 15:18:02,076 - ERROR -   File "<stdin>", line 1, in <module>
+
+2021-10-23 15:18:02,344 - ERROR - <class 'NameError'> - name 'speaf' is not defined
+2021-10-23 15:18:08,229 - ERROR -   File "<stdin>", line 1, in <module>
+
+2021-10-23 15:18:08,231 - ERROR - <class 'TypeError'> - 'googleTTS' object is not callable
+2021-10-23 15:18:39,006 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/home/pi/Devlopp/FSTA/FSTA/speaker.py", line 52, in speak
+    logging.warning(e.message)
+
+2021-10-23 15:18:39,008 - ERROR - <class 'AttributeError'> - 'NameError' object has no attribute 'message'
+2021-10-23 15:19:22,359 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2021-10-23 15:19:29,773 - WARNING - name 'gTTS' is not defined
+2021-10-23 15:20:44,286 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2021-10-23 15:20:50,406 - DEBUG - text: salut
+2021-10-23 15:20:50,409 - DEBUG - tld: com
+2021-10-23 15:20:51,047 - DEBUG - lang: fr
+2021-10-23 15:20:51,050 - DEBUG - slow: False
+2021-10-23 15:20:51,052 - DEBUG - lang_check: True
+2021-10-23 15:20:51,053 - DEBUG - pre_processor_funcs: [<function tone_marks at 0xb5fa2e40>, <function end_of_line at 0xb5faa078>, <function abbreviations at 0xb5faa198>, <function word_sub at 0xb5faa588>]
+2021-10-23 15:20:51,055 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|：|。|\\\n|\\)|¿|،|、|¡|\\(|;|\\[|‥|，|…|\\]|—', re.IGNORECASE) from: [<function tone_marks at 0xb5faa618>, <function period_comma at 0xb5faa660>, <function colon at 0xb5faa6a8>, <function other_punctuation at 0xb5faa6f0>]>
+2021-10-23 15:20:51,058 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'cy': 'Welsh', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'eo': 'Esperanto', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'hy': 'Armenian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'mk': 'Macedonian', 'ml': 'Malayalam', 'mr': 'Marathi', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2021-10-23 15:20:51,131 - DEBUG - pre-processing: <function tone_marks at 0xb5fa2e40>
+2021-10-23 15:20:51,134 - DEBUG - pre-processing: <function end_of_line at 0xb5faa078>
+2021-10-23 15:20:51,137 - DEBUG - pre-processing: <function abbreviations at 0xb5faa198>
+2021-10-23 15:20:51,140 - DEBUG - pre-processing: <function word_sub at 0xb5faa588>
+2021-10-23 15:20:51,142 - DEBUG - text_parts: ['salut']
+2021-10-23 15:20:51,144 - DEBUG - text_parts: 1
+2021-10-23 15:20:51,146 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22salut%5C%22%2C%5C%22fr%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2021-10-23 15:20:51,150 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2021-10-23 15:20:51,398 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2021-10-23 15:20:51,403 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '135'}
+2021-10-23 15:20:51,404 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2021-10-23 15:20:51,405 - DEBUG - status-0: 200
+2021-10-23 15:20:51,407 - DEBUG - part-0 written to <_io.BufferedWriter name='tts.mp3'>
+2021-10-23 15:20:51,408 - DEBUG - Saved to tts.mp3
+2021-10-23 15:20:51,912 - INFO - 'salut' speaked with gTTS.
+2021-10-23 15:44:02,085 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2021-10-23 15:45:19,044 - DEBUG - text: Salut Fred
+2021-10-23 15:45:19,046 - DEBUG - tld: com
+2021-10-23 15:45:19,050 - DEBUG - lang: fr
+2021-10-23 15:45:19,052 - DEBUG - slow: False
+2021-10-23 15:45:19,053 - DEBUG - lang_check: True
+2021-10-23 15:45:19,055 - DEBUG - pre_processor_funcs: [<function tone_marks at 0xb5fb8e40>, <function end_of_line at 0xb5fc1078>, <function abbreviations at 0xb5fc1198>, <function word_sub at 0xb5fc1588>]
+2021-10-23 15:45:19,057 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|¿|\\)|\\[|¡|،|\\(|;|，|\\\n|、|—|‥|：|\\]|。', re.IGNORECASE) from: [<function tone_marks at 0xb5fc1618>, <function period_comma at 0xb5fc1660>, <function colon at 0xb5fc16a8>, <function other_punctuation at 0xb5fc16f0>]>
+2021-10-23 15:45:19,059 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'cy': 'Welsh', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'eo': 'Esperanto', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'hy': 'Armenian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'mk': 'Macedonian', 'ml': 'Malayalam', 'mr': 'Marathi', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2021-10-23 15:45:19,073 - DEBUG - pre-processing: <function tone_marks at 0xb5fb8e40>
+2021-10-23 15:45:19,075 - DEBUG - pre-processing: <function end_of_line at 0xb5fc1078>
+2021-10-23 15:45:19,077 - DEBUG - pre-processing: <function abbreviations at 0xb5fc1198>
+2021-10-23 15:45:19,081 - DEBUG - pre-processing: <function word_sub at 0xb5fc1588>
+2021-10-23 15:45:19,083 - DEBUG - text_parts: ['Salut Fred']
+2021-10-23 15:45:19,085 - DEBUG - text_parts: 1
+2021-10-23 15:45:19,087 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Salut%20Fred%5C%22%2C%5C%22fr%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2021-10-23 15:45:19,091 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2021-10-23 15:45:19,376 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2021-10-23 15:45:19,382 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2021-10-23 15:45:19,384 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2021-10-23 15:45:19,385 - DEBUG - status-0: 200
+2021-10-23 15:45:19,387 - DEBUG - part-0 written to <_io.BufferedWriter name='tts.mp3'>
+2021-10-23 15:45:19,388 - DEBUG - Saved to tts.mp3
+2021-10-23 15:45:22,133 - INFO - 'Salut Fred' speaked with gTTS.
+2021-10-23 15:45:25,764 - DEBUG - text: Salut Fred
+2021-10-23 15:45:25,765 - DEBUG - tld: com
+2021-10-23 15:45:25,767 - DEBUG - lang: fr
+2021-10-23 15:45:25,768 - DEBUG - slow: False
+2021-10-23 15:45:25,769 - DEBUG - lang_check: True
+2021-10-23 15:45:25,770 - DEBUG - pre_processor_funcs: [<function tone_marks at 0xb5fb8e40>, <function end_of_line at 0xb5fc1078>, <function abbreviations at 0xb5fc1198>, <function word_sub at 0xb5fc1588>]
+2021-10-23 15:45:25,771 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|¿|\\)|\\[|¡|،|\\(|;|，|\\\n|、|—|‥|：|\\]|。', re.IGNORECASE) from: [<function tone_marks at 0xb5fc1618>, <function period_comma at 0xb5fc1660>, <function colon at 0xb5fc16a8>, <function other_punctuation at 0xb5fc16f0>]>
+2021-10-23 15:45:25,773 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'cy': 'Welsh', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'eo': 'Esperanto', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'hy': 'Armenian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'mk': 'Macedonian', 'ml': 'Malayalam', 'mr': 'Marathi', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2021-10-23 15:45:25,855 - DEBUG - pre-processing: <function tone_marks at 0xb5fb8e40>
+2021-10-23 15:45:25,859 - DEBUG - pre-processing: <function end_of_line at 0xb5fc1078>
+2021-10-23 15:45:25,874 - DEBUG - pre-processing: <function abbreviations at 0xb5fc1198>
+2021-10-23 15:45:25,876 - DEBUG - pre-processing: <function word_sub at 0xb5fc1588>
+2021-10-23 15:45:25,884 - DEBUG - text_parts: ['Salut Fred']
+2021-10-23 15:45:25,888 - DEBUG - text_parts: 1
+2021-10-23 15:45:25,895 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Salut%20Fred%5C%22%2C%5C%22fr%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2021-10-23 15:45:25,898 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2021-10-23 15:45:26,091 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2021-10-23 15:45:26,095 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2021-10-23 15:45:26,097 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2021-10-23 15:45:26,098 - DEBUG - status-0: 200
+2021-10-23 15:45:26,099 - DEBUG - part-0 written to <_io.BufferedWriter name='tts.mp3'>
+2021-10-23 15:45:26,103 - DEBUG - Saved to tts.mp3
+2021-10-23 15:45:28,623 - INFO - 'Salut Fred' speaked with gTTS.
+2021-10-23 15:47:38,357 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/home/pi/Devlopp/FSTA/FSTA/speaker.py", line 66, in __init__
+    self.engine = pyttsx.init()
+
+2021-10-23 15:47:38,358 - ERROR - <class 'NameError'> - name 'pyttsx' is not defined
+2021-10-23 15:47:54,329 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python3.7/dist-packages/pyttsx/__init__.py", line 18, in <module>
+    from engine import Engine
+
+2021-10-23 15:47:54,330 - ERROR - <class 'ModuleNotFoundError'> - No module named 'engine'
+2021-10-23 16:14:56,815 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2021-10-23 16:15:10,212 - ERROR -   File "<stdin>", line 1, in <module>
+  File "/home/pi/Devlopp/FSTA/FSTA/speaker.py", line 66, in __init__
+    self.engine = pyttsx.init()
+
+2021-10-23 16:15:10,215 - ERROR - <class 'NameError'> - name 'pyttsx' is not defined
+2021-10-23 16:15:59,649 - INFO - my_logging logger is started. Console : DEBUG. File (.log) : DEBUG
+2021-10-23 16:16:23,052 - INFO - 'Salut FRED' speaked with pyttsx.
+2021-10-23 16:16:56,700 - DEBUG - text: Salut FRED
+2021-10-23 16:16:56,702 - DEBUG - tld: com
+2021-10-23 16:16:56,704 - DEBUG - lang: fr
+2021-10-23 16:16:56,707 - DEBUG - slow: False
+2021-10-23 16:16:56,708 - DEBUG - lang_check: True
+2021-10-23 16:16:56,710 - DEBUG - pre_processor_funcs: [<function tone_marks at 0xb5fd2b70>, <function end_of_line at 0xb5fd2d68>, <function abbreviations at 0xb5fd2e88>, <function word_sub at 0xb5fda2b8>]
+2021-10-23 16:16:56,712 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|‥|—|…|，|\\[|;|¿|：|\\)|\\(|、|،|¡|\\\n|。|\\]', re.IGNORECASE) from: [<function tone_marks at 0xb5fda348>, <function period_comma at 0xb5fda390>, <function colon at 0xb5fda3d8>, <function other_punctuation at 0xb5fda420>]>
+2021-10-23 16:16:56,714 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'cy': 'Welsh', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'eo': 'Esperanto', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'hy': 'Armenian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'mk': 'Macedonian', 'ml': 'Malayalam', 'mr': 'Marathi', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2021-10-23 16:16:56,726 - DEBUG - pre-processing: <function tone_marks at 0xb5fd2b70>
+2021-10-23 16:16:56,729 - DEBUG - pre-processing: <function end_of_line at 0xb5fd2d68>
+2021-10-23 16:16:56,731 - DEBUG - pre-processing: <function abbreviations at 0xb5fd2e88>
+2021-10-23 16:16:56,735 - DEBUG - pre-processing: <function word_sub at 0xb5fda2b8>
+2021-10-23 16:16:56,738 - DEBUG - text_parts: ['Salut FRED']
+2021-10-23 16:16:56,739 - DEBUG - text_parts: 1
+2021-10-23 16:16:56,742 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Salut%20FRED%5C%22%2C%5C%22fr%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2021-10-23 16:16:56,746 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2021-10-23 16:16:56,952 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2021-10-23 16:16:56,958 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2021-10-23 16:16:56,960 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2021-10-23 16:16:56,961 - DEBUG - status-0: 200
+2021-10-23 16:16:56,963 - DEBUG - part-0 written to <_io.BufferedWriter name='tts.mp3'>
+2021-10-23 16:16:56,964 - DEBUG - Saved to tts.mp3
+2021-10-23 16:16:59,780 - INFO - 'Salut FRED' speaked with gTTS.
+2021-10-23 16:17:20,122 - INFO - 'Salut FRED' speaked with pyttsx.
+2021-10-23 16:17:22,972 - DEBUG - text: Salut FRED
+2021-10-23 16:17:22,974 - DEBUG - tld: com
+2021-10-23 16:17:22,975 - DEBUG - lang: fr
+2021-10-23 16:17:22,976 - DEBUG - slow: False
+2021-10-23 16:17:22,977 - DEBUG - lang_check: True
+2021-10-23 16:17:22,978 - DEBUG - pre_processor_funcs: [<function tone_marks at 0xb5fd2b70>, <function end_of_line at 0xb5fd2d68>, <function abbreviations at 0xb5fd2e88>, <function word_sub at 0xb5fda2b8>]
+2021-10-23 16:17:22,979 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|‥|—|…|，|\\[|;|¿|：|\\)|\\(|、|،|¡|\\\n|。|\\]', re.IGNORECASE) from: [<function tone_marks at 0xb5fda348>, <function period_comma at 0xb5fda390>, <function colon at 0xb5fda3d8>, <function other_punctuation at 0xb5fda420>]>
+2021-10-23 16:17:22,981 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'cy': 'Welsh', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'eo': 'Esperanto', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'hy': 'Armenian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'mk': 'Macedonian', 'ml': 'Malayalam', 'mr': 'Marathi', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2021-10-23 16:17:23,014 - DEBUG - pre-processing: <function tone_marks at 0xb5fd2b70>
+2021-10-23 16:17:23,018 - DEBUG - pre-processing: <function end_of_line at 0xb5fd2d68>
+2021-10-23 16:17:23,020 - DEBUG - pre-processing: <function abbreviations at 0xb5fd2e88>
+2021-10-23 16:17:23,021 - DEBUG - pre-processing: <function word_sub at 0xb5fda2b8>
+2021-10-23 16:17:23,028 - DEBUG - text_parts: ['Salut FRED']
+2021-10-23 16:17:23,029 - DEBUG - text_parts: 1
+2021-10-23 16:17:23,030 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Salut%20FRED%5C%22%2C%5C%22fr%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2021-10-23 16:17:23,034 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2021-10-23 16:17:23,252 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2021-10-23 16:17:23,257 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2021-10-23 16:17:23,259 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2021-10-23 16:17:23,260 - DEBUG - status-0: 200
+2021-10-23 16:17:23,261 - DEBUG - part-0 written to <_io.BufferedWriter name='tts.mp3'>
+2021-10-23 16:17:23,263 - DEBUG - Saved to tts.mp3
+2021-10-23 16:17:26,061 - INFO - 'Salut FRED' speaked with gTTS.
+2021-10-23 16:17:30,043 - INFO - 'Salut FRED' speaked with pyttsx.
+2021-10-23 16:17:34,146 - INFO - 'Salut FRED' speaked with pyttsx.
+2021-10-23 18:53:22,820 - INFO - 'Salut FRED' speaked with pyttsx.
+2021-10-23 18:53:25,167 - DEBUG - text: Salut FRED
+2021-10-23 18:53:25,168 - DEBUG - tld: com
+2021-10-23 18:53:25,169 - DEBUG - lang: fr
+2021-10-23 18:53:25,170 - DEBUG - slow: False
+2021-10-23 18:53:25,171 - DEBUG - lang_check: True
+2021-10-23 18:53:25,173 - DEBUG - pre_processor_funcs: [<function tone_marks at 0xb5fd2b70>, <function end_of_line at 0xb5fd2d68>, <function abbreviations at 0xb5fd2e88>, <function word_sub at 0xb5fda2b8>]
+2021-10-23 18:53:25,174 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|‥|—|…|，|\\[|;|¿|：|\\)|\\(|、|،|¡|\\\n|。|\\]', re.IGNORECASE) from: [<function tone_marks at 0xb5fda348>, <function period_comma at 0xb5fda390>, <function colon at 0xb5fda3d8>, <function other_punctuation at 0xb5fda420>]>
+2021-10-23 18:53:25,175 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'cy': 'Welsh', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'eo': 'Esperanto', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'hy': 'Armenian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'mk': 'Macedonian', 'ml': 'Malayalam', 'mr': 'Marathi', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2021-10-23 18:53:25,198 - DEBUG - pre-processing: <function tone_marks at 0xb5fd2b70>
+2021-10-23 18:53:25,200 - DEBUG - pre-processing: <function end_of_line at 0xb5fd2d68>
+2021-10-23 18:53:25,201 - DEBUG - pre-processing: <function abbreviations at 0xb5fd2e88>
+2021-10-23 18:53:25,203 - DEBUG - pre-processing: <function word_sub at 0xb5fda2b8>
+2021-10-23 18:53:25,204 - DEBUG - text_parts: ['Salut FRED']
+2021-10-23 18:53:25,205 - DEBUG - text_parts: 1
+2021-10-23 18:53:25,207 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Salut%20FRED%5C%22%2C%5C%22fr%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2021-10-23 18:53:25,210 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2021-10-23 18:53:25,428 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2021-10-23 18:53:25,433 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2021-10-23 18:53:25,434 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2021-10-23 18:53:25,435 - DEBUG - status-0: 200
+2021-10-23 18:53:25,437 - DEBUG - part-0 written to <_io.BufferedWriter name='tts.mp3'>
+2021-10-23 18:53:25,438 - DEBUG - Saved to tts.mp3
+2021-10-23 18:53:28,131 - INFO - 'Salut FRED' speaked with gTTS.
+2021-10-23 18:56:31,483 - ERROR -   File "<stdin>", line 1, in <module>
+
+2021-10-23 18:56:31,484 - ERROR - <class 'ModuleNotFoundError'> - No module named 'speech_recognition'

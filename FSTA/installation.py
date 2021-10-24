@@ -9,13 +9,17 @@ import paho.mqtt.client as paho
 import threading
 import logging
 import speech_recognition as sr
-import snowboydecoder
+#import snowboydecoder
 import os
 import re
 from FSTA.plugin import *
 from FSTA.group import *
-from FSTA.fred_language_analyser import *
-from FSTA.eyes import *
+#from FSTA.fred_language_analyser import *
+try:
+	from FSTA.eyes import *
+except ModuleNotFoundError:
+	pass
+from FSTA.hotword import Detector
 
 #TODO : plusieurs API (google, MS, ...) pour gérer quotas
 
@@ -25,16 +29,16 @@ class installation(object):
 		- mqtt serveur
 	"""
 	plugin_path = "resources/rules"
-	
-	def __init__(self, groups = [], 
-					mqtt_host='localhost', 
-					mqtt_port = 1883, 
-					google_API_key = None, 
-					language = 'fr-FR', 
-					eyes = None, 
-					mqtt_base_topic = None, 
-					listen_timeout = 5, 
-					language_analyser = fred_language_analyser(), 
+
+	def __init__(self, groups = [],
+					mqtt_host='localhost',
+					mqtt_port = 1883,
+					google_API_key = None,
+					language = 'fr-FR',
+					eyes = None,
+					mqtt_base_topic = None,
+					listen_timeout = 5,
+					language_analyser = None,#fred_language_analyser(),
 					and_words = [],
 					civility_sentences = []):
 		"""Initialisation
@@ -48,8 +52,9 @@ class installation(object):
 			- civility_sentences:	list of sentence to ignore (ex 'Please')
 		"""
 		self.eyes = eyes
-		self.eyes.show_message("* Hello *")
-		self.eyes.cligne(repeat=5)
+		if self.eyes:
+			self.eyes.show_message("* Hello *")
+			self.eyes.cligne(repeat=5)
 		self.groups = {}
 		self.hotwords = []
 		self.callbacks = []
@@ -69,10 +74,13 @@ class installation(object):
 		self.language = language
 		self.reconizer = sr.Recognizer()
 		self.plugins = {}
-		self.language_analyser = language_analyser
+		if language_analyser:
+			self.language_analyser = language_analyser
+		else:
+			self.language_analyser = fred_language_analyser()
 		self.and_words = and_words
 		self.civility_sentences = civility_sentences
-		
+
 	@property
 	def and_words(self):
 		return [t[1:-1] for t in self._and_words.split('|')]
@@ -82,28 +90,30 @@ class installation(object):
 			self._and_words = " " + " | ".join(words) + " "
 		else:
 			self._and_words = " " + words + " "
-		
+
 	def run(self):
 		"""Main function : wait for hotwords and run the callback function for the groups
 		"""
 		signal.signal(signal.SIGINT, self.signal_handler)
 		while not self.interrupted:
 			self.check_plugin()
-			self.detector = snowboydecoder.HotwordDetector(self.hotwords, sensitivity=0.5*len(self.hotwords))
+			#self.detector = snowboydecoder.HotwordDetector(self.hotwords, sensitivity=0.5*len(self.hotwords))
+			self.detector = Detector(self.hotwords)
 			logging.info("Detector start")
 			self.on_action = False
 			self.detector.start(detected_callback=self.callbacks,interrupt_check=self.interrupt_callback,sleep_time=0.03)
 			logging.info("Detector stopped")
 		self.detector.terminate()
-		self.eyes.clear()
-	
+		if self.eyes:
+			self.eyes.clear()
+
 	def signal_handler(self, signal, frame):
 		logging.info("installation interrupted by signal.")
 		self.interrupted = True
-	
+
 	def interrupt_callback(self):
 		return self.interrupted or self.on_action
-		
+
 	def calibrate(self):
 		''' Calibrate the speech_recognition
 		'''
@@ -114,7 +124,7 @@ class installation(object):
 			self.reconizer.adjust_for_ambient_noise(source)
 			self.reconizer.energy_threshold = max(self.reconizer.energy_threshold, 200)
 			logging.info("energy_threshold is changed from %i to %i"%(energy, self.reconizer.energy_threshold))
-	
+
 	def check_plugin(self):
 		'''Check if new or modiffied plugin and load them if needed.
 		'''
@@ -132,10 +142,10 @@ class installation(object):
 			self.hotwords = []
 			self.callbacks = []
 			for group in self.groups.values():
-				self.hotwords.append(group.hotword)
+				self.hotwords.append(group.name) #change .hotword to .name
 				self.callbacks.append(group.callback)
 				group.init(self)
-	
+
 	def add_group(self, group_name, hotword, mqtt_hotword_topic = None):
 		'''Add or update a group to the installation
 		'''
@@ -144,7 +154,7 @@ class installation(object):
 			self.groups[group_name].mqtt_hotword_topic = mqtt_hotword_topic
 		else:
 			self.groups[group_name] = group(group_name,hotword, mqtt_hotword_topic)
-	
+
 	def add_scenario(self, group_name, name, phrases = [] , actions = []):
 		'''Add or update a scenario
 		'''
@@ -152,12 +162,12 @@ class installation(object):
 			self.groups[group_name].add_scenario(name, phrases, actions)
 		else:
 			logging.error("Group %s is not declare.")
-	
+
 	def group(self, group_name):
 		'''Return a group
 		'''
 		return self.groups[group_name]
-	
+
 	def allphrases(self):
 		'''to debug
 		'''
@@ -166,12 +176,12 @@ class installation(object):
 			for scenario in group.scenarios.values():
 				phrases.extend(scenario.phrases)
 		return phrases
-	
+
 	def show_message(self, text):
 		'''Show message on the leds (tread)
 		'''
 		self.eyes.show_message(text)
-	
+
 	def mqtt_send(self, topic, payload):
 		'''Send a mqtt message
 		'''

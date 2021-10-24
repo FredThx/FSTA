@@ -1,0 +1,8 @@
+paho-mqtt
+FUTIL
+gTTS
+pyttsx3
+SpeechRecognition
+PyAudio
+nltk
+retinasdk

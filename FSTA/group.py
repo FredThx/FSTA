@@ -13,10 +13,10 @@ class group(object):
 	"""
 	max_distance = 5
 	min_cosine = 0.4
-	def __init__(self, 
-					name, 
-					hotword = "./resources/hotwords/snowboy.umdl", 
-					mqtt_before_topic = None, 
+	def __init__(self,
+					name,
+					hotword = "./resources/hotwords/snowboy.umdl",
+					mqtt_before_topic = None,
 					mqtt_before_s2t_topic = None,
 					mqtt_always_topic = None,
 					scenarios = [],
@@ -25,7 +25,7 @@ class group(object):
 					and_words = []):
 		"""Initialisation
 			- name					:	name of the group
-			- hotword				:	string containing path to a umdl or pmdl file as "Ok google" 
+			- hotword				:	string containing path to a umdl or pmdl file as "Ok google"
 			- mqtt_before_topic		:	if set, a mqtt message is send with it as topic and name as message when hotword is detected
 			- mqtt_before_s2t_topic :	if set, a mqtt message is send with it as topic and name as message when audio is captured
 			- mqtt_always_topic		:	if set, a mqtt message is send with it as topic and name as message when text is reconized
@@ -42,7 +42,7 @@ class group(object):
 		self.mqtt_always_topic = mqtt_always_topic
 		self.before_actions = before_actions
 		self.always_actions = always_actions
-	
+
 	@property
 	def always_actions(self):
 		return self._always_actions
@@ -52,7 +52,7 @@ class group(object):
 			self._always_actions = actions
 		else:
 			self._always_actions = [actions]
-	
+
 	@property
 	def before_actions(self):
 		return self._before_actions
@@ -62,8 +62,8 @@ class group(object):
 			self._before_actions = actions
 		else:
 			self._before_actions = [actions]
-	
-	
+
+
 	def init(self, installation):
 		'''Initialise the group with installation datas
 		'''
@@ -80,7 +80,7 @@ class group(object):
 			action.init(self.installation)
 		for action in self.before_actions:
 			action.init(self.installation)
-	
+
 	def callback(self):
 		""" Function called when the hotword match
 		"""
@@ -153,8 +153,8 @@ class group(object):
 			logging.info("None text captured.")
 			time.sleep(0.5)
 		self.installation.eyes.close_eye()
-		
-		
+
+
 	def add_scenario(self,name, phrases = [], actions = [], min_cosine = 0.4, text = None):
 		'''add or update a scenario
 		'''
@@ -165,7 +165,7 @@ class group(object):
 			self.scenarios[name].text = text
 		else:
 			self.scenarios[name] = scenario(name, phrases, actions, min_cosine, text)
-	
+
 	def allphrases(self):
 		''' return a list of tuple : [(text,scenario_name),(..),...]
 		'''
@@ -174,19 +174,19 @@ class group(object):
 			for text in self.scenarios[index].phrases:
 				phrases.append((text, index))
 		return phrases
-	
+
 	def run_always_actions(self, text):
 		'''Run all the always_actions
 		'''
 		for action in self.always_actions:
 			action.run(text)
-			
+
 	def run_before_actions(self):
 		'''Run all the before_actions
 		'''
 		for action in self.before_actions:
 			action.run()
-	
+
 	def get_best_scenario(self, text):
 		''' return the name of the best scenario or False
 		'''
